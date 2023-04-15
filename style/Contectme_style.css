@@ -1,0 +1,109 @@
+
+/* Form  */
+.top_title{
+    display: block;
+    text-align: center;
+    margin-bottom: 5vw;
+    margin-top: 5vw;
+    font-style: bold;
+}
+
+.contect_inp{
+    border-radius: 15px !important;
+}
+
+  .btnsend {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 40vw;
+    cursor: pointer;
+    display: block;
+    width: 15vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    transition: .5s ease;
+  }
+
+
+  .btnsend:hover {
+    background-color: #046340;
+    width: 17vw;
+  } 
+
+ #send_img{
+    rotate: 30deg !important; 
+ }    
+
+  /* Add a background color and some padding around the form */
+.container12 {
+    border-radius: 5px;
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+}
+
+.container123 {
+    border-radius: 5px;
+    padding: 20px;
+    display: block;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    background: transparent;
+    max-width: 50%;
+
+}
+
+
+.alert_close{
+    display: block;
+    margin-left: auto;
+}
+
+@media (max-width:500px){
+    .container12 {
+        max-width: 90%;
+    }
+    
+    .container123 {
+        max-width: 90% !important;
+
+    }
+}
+
+@media (max-width:900px){
+    .container123 {
+        max-width: 70%;
+    }
+}
+@media (max-width:700px){
+  .btnsend {
+    padding: 9px 15px;
+    border-radius: 40vw;
+    width: 20vw;
+  }
+
+
+  .btnsend:hover {
+    width: 23vw;
+  }
+  
+}
+@media (max-width:470px){
+    .btnsend {
+      padding: 12px 17px;
+      border-radius: 35vw;
+      width: 40vw;
+    }
+  
+  
+    .btnsend:hover {
+      width: 45vw;
+    }
+    
+  }

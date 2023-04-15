@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="/style/Details_projects.css" rel="stylesheet">
+    <link href="/style/Common.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/Image/ico.jpg">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <title>Somnath dash - Projects</title>
+    <script src="/script/Details_projects.js" type="module"></script>
+
+</head>
+
+<body>
+    <script>
+        function close_aler() {
+            const div = document.getElementById('altt');
+            div.innerHTML = ""
+        }
+        function myFunction() {
+            // Get the text field
+            var copyText = window.location
+
+            // navigator.clipboard.writeText(copyText); 
+            navigator.clipboard.writeText(copyText).then(() => {
+                try {
+                    var di = '<div class="alert alert-info text-center my-3 pb-3" style="display: block; margin-left: auto; margin-right: auto; transition:  1s ease; pad" role="alert"> <button type="button" onclick="close_aler()" class="btn-close alert_close" aria-label="Close"></button>Link has been copied Successfully !!</div>'
+                    document.getElementById("altt").innerHTML = di;
+                } catch (err) {
+                    var di = '<div class="alert alert-danger text-center my-3 pb-3" style="display: block; margin-left: auto; margin-right: auto; transition:  1s ease; pad" role="alert"> <button type="button" onclick="close_aler()" class="btn-close alert_close" aria-label="Close"></button>Something really went wrong.</div>'
+                    document.getElementById("altt").innerHTML = di;
+                }
+            });
+
+
+
+
+        }
+    </script>
+    <header class="text-gray-600 body-font custum_header">
+
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a href="/" class="mt-2">
+                    <img src="Image/IMG_5.jpg" alt="Logo" width="50" height="50"
+                    class="d-inline-block align-text-top" style="border-radius: 100%;">
+                  </a> 
+                  <a class="navbar-brand fs-3 mt-1" href="/index.html">
+                   
+                    &nbsp;&nbsp;&nbsp;&nbsp; My Portfolio
+                  </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto">
+                        <a class="mr-5 hover:text-gray-900 nav_tab under nav-link " href="/index.html">Home</a>
+                        <a class="mr-5 hover:text-gray-900 nav_tab under nav-link" href="/My_project.html">My
+                            Projects</a>
+                        <a class="mr-5 hover:text-gray-900 nav_tab under nav-link" target="_blank"
+                            href="https://somnathdashsnp.blogspot.com">Blog</a>
+                        <a class="mr-5 hover:text-gray-900 nav_tab under nav-link" href="/About.html">About</a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <hr>
+    </header>
+
+    <div class="main_body CenterBlock my-5">
+
+        <div id="top_part" class="mb-5">
+            <div class="MTitle" id="tit">
+                <h5 class="h2 my-5 card-title placeholder-glow">
+                    <span class="placeholder col-4"></span>
+                </h5>
+                <p class="card-text placeholder-glow">
+                    <span class="placeholder col-12"></span>
+                    <span class="placeholder col-11"></span>
+                    <span class="placeholder col-11"></span>
+                    <span class="placeholder col-10"></span>
+                    <span class="placeholder col-10"></span>
+                    <span class="placeholder col-10"></span>
+                    <span class="placeholder col-9"></span>
+                    <span class="placeholder col-9"></span>
+                </p>
+                <h5 class=" my-5 card-title placeholder-glow">
+                    <span class="placeholder col-4"></span>
+                </h5>
+
+
+
+                <div id="gntbtn">
+                    <div class="row">
+                        <div class="col">
+                            <a id="githubbtn" class="my-3 ml-3"><i class="bx bxl-github"></i></a>
+                        </div>
+                        <div class="col">
+                            <a id="livebtn" class="my-3 ml-3"><i class="bx bx-code-alt"></i></a>
+                        </div>
+                        <div class="col ">
+                            <a id="sharebtn" class="my-3 ml-3 share-button1"><i class="bx bx-share-alt"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div id="if" class="CenterBlock">
+        <strong class="h4 mb-3 text-center"><u>README.md </u></strong>
+        
+    </div>
+    <div class="share-dialog">
+        <header>
+            <h3 class="dialog-title">Share with your Friends :</h3>
+            <button class="close-button"><svg>
+                    <use href="#close"></use>
+                </svg></button>
+        </header>
+        <div class="targets" id="sorter">
+
+        </div>
+        <div class="link">
+            <div class="pen-url" id="SUrl">https://codepen.io/ayoisaiah/pen/YbNazJ</div>
+            <button class="copy-link" onclick="myFunction()">Copy Link</button>
+        </div>
+        <div id="altt">
+
+        </div>
+    </div>
+
+    <!-- <button class="share-button" type="button" title="Share this article">
+        <svg>
+            <use href="#share-icon"></use>
+        </svg>
+        <span>Share</span>
+    </button> -->
+
+    <svg class="hidden">
+        <defs>
+            <symbol id="share-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-share">
+                <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                <polyline points="16 6 12 2 8 6"></polyline>
+                <line x1="12" y1="2" x2="12" y2="15"></line>
+            </symbol>
+
+            <symbol id="facebook" viewBox="0 0 24 24" fill="#3b5998" stroke="#3b5998" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </symbol>
+
+            <symbol id="twitter" viewBox="0 0 24 24" fill="#1da1f2" stroke="#1da1f2" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter">
+                <path
+                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                </path>
+            </symbol>
+
+            <symbol id="email" viewBox="0 0 24 24" fill="	#c71610" stroke="#fafafa" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+            </symbol>
+
+            <symbol id="whatsapp" fill="#25D366" stroke="#25D366" stroke-width="2" viewBox="0 0 32 32"
+                class="whatsapp-ico">
+                <path
+                    d=" M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z"
+                    fill-rule="evenodd"></path>
+            </symbol>
+
+            <symbol id="close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-square">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="9" y1="9" x2="15" y2="15"></line>
+                <line x1="15" y1="9" x2="9" y2="15"></line>
+            </symbol>
+        </defs>
+    </svg>
+
+
+    <!-- <div id="carouselExampleIndicators" class="carousel slide"
+                style="height: 10% ; width: 50%; max-width: 50%; max-height: 25vw !important; display: block; margin-left: auto; margin-right: auto;">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://raw.githubusercontent.com/somnathdashs/Face-Recognition/main/Preview/facenotfound.JPG"
+                            style="width: 100%; height: 100%; max-height: 25vw;" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://raw.githubusercontent.com/somnathdashs/Face-Recognition/main/Preview/Loading.JPG"
+                            style="width: 100%; height: 100%; max-height: 25vw; max-width: 20vw;" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://raw.githubusercontent.com/somnathdashs/Face-Recognition/main/Preview/add.JPG"
+                            style="width: 100%; height: 100%; max-height: 25vw;" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div> -->
+
+    <footer class="text-gray-600 bg-white body-font dark:bg-gray-800 dark:text-white mt-5">
+        <hr>
+        <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+            <div
+                class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900 dark:text-gray-200">
+                <span
+                    style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%"><span
+                        style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%"><img
+                            style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                            alt="" aria-hidden="true"
+                            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2748%27%20height=%2748%27/%3e"></span>
+                    <img name="logo" alt="Somnath Dash Logo" src="Image/IMG_5.jpg"
+                        style="border-radius: 100%; position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                        srcset="Image/IMG_5.jpg"><noscript><img name="logo" alt="CodeWithHarry Logo"
+                            srcSet="Image/IMG_5.jpg" src="Image/IMG_5.jpg" decoding="async" data-nimg="intrinsic"
+                            style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                            class="rounded h-12" loading="lazy" /></noscript></span>
+                <div class="ml-3 text-xl">Somnath Dash</div>
+            </div>
+            <p class="text-sm text-black-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 mt-4 md:mt-2 mb-2 md:mb-0 text-center dark:text-gray-400"
+                style="font-size: 1rem;">
+                Thanks for visiting my website.</p>
+            <div class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start" style="align-items:center">
+                <a href="anout:blanks" aria-label="facebook" target="_blank" rel="noreferrer"
+                    class="text-gray-500 dark:text-gray-300"><svg fill="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                    </svg></a>
+                <a href="#" class="mybtn1">Write a Feedback</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

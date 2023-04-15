@@ -1,0 +1,98 @@
+.CenterBlock {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+
+.sort_btn {
+    width: 5vw;
+    height: 5vw;
+    border: .2rem solid black;
+    border-radius: 30%;
+}
+
+
+
+
+.Scard {
+    width: fit-content !important;
+    max-width: 70%;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.Scard:hover {
+    max-width: 71%;
+    box-shadow: 0 .6rem 5rem var(--shadow-colour);
+}
+
+
+
+.card_text_part {
+    display: block;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+}
+
+
+.card_image {
+    border-radius: 15% !important;
+}
+
+.card_image img {
+    display: inline-block;
+    height: 100%;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+#card_botm-div {
+    margin-bottom: 0;
+    margin-top: 3vw;
+}
+
+
+@media (max-width:1024px) {
+    .Scard {
+        max-width: 90%;
+    }
+
+    .Scard:hover {
+        max-width: 91%;
+    }
+
+}
+
+@media (max-width:840px) {
+    .Scard {
+        max-width: 87%;
+    }
+
+    .Scard:hover {
+        max-width: 88%;
+    }
+}
+
+
+@media (max-width:785px) {
+    .Scard {
+        max-width: 90%;
+    }
+
+    .Scard:hover {
+        max-width: 91%;
+    }
+}
+
+@media (max-width:754px) {
+    .Scard {
+        max-width: 70%;
+    }
+
+    .Scard:hover {
+        max-width: 71%;
+    }
+}

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Noto+Sans:ital,wght@1,900&display=swap');
+/* font-family: 'Noto Sans', sans-serif !important; */
+
+
+:root{
+    --bg-colour:#fdfdfd;
+    --text-colour:#333;
+    --main-colour:#f5b506;
+    --white-colour:#fdfdfd;
+    --shadow-colour: rgba(0,0,0,.2);
+    --gray-colour: rgb(253, 253, 253);
+}
+
+#send_img{
+    font-size: large;
+}
+
+.custum_header{
+    background: url(https://i.pinimg.com/736x/d7/0c/83/d70c839f0a2fa9743cf53a03d39daa32.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-attachment: fixed;
+    
+}
+.custum_header .nav_tab{
+    cursor: pointer;
+    font-style: bold;
+}
+
+body{
+    font-family: 'Noto Sans', sans-serif !important;
+}
+
+
+.mybtn1{
+    display: inline-block;
+    padding: .2rem .3rem;
+    background: var(--main-colour);
+    border-radius: .8rem;
+    box-shadow: 0 .3rem .5rem var(--shadow-colour);
+    font-size: 1rem;
+    color: var(--white-colour);
+    border: .2rem solid transparent;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+    margin-left: 20px;
+}
+
+
+.mybtn1:hover {
+    background: var(--bg-colour);
+    color: var(--main-colour);
+    border-color: var(--main-colour);
+    border: .3erm;
+    background: transparent;
+}
+
+
+
+.footer_my{
+    margin-bottom: 0;
+    margin-top: auto;
+}

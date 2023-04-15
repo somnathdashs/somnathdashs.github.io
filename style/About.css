@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Noto+Sans:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Noto+Sans:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@1&family=Fasthand&family=Noto+Sans:ital,wght@1,900&display=swap');
+
+header{
+    background: url(https://i.pinimg.com/564x/02/67/1e/02671e31cc9fadae76eaf29cb0b9e8b7.jpg) !important;
+    color: var(--bg-colour) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    
+}
+.picdown_name{
+    font-family: 'Changa One', cursive;;
+}
+
+
+header nav div div ul a:hover{
+    color: rgb(212, 210, 210) !important;
+    font-style: italic bold !important;
+}
+
+
+
+
+
+.Main_body{
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vw;
+    flex-direction: row;
+    margin-bottom: 10vw;
+}
+
+
+.intro_clas{
+    font-family: 'Noto Sans', sans-serif !important;
+    font-size: 3vw; 
+    text-align: left;
+    font-weight: 800;
+} 
+section div div h1{
+    text-align: left;
+    margin-bottom: 10vw;
+} 
+section div div p{
+    text-align: left;
+} 
+
+section div  h2{
+    text-align: center;
+} 
+
+
+.para{
+    margin-top: 1vw;
+}
+
+
+
+
+.contect_grp{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.contect_icon{
+    display:  inline-flex;
+    justify-content:  center;
+    border-radius: 30%;
+    box-shadow: 0 .5rem .5rem var(--shadow-colour);
+    font-size: 2rem;
+    margin: 2.5rem 1.5rem 3rem 0;
+    transition: .5s ease;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+@media (max-width:421px){
+    .intro_clas {
+        font-size: 1.2rem !important; 
+    }        
+}
+
+@media (max-width:800px){
+    .intro_clas {
+        font-size: 1.2rem !important; 
+    }        
+   .intro_clas_about{
+        font-size: 1.7rem !important; 
+    } 
+}
+
+
+@media (max-width:1279px){
+    .intro_clas {
+        font-size: 1.4rem !important; 
+    }        
+   .intro_clas_about{
+        font-size: 1.7rem !important; 
+    } 
+}
+
+
+@media (max-width:345px){
+    .intro_clas {
+        font-size: .5rem !important; 
+
+    }        
+   .intro_clas_about{
+        font-size: 1.3rem !important; 
+    } 
+}
+
+@media (max-width:400px){
+    .intro_clas {
+        font-size: 1.3rem !important; 
+    }        
+   .intro_clas_about{
+        font-size: 1.6rem !important; 
+    } 
+}

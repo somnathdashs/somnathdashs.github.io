@@ -19,10 +19,17 @@ const dbref = ref(db);
 
 
 async function LOAD_DATA() {
-        let resp = await get(child(dbref, "Profile/Long_About"));
-        var arr = resp.val();
-        document.getElementById("FPara").innerText=arr.charAt(0);
-        document.getElementById("Para").innerText=document.getElementById("Para").innerText+arr.slice(1);;
-    }
+    let resp = await get(child(dbref, "Profile/Long_About"));
+    var arr = resp.val();
+    document.getElementById("FPara").innerText = arr.charAt(0);
+    document.getElementById("Para").innerText = document.getElementById("Para").innerText + arr.slice(1);;
+
+    var paragraph = document.getElementById("Para");
+
+    // Replace '<br>' with '<br>' using the innerHTML property
+    paragraph.innerHTML = paragraph.innerHTML.replace(/&lt;br&gt;/g, '<br>');
+
+}
 
 LOAD_DATA()
+

@@ -44,6 +44,7 @@ function GetID() {
 
 
 
+
 function Readme(url) {
   var ifr = `<iframe src="/readme.html?url=${url}" style="border:0.5px solid black;" class="my-5" >
   </iframe>`
@@ -74,9 +75,12 @@ async function LOAD_DATA() {
     </div>
 </div>
 </div>`;
+// var paragraph = document.getElementById("Para");
+
+    // paragraph.innerHTML = paragraph.innerHTML.;
     document.title = "Somnath Dash - " + arr[11];
     const topT = `<h5 class="h1"><u>${arr[11]}</u></h5> 
-    <p class="fs-5 mt-5">${arr[3]}</p>
+    <p class="fs-5 mt-5">${arr[3].replace(/&lt;br&gt;/g, '<br>')}</p>
     <p class="mt-5 text-center"><small class="text-body-secondary">Created on: ${arr[2]} and
                         Last Update on: ${arr[13]}</small></p>
                         <div id="gntbtn">

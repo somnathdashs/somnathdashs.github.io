@@ -58,8 +58,6 @@ async function LOAD_DATA() {
   try {
     let resp = await get(child(dbref, "Projects/" + UID))
     arr = Object.values(resp.val())
-    console.log(arr)
-
     var btns = `<div class="container text-center">
 <div class="row">
     <div class="col">
@@ -71,7 +69,7 @@ async function LOAD_DATA() {
             class="my-3 ml-3"><i class="bx bx-code-alt"></i></a>
     </div>
     <div class="col ">
-        <a id="sharebtn" 
+        <a id="sharebtn" href="#"
             class="my-3 ml-3 share-button1"><i class="bx bx-share-alt"></i></a>
     </div>
 </div>

@@ -1,0 +1,137 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day","hiiiiiiiii","hii","hello","how are you"],
+     "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+     "context": [""]
+    },
+
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+     "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+     "context": [""]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me","good job","you are nice"],
+     "responses": ["Happy to help!", "Welcome","most welcome", "My pleasure"],
+     "context": [""]
+    },
+    {"tag": "what help?",
+     "patterns": ["How you could help me?", "What you can do?","how can you help me", "What help you provide?", "How you can be helpful?","I need your help","how help me", "What support is offered"],
+     "responses": ["I can search everythin for you, talk to you,play music,solved math & science problem , etc "],
+     "context": [""]
+    },
+    {"tag": "help",
+     "patterns": ["I need your help","help me","i need your help in any condition","you are must to help me"],
+     "responses": ["Yes,i will help you. What help do you need?","What help do you need?","I my here to  help you,just relex","Relex my friend ,i will help you in any condition"],
+     "context": [""]
+    },
+    {"tag": "marry",
+     "patterns": ["I love you", "will you marry me?", "will you be my girlfriend", "will you be my boyfriend", "will you like to in a realtionship with me"],
+     "responses": ["Sorry,i am a program","Sorry,i have in a relationship with my devloper","First see your face in mirror,you have a ugly face"],
+      "context": [""]
+    },
+    {"tag": "music",
+     "patterns": ["play", "youtube", "sing","search on youtube" ],
+     "responses": ["youtube"],
+     "context": [""]
+    },
+    {"tag": "time",
+     "patterns": ["what's the time", "what is current the time", "what's time now" ],
+     "responses": ["time"],
+     "context": [""]
+    },
+    {"tag": "date",
+      "patterns": ["what's today's date", "yesterday's date", "tommorow's date" ],
+      "responses": ["nrandom","date"],
+      "context": [""]
+     },
+    {"tag": "sorry",
+     "patterns": ["i,am sorry", "i feel sorry for you", "so sorry"],
+     "responses": ["it's ok","i forgiv you","i didn't take it seriusly"],
+     "context": [""]
+    },
+    {"tag": "sline language",
+     "patterns": ["fuck up", "motherfucker", "sex","fucky","fuck you" ],
+     "responses": ["what the hell word you are using","behave yourself","shut up ,don't use slain language again"],
+     "context": [""]
+    },
+    {"tag": "whis",
+     "patterns": ["good morning zara", "good evening zara", "good afternoon zara",
+      "hey zara","what's up zara","hii zara","zara" ],
+     "responses": ["whis","what's up bro","nice to see you","hii,how can help you"],
+     "context": [""]
+    },
+    {"tag": "wikipedia",
+     "patterns": [ ],
+     "responses": ["wikipedia"],
+     "context": [""]
+    },
+    {"tag": "stop",
+     "patterns": ["mini stop", "stop the music", "stop speaking",
+      "stop zara","stop","can you please stop","stop please","ok stop" ],
+     "responses": ["stop"],
+     "context": [""]
+    },
+    {"tag": "math",
+     "patterns": ["2 + 2", "98 + 25", "9+0","300 + 154 + 146 + 500","300 / 154 - 176 + 580"
+      ,"78 - 2","40 - 99","114-4","add 50 with 70","subtract 70 with 50"
+      ,"4*9","9*5","45 * 92","45/89*52*74+57-5+47+95"
+      ,"4/2","49/7","110 / 11","89/7","100/2"
+      ,"21 plus 54","589 plus 2","34 add 89","add 78 and 90" ,"45 add 68","add 67 and 23"
+      ,"24 subtract 4","2 subtract 5485","40 subtract 12","subtract 7895 and 90" ,"785 subtract 68","subtract 1087 and 23"
+      ,"14 multiply 4","478 multiply -2","7 multiply 7","multiply -15 and 9" ,"12 multiply -8","multiply 10 and 23"
+      ,"-21 divide 54","589 divide 2","81 divide 9","divide 8 and 7" ,"5 divide 5","divide 49 and 2"],
+     "responses": ["math"],
+     "context": [""]
+    },
+    {"tag": "Short Question : Under work ,A long answer question also needed",   
+     "patterns": ["who is elon musk", "who is pinu","describe mobile","describe computer",
+     "who invente mobile","meaning of lol","full form of hiv","Aids meaning","what dose adis stand for",
+     "what is a phone","who is the pm of india","how many start are in india"
+     ,"define photo","define india"
+     ,"how human made","who is god","where is paris",
+     "how to use a phone","who is","how is","what is","can you tell me about india"
+     ,"can you search about hero of luck movie","what about SRK","can you tell me something about carryminaty","what is the chemical formula of water", "what is the chemical formula of salt",
+      "define Photosynthesis","how plant make their own food","what is adis","what do you mean by rabbis",
+      "how animals reproduce","what is atomic mass of oxygen","what is atomic mass of hydrogen",
+      "today's weather", "today's temprature", "today's climate",
+      "what is the formula of force","what is the formula of weight","what is the si unit of force",
+      "what is the si unit of work","who discovered gravity","what is the velancy of neon","what is the velancy of hydrogen",
+      "what is the function of xylom","what is the function of muscular tissue","define tisssue","type of tissue",
+      "define thhe type of cell are there","what is the chemiccal equation of water","what is the chemiccal equation of milk",
+      "sicentific name of start fish","sicentific name of lion","sicentific name of jelly fish" ],
+     "responses": ["questions"],
+     "context": [""]
+    },
+    {"tag": "fav ",
+     "patterns": ["what your favorite colour", "what is your favorite food" ,"who is your favorite person"],
+     "responses": ["nrandom","black","I am an Artificial Intelligence ,so i can eat any food","Pinu is my favorite person"],
+     "context": [""]
+    },
+    {"tag": "intro",
+     "patterns": ["introduce yourself", "mini introduce yourself", "can you please introduce yourself",
+      "who are you","can you tell me about yourself","please introduce yourself","who r you","who r u" ,"what is your name ?"],
+     "responses": ["Hello,{} i am Mini,an Artificial Intelligence.","Hey,{} Myself Mini a rule base Artificial Intelligence devloped by Mister Somnath dash, i can able to give answer to your question."],
+     "context": [""]
+    },
+    {"tag":"detac",
+     "patterns": ["who am i", "mini did you remember me", "who i am",
+      "can you able to tell my name","tell my name","who is infront of you" ],
+     "responses": ["detac"],
+     "context": [""]
+    },
+    {"tag": "not get answer",
+     "patterns": [""],
+     "responses": ["i didn't get your question","sorry, i can't hear you","can you please explain in detail about your query"],
+     "context": [""]
+    }
+]
+}
+  
+
+
+
+
+
+
+

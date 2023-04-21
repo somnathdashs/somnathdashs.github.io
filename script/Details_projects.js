@@ -1,27 +1,17 @@
-
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-analytics.js";
-const firebaseConfig = {
-  apiKey: "AIzaSyBR4fbDmBVs5pUdK24fkfR8CPSWc8chd1g",
-  authDomain: "my-portfolio-51150.firebaseapp.com",
-  databaseURL: "https://my-portfolio-51150-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "my-portfolio-51150",
-  storageBucket: "my-portfolio-51150.appspot.com",
-  messagingSenderId: "983424656299",
-  appId: "1:983424656299:web:25cf6ab30ea14378e568ee",
-  measurementId: "G-S81C715WT4"
-};
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-import {
-  getDatabase, ref, child,
-  get} from "https://www.gstatic.com/firebasejs/9.19.0/firebase-database.js";
-const db = getDatabase();
 const div = document.getElementById('mdcontainer');
-const dbref = ref(db);
 var arr = [];
 
-
+function readTextFile(file, callback) {
+  var rawFile = new XMLHttpRequest();
+  rawFile.overrideMimeType("application/json");
+  rawFile.open("GET", file, true);
+  rawFile.onreadystatechange = function () {
+    if (rawFile.readyState === 4 && rawFile.status == "200") {
+      callback(rawFile.responseText);
+    }
+  }
+  rawFile.send(null);
+}
 
 function add3Dots(string, limit) {
   var dots = "... Check Out the Link ";
@@ -51,22 +41,21 @@ function Readme(url) {
   document.getElementById("if").innerHTML = document.getElementById("if").innerHTML + ifr
 
 }
-async function LOAD_DATA() {
+
+async function LOAD_DATA(arr) {
   var TOPT = document.getElementById("tit");
-  var UID = GetID();
   const U = window.location;
   const Urll = "%0A%0A" + U+ "%0A%0A";
   try {
-    let resp = await get(child(dbref, "Projects/" + UID))
-    arr = Object.values(resp.val())
+
     var btns = `<div class="container text-center">
 <div class="row">
     <div class="col">
-        <a id="githubbtn" target=”_blank” href="${arr[4]}"
+        <a id="githubbtn" target=”_blank” href="${arr.GithubUrl}"
             class="my-3 ml-3"><i class="bx bxl-github"></i></a>
     </div>
     <div class="col">
-        <a id="livebtn" target=”_blank” href="${arr[4].toString().replace("github", "github1s")}"
+        <a id="livebtn" target=”_blank” href="${arr.GithubUrl.toString().replace("github", "github1s")}"
             class="my-3 ml-3"><i class="bx bx-code-alt"></i></a>
     </div>
     <div class="col ">
@@ -75,14 +64,11 @@ async function LOAD_DATA() {
     </div>
 </div>
 </div>`;
-// var paragraph = document.getElementById("Para");
-
-    // paragraph.innerHTML = paragraph.innerHTML.;
-    document.title = "Somnath Dash - " + arr[11];
-    const topT = `<h5 class="h1"><u>${arr[11]}</u></h5> 
-    <p class="fs-5 mt-5">${arr[3].replace(/&lt;br&gt;/g, '<br>')}</p>
-    <p class="mt-5 text-center"><small class="text-body-secondary">Created on: ${arr[2]} and
-                        Last Update on: ${arr[13]}</small></p>
+    document.title = "Somnath Dash - " + arr.Title;
+    const topT = `<h5 class="h1"><u>${arr.Title}</u></h5> 
+    <p class="fs-5 mt-5">${arr.Des.replace(/&lt;br&gt;/g, '<br>')}</p>
+    <p class="mt-5 text-center"><small class="text-body-secondary">Created on: ${arr.CreatedDate} and
+                        Last Update on: ${arr.UpdateDate}</small></p>
                         <div id="gntbtn">
 
                         </div>`;
@@ -91,7 +77,7 @@ async function LOAD_DATA() {
     var BTNS = document.getElementById("gntbtn");
     BTNS.innerHTML = btns;
 
-    Readme(arr[8]);
+    Readme(arr.ReadmeUrl);
 
     var sharesB = `<a target="_blank" class="button" href="https://www.facebook.com/sharer/sharer.php?u=${Urll}">
     <svg>
@@ -100,21 +86,21 @@ async function LOAD_DATA() {
     <span>Facebook</span>
 </a>
 
-<a class="button" target="_blank" href="https://twitter.com/intent/tweet?text=${add3Dots(arr[3], 100)}&url=${Urll}&hashtags=${arr[11].replace(" ", "_").replace(" ", "_").replace(" ", "_").replace(" ", "_").replace(" ", "_")}">
+<a class="button" target="_blank" href="https://twitter.com/intent/tweet?text=${add3Dots(arr.Des, 100)}&url=${Urll}&hashtags=${arr.Title.replace(" ", "_").replace(" ", "_").replace(" ", "_").replace(" ", "_").replace(" ", "_")}">
     <svg>
         <use href="#twitter"></use>
     </svg>
     <span>Twitter</span>
 </a>
 
-<a class="button" target="_blank" href="https://wa.me/?text=${add3Dots(arr[3], 100)}${Urll}" data-action="share/whatsapp/share">
+<a class="button" target="_blank" href="https://wa.me/?text=${add3Dots(arr.Des, 100)}${Urll}" data-action="share/whatsapp/share">
     <svg>
         <use href="#whatsapp"></use>
     </svg>
     <span>Whatsapp</span>
 </a>
 
-<a class="button" target="_blank" href="mailto:?subject=${arr[11]} &body=${add3Dots(arr[3], 100)}${Urll}">
+<a class="button" target="_blank" href="mailto:?subject=${arr.Title} &body=${add3Dots(arr.Des, 100)}${Urll}">
     <svg>
         <use href="#email"></use>
     </svg>
@@ -150,11 +136,11 @@ async function LOAD_DATA() {
     });
 
     var metadata = `
-    <link href='${arr[6]}' rel='image_src'/>
+    <link href='${arr.ImageUrl}' rel='image_src'/>
     <meta content='${U}' property='og:url'/>
     <meta content='${document.title}' property='og:title'/>
     <meta content='You are always wellcome to visit me portfolio.' property='og:description'/>
-    <meta content='${arr[6]}' property='og:image'/>`
+    <meta content='${arr.ImageUrl}' property='og:image'/>`
     document.head.innerHTML = metadata + document.head.innerHTML;
 
 
@@ -169,19 +155,24 @@ async function LOAD_DATA() {
 
 
 
+readTextFile("https://raw.githubusercontent.com/somnathdashs/somnathdashs.github.io/main/Datas/Projects.json", async function (text) {
+  var TOPT = document.getElementById("tit");
+  var MUID = GetID();
+  const U = window.location;
+  const Urll = "%0A%0A" + U+ "%0A%0A";
+  var data = await JSON.parse(text);
+  arr = Object.values(data)
+  for (var i = 0; i < arr.length; i++) {
+    var C = arr[i][0]
+    if (C.Uid == MUID){
+      LOAD_DATA(C)
+    }
+  }
+});
 
-LOAD_DATA();
 
 
 
 
 
-
-
-
-// var cssFile = document.createElement( "link" );
-// cssFile.rel = "stylesheet";
-// cssFile.type = "text/css";
-// cssFIle.href = "https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css";
-// document.getElementsByTagName( "header" )[0].appendChild( cssFile );
 

@@ -1,0 +1,35 @@
+{
+    "fac": [
+        {
+            "Uid": "fac",
+            "Title": "Face Recognization",
+            "Des": "It is a Face Recognition project, which you can use it in different project to make a face lock patten. Here, you add a person's face (It will automatic detect the fave encode it) which store in a database folder. Later on it used to Recognize the face.",
+            "ImageUrl": "https://raw.githubusercontent.com/somnathdashs/Face-Recognition/main/Preview/live.JPG",
+            "SsUrl": "https://raw.githubusercontent.com/somnathdashs/Face-Recognition/main/Preview/live.JPG,https://raw.githubusercontent.com/somnathdashs/Face-Recognition/main/Preview/live.JPG",
+            "ReadmeUrl": "https://raw.githubusercontent.com/somnathdashs/Face-Recognition/main/README.md",
+            "GithubUrl": "https://github.com/somnathdashs/Face-Recognition",
+            "ISAI": true,
+            "ModelUrl": "",
+            "CreatedDate": "2022-05-14",
+            "UpdateDate": "No Update",
+            "Search": "It is a Face Recognition project, which you can use it in different project to make a face lock patten. Here, you add a person's face (It will automatic detect the fave encode it) which store in a database folder. Later on it used to Recognize the face.It is a Face Recognition project, which you can use it in different project to make a face lock patten. Here, you add a person's face (It will automatic detect the fave encode it) which store in a database folder. Later on it used to Recognize the face."
+        }
+    ],
+    "jgk": [
+        {
+            "Uid": "jgk",
+            "Title": "Emotions Recognization",
+            "Des": "It is a Emotions Recognition project, which you can use it in different project to make a face lock patten. Here, you add a person's face (It will automatic detect the fave encode it) which store in a database folder. Later on it used to Recognize the face.",
+            "ImageUrl": "https://raw.githubusercontent.com/somnathdashs/Face-Recognition/main/Preview/live.JPG",
+            "SsUrl": "https://raw.githubusercontent.com/somnathdashs/Face-Recognition/main/Preview/live.JPG,https://raw.githubusercontent.com/somnathdashs/Face-Recognition/main/Preview/live.JPG",
+            "ReadmeUrl": "https://raw.githubusercontent.com/somnathdashs/Face-Recognition/main/README.md",
+            "GithubUrl": "https://github.com/somnathdashs/Face-Recognition",
+            "ISAI": true,
+            "ModelUrl": "",
+            "CreatedDate": "2022-05-14",
+            "UpdateDate": "No Update",
+            "Search": "It is a Face Recognition project, which you can use it in different project to make a face lock patten. Here, you add a person's face (It will automatic detect the fave encode it) which store in a database folder. Later on it used to Recognize the face.It is a Face Recognition project, which you can use it in different project to make a face lock patten. Here, you add a person's face (It will automatic detect the fave encode it) which store in a database folder. Later on it used to Recognize the face."
+        }
+    ]
+
+}

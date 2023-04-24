@@ -1,6 +1,14 @@
+.quoraD {
+    cursor: pointer;
+}
+
+#Qimg {
+    font-size: 2rem;
+    color: rgb(245, 12, 12);
+}
 
 
-.custum_header .my_img{
+.custum_header .my_img {
     border-radius: 100% !important;
     width: 50vh;
     margin-left: auto;
@@ -9,30 +17,34 @@
     transition: .5s ease-out;
 
 }
-.custum_header .my_img:hover{
+
+.custum_header .my_img:hover {
     width: 55vh;
     height: 55vh;
 
 }
 
 
-.custum_header .my_name_cont{
+.custum_header .my_name_cont {
     display: flex;
 }
 
-.custum_header .my_name_cont .my_name{
+.custum_header .my_name_cont .my_name {
     color: var(--main-colour);
-    display: inline; /* Position text */
+    display: inline;
+    /* Position text */
     margin-left: 0;
 }
 
-.custum_header .my_name_cont .my_self{
+.custum_header .my_name_cont .my_self {
     margin-right: auto;
-    position: static; /* Position text */
+    position: static;
+    /* Position text */
 
 
 }
-.custum_header .hello{
+
+.custum_header .hello {
     margin-right: auto;
     font-size: 1.8rem;
     margin-left: 0;
@@ -42,18 +54,18 @@
 
 
 
-.custum_header .warrper{
+.custum_header .warrper {
     display: inline-flex;
 }
 
-.warrper .dynamic-text{
+.warrper .dynamic-text {
     /* margin-left: 15px; */
     height: 90px;
     line-height: 90px;
     overflow: hidden;
 }
 
-.custum_header .warrper li{
+.custum_header .warrper li {
     list-style: none;
     color: #FC6D6D;
     font-size: 60px;
@@ -64,18 +76,18 @@
 }
 
 /* step Animatin  */
-@keyframes step{
-    100%{
+@keyframes step {
+    100% {
         top: -360px;
     }
 }
 
 
-.dynamic-text li span{
+.dynamic-text li span {
     position: relative;
 }
 
-.dynamic-text li span::after{
+.dynamic-text li span::after {
     content: "";
     position: absolute;
     left: 0;
@@ -87,45 +99,45 @@
 }
 
 /* Typing Animatin  */
-@keyframes typing{
-    100%{
-        left:100%;
+@keyframes typing {
+    100% {
+        left: 100%;
         margin: 0 -35px 0 35px;
     }
 }
 
-.custum_header .warrper .static{
+.custum_header .warrper .static {
     font-size: 60px;
 }
 
-.custum_header .div .nav .a{
-    background:red !important;
-} 
+.custum_header .div .nav .a {
+    background: red !important;
+}
 
-body{
+body {
     font-family: 'Noto Sans', sans-serif !important;
 
 }
 
-.my_title{
+.my_title {
     text-align: center;
     margin-top: 5vh;
 }
 
 
 
-.groups{
+.groups {
     background: transparent;
     margin-top: 2vh;
     margin-bottom: 7vh;
 }
 
-.my_card{
-    margin-top: 5vw !important; 
+.my_card {
+    margin-top: 5vw !important;
     padding: 1vh;
     min-height: 90%;
     max-height: 90%;
-    display:block;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--gray-colour);
@@ -133,19 +145,19 @@ body{
     cursor: pointer;
 }
 
-.my_card div p{
+.my_card div p {
     display: inline-block;
     width: 180px;
     overflow: hidden !important;
     text-overflow: ellipsis;
 }
 
-.my_card:hover{
+.my_card:hover {
     width: 25rem;
     box-shadow: 0 .6rem 5rem var(--shadow-colour);
 }
 
-.btn{
+.btn {
     background: var(--main-colour);
     transition: .5s ease;
     border-color: var(--main-colour);
@@ -157,31 +169,31 @@ body{
     background: transparent;
     color: var(--main-colour);
     border-color: var(--main-colour);
-    
+
 }
 
-.social-media a{
-    display:  inline-flex;
-    justify-content:  center;
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
     align-items: center;
     width: 2.vw;
     height: 2.vw;
     background: transparent;
-    border:  .2rem solid var(--main-colour);
+    border: .2rem solid var(--main-colour);
     border-radius: 30%;
     box-shadow: 0 .5rem .5rem var(--shadow-colour);
     font-size: 2rem;
-    color:  var(--main-colour);
+    color: var(--main-colour);
     margin: 2.5rem 1.5rem 3rem 0;
     transition: .5s ease;
 }
 
-.social-media a:hover{
+.social-media a:hover {
     background: var(--main-colour);
     color: var(--white-colour);
 }
- 
-.mybtn{
+
+.mybtn {
     display: inline-block;
     padding: .5rem 1.3rem;
     background: var(--main-colour);
@@ -199,203 +211,216 @@ body{
     background: transparent;
     color: var(--main-colour);
     border-color: var(--main-colour);
-    
+
 }
 
 
-.my_card_img{
+.my_card_img {
     top: 50%;
 }
 
 
-@media (max-width:650px){
-    .custum_header .my_img{
+@media (max-width:650px) {
+    .custum_header .my_img {
         border-radius: 100% !important;
         width: 30vh;
         height: 30vh;
         margin-left: auto;
         margin-right: auto;
         transition: .5s ease-out;
-    
+
     }
-    .my_card{
+
+    .my_card {
         min-height: fit-content;
         max-height: fit-content;
     }
-    .custum_header .my_img:hover{
+
+    .custum_header .my_img:hover {
         width: 35vh;
         height: 35vh;
-    
+
     }
 }
 
 
 
-@media (max-width:1280px){
-    .custum_header .my_name_cont .my_name{
+@media (max-width:1280px) {
+    .custum_header .my_name_cont .my_name {
         color: var(--main-colour);
-        display: inline; 
+        display: inline;
         margin-left: 0;
         font-size: 3.8vh;
     }
-    
-    .custum_header .my_name_cont .my_self{
+
+    .custum_header .my_name_cont .my_self {
         margin-right: auto;
-        position: static; /* Position text */
+        position: static;
+        /* Position text */
         font-size: 3.8vh;
-    
-    
+
+
     }
-    .custum_header .hello{
+
+    .custum_header .hello {
         margin-right: auto;
         font-size: 1.8rem;
         margin-left: 0;
-    
-    
+
+
     }
 }
 
 
-@media (max-width:1025px){
-    .custum_header .my_name_cont .my_name{
+@media (max-width:1025px) {
+    .custum_header .my_name_cont .my_name {
         color: var(--main-colour);
-        display: inline; 
+        display: inline;
         margin-left: 0;
         font-size: 3.2vh;
     }
-    
-    .custum_header .my_name_cont .my_self{
+
+    .custum_header .my_name_cont .my_self {
         margin-right: auto;
-        position: static; /* Position text */
+        position: static;
+        /* Position text */
         font-size: 3.2vh;
-    
-    
+
+
     }
-    .custum_header .hello{
+
+    .custum_header .hello {
         margin-right: auto;
         font-size: 1.3rem;
         margin-left: 0;
-    
-    
+
+
     }
 }
 
 
 
-@media (max-width:421px){
-    .custum_header .my_img{
+@media (max-width:421px) {
+    .custum_header .my_img {
         border-radius: 100% !important;
         width: 30vh;
         height: 30vh;
         margin-left: auto;
         margin-right: auto;
         transition: .5s ease-out;
-    
-    }
-    .custum_header .my_img:hover{
-        width: 35vh;
-        height: 35vh;
-    
+
     }
 
-    .custum_header .my_name_cont .my_name{
+    .custum_header .my_img:hover {
+        width: 35vh;
+        height: 35vh;
+
+    }
+
+    .custum_header .my_name_cont .my_name {
         color: var(--main-colour);
-        display: inline; 
+        display: inline;
         margin-left: 0;
         font-size: 3.5vh;
     }
-    
-    .custum_header .my_name_cont .my_self{
+
+    .custum_header .my_name_cont .my_self {
         margin-right: auto;
-        position: static; /* Position text */
+        position: static;
+        /* Position text */
         font-size: 3.5vh;
-    
-    
+
+
     }
-    .custum_header .hello{
+
+    .custum_header .hello {
         margin-right: auto;
         font-size: 1.5rem;
         margin-left: 0;
-    
-    
+
+
     }
 }
 
 
 
-@media (max-width:387px){
-    .custum_header .my_img{
+@media (max-width:387px) {
+    .custum_header .my_img {
         border-radius: 100% !important;
         width: 30vh;
         height: 30vh;
         margin-left: auto;
         margin-right: auto;
         transition: .5s ease-out;
-    
+
     }
-    .custum_header .my_img:hover{
+
+    .custum_header .my_img:hover {
         width: 35vh;
         height: 35vh;
-    
+
     }
-    .custum_header .my_name_cont .my_name{
+
+    .custum_header .my_name_cont .my_name {
         color: var(--main-colour);
-        display: inline; 
+        display: inline;
         margin-left: 0;
         font-size: 3.3vh;
     }
-    
-    .custum_header .my_name_cont .my_self{
+
+    .custum_header .my_name_cont .my_self {
         margin-right: auto;
-        position: static; /* Position text */
+        position: static;
+        /* Position text */
         font-size: 3.3vh;
-    
-    
+
+
     }
-    .custum_header .hello{
+
+    .custum_header .hello {
         margin-right: auto;
         font-size: 2rem;
         margin-left: 0;
-    
-    
+
+
     }
 }
-@media (max-width:350px){
-    .custum_header .my_img{
+
+@media (max-width:350px) {
+    .custum_header .my_img {
         border-radius: 100% !important;
         width: 20vh;
         height: 20vh;
         transition: .5s ease-out;
-    
+
     }
-    .custum_header .my_img:hover{
+
+    .custum_header .my_img:hover {
         width: 25vh;
         height: 25vh;
-    
-    }    
-    .custum_header .my_name_cont .my_name{
+
+    }
+
+    .custum_header .my_name_cont .my_name {
         color: var(--main-colour);
-        display: inline; 
+        display: inline;
         margin-left: 0;
         font-size: 3vh;
     }
-    
-    .custum_header .my_name_cont .my_self{
+
+    .custum_header .my_name_cont .my_self {
         margin-right: auto;
-        position: static; 
+        position: static;
         font-size: 3vh;
-    
-    
+
+
     }
-    .custum_header .hello{
+
+    .custum_header .hello {
         margin-right: auto;
         font-size: 1.3rem;
         margin-left: 0;
-    
-    
+
+
     }
 }
-
-
-
-

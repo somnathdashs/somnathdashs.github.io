@@ -1,5 +1,21 @@
 {
-        "091d7533-f33f-4b45-86bb-d483566ecee1": [
+    "91a60401-e51a-4c7e-83cc-0c09f09add5e": [
+        {
+            "Uid": "91a60401-e51a-4c7e-83cc-0c09f09add5e",
+            "Title": "Face Recognition\n",
+            "Des": "It is a Face Recognition project, which you can use it in different project to make a face lock patten. Here, you add a person's face (It will automatic detect the fave encode it) which store in a database folder. Later on it used to Recognize the face.",
+            "ImageUrl": "https://raw.githubusercontent.com/somnathdashs/Face-Recognition/main/Preview/live.JPG",
+            "SsUrl": "https://raw.githubusercontent.com/somnathdashs/Face-Recognition/main/Preview/live.JPG,https://raw.githubusercontent.com/somnathdashs/Face-Recognition/main/Preview/add.JPG",
+            "ReadmeUrl": "https://raw.githubusercontent.com/somnathdashs/Face-Recognition/main/README.md",
+            "GithubUrl": "https://github.com/somnathdashs/Face-Recognition",
+            "ISAI": false,
+            "ModelUrl": "",
+            "CreatedDate": "2023-04-21 11:15:22",
+            "UpdateDate": "No Update",
+            "Search": "Face Recognition\n It is a Face Recognition project, which you can use it in different project to make a face lock patten. Here, you add a person's face (It will automatic detect the fave encode it) which store in a database folder. Later on it used to Recognize the face. https://raw.githubusercontent.com/somnathdashs/Face-Recognition/main/Preview/live.JPG,https://raw.githubusercontent.com/somnathdashs/Face-Recognition/main/Preview/add.JPG https://github.com/somnathdashs/Face-Recognition 2023-04-21 11:15:22No Update"
+        }
+    ],
+    "091d7533-f33f-4b45-86bb-d483566ecee1": [
         {
             "Uid": "091d7533-f33f-4b45-86bb-d483566ecee1",
             "Title": "Movie Recommendation Using Cosine Similarity",
@@ -13,6 +29,22 @@
             "CreatedDate": "2023-04-21 11:20:42",
             "UpdateDate": "No Update",
             "Search": "Movie Recommendation Using Cosine Similarity A Movie Recommendation system used to recommendation movie on the basis of the previous movie watched by a user.<br>\nA recommendation systems is used to recommendation a movie,music,video etc on the basis of previous one.\n\nAll Social-Media Industry used it to provide the content that the users are most interest. They just track their data to recommendation those things. https://github.com/somnathdashs/Movie-Recommendation-System/blob/main/Preview/image7.png?raw=true,https://github.com/somnathdashs/Movie-Recommendation-System/blob/main/Preview/image4.png?raw=true,https://github.com/somnathdashs/Movie-Recommendation-System/blob/main/Preview/image5.png?raw=true,https://github.com/somnathdashs/Movie-Recommendation-System/blob/main/Preview/image3.png?raw=true,https://github.com/somnathdashs/Movie-Recommendation-System/blob/main/Preview/image3.png?raw=true https://github.com/somnathdashs/Movie-Recommendation-System 2023-04-21 11:20:42No Update"
+        }
+    ],
+    "7e548a8d-4376-4d6d-8959-53788021f588": [
+        {
+            "Uid": "7e548a8d-4376-4d6d-8959-53788021f588",
+            "Title": "Object Detection",
+            "Des": "A object detection project that can detecte 85 types of object using YoLo v5. Python make it more easy to work with such library",
+            "ImageUrl": "https://github.com/somnathdashs/Object-Detection/blob/main/Screenshot%202023-06-12%20225151.png?raw=true",
+            "SsUrl": "https://github.com/somnathdashs/Object-Detection/blob/main/Screenshot%202023-06-12%20225151.png?raw=true,https://github.com/somnathdashs/Object-Detection/blob/main/Screenshot%202023-06-12%20225211.png?raw=true",
+            "ReadmeUrl": "about:blank",
+            "GithubUrl": "https://github.com/somnathdashs/Object-Detection/",
+            "ISAI": false,
+            "ModelUrl": "",
+            "CreatedDate": "2023-06-12 17:25:00",
+            "UpdateDate": "2023-06-12 17:26:38",
+            "Search": "Object Detection A object detection project that can detecte 85 types of object using YoLo v5. Python make it more easy to work with such library https://github.com/somnathdashs/Object-Detection/blob/main/Screenshot%202023-06-12%20225151.png?raw=true,https://github.com/somnathdashs/Object-Detection/blob/main/Screenshot%202023-06-12%20225211.png?raw=true 2023-06-12 17:26:38 https://github.com/somnathdashs/Object-Detection/ 2023-06-12 17:25:00"
         }
     ],
     "9e8c33c7-9424-40c0-b0d1-04965deef37a": [

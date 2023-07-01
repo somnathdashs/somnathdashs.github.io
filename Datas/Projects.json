@@ -78,5 +78,21 @@
             "UpdateDate": "No Update",
             "Search": "Object Detection A object detection project that can detecte 85 types of object using YoLo v5. Python make it more easy to work with such library https://github.com/somnathdashs/Object-Detection/blob/main/Screenshot%202023-06-12%20225151.png?raw=true,https://github.com/somnathdashs/Object-Detection/blob/main/Screenshot%202023-06-12%20225211.png?raw=true https://github.com/somnathdashs/Object-Detection/ 2023-06-12 17:25:00No Update"
         }
+    ],
+    "7c18e905-a3a2-4707-a452-9eb7a1f4ac06": [
+        {
+            "Uid": "7c18e905-a3a2-4707-a452-9eb7a1f4ac06",
+            "Title": "Cat Vs Dog classification\n",
+            "Des": "A Deep Learning Model which used for classification of Cat and Dog. The Accuracy it reach upto 95%. It train on 25000 data where 12500 is cat images and 12500 is dog images.",
+            "ImageUrl": "https://github.com/somnathdashs/Cat-and-dog-classification/raw/main/SS/Screenshot%202023-07-01%20165918.png?raw=true",
+            "SsUrl": "https://github.com/somnathdashs/Cat-and-dog-classification/raw/main/SS/Screenshot%202023-07-01%20165918.png?raw=true",
+            "ReadmeUrl": "https://raw.githubusercontent.com/somnathdashs/Cat-and-dog-classification/main/README.md",
+            "GithubUrl": "https://github.com/somnathdashs/Cat-and-dog-classification",
+            "ISAI": true,
+            "ModelUrl": "https://github.com/somnathdashs/Cat-and-dog-classification/raw/main/cat_n_dog.h5",
+            "CreatedDate": "2023-07-01 12:35:05",
+            "UpdateDate": "No Update",
+            "Search": "Cat Vs Dog classification\n A Deep Learning Model which used for classification of Cat and Dog. The Accuracy it reach upto 95%. It train on 25000 data where 12500 is cat images and 12500 is dog images. https://github.com/somnathdashs/Cat-and-dog-classification/raw/main/SS/Screenshot%202023-07-01%20165918.png?raw=true https://github.com/somnathdashs/Cat-and-dog-classification 2023-07-01 12:35:05No Update"
+        }
     ]
 }

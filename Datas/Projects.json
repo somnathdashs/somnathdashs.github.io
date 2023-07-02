@@ -94,5 +94,20 @@
             "UpdateDate": "No Update",
             "Search": "Cat Vs Dog classification\n A Deep Learning Model which used for classification of Cat and Dog. The Accuracy it reach upto 95%. It train on 25000 data where 12500 is cat images and 12500 is dog images. https://github.com/somnathdashs/Cat-and-dog-classification/raw/main/SS/Screenshot%202023-07-01%20165918.png?raw=true https://github.com/somnathdashs/Cat-and-dog-classification 2023-07-01 12:35:05No Update"
         }
+    ],"dd991b93-f6a2-490b-9a3b-698a40b44691": [
+        {
+            "Uid": "dd991b93-f6a2-490b-9a3b-698a40b44691",
+            "Title": "Male and Female classification",
+            "Des": "A Deep Learning Model which used for classification of Male and Female. The Accuracy it reach upto 97%. It train on 25000 data where 12500 is Male's images and 12500 is Female's images.",
+            "ImageUrl": "https://github.com/somnathdashs/Male-Felmale-Classification/raw/main/SS/Screenshot%202023-07-02%20222657.png?raw=true",
+            "SsUrl": "https://github.com/somnathdashs/Male-Felmale-Classification/raw/main/SS/Screenshot%202023-07-02%20222657.png?raw=true,https://github.com/somnathdashs/Male-Felmale-Classification/raw/main/SS/Screenshot%202023-07-02%20222742.png?raw=true",
+            "ReadmeUrl": "https://raw.githubusercontent.com/somnathdashs/Male-Felmale-Classification/main/README.md",
+            "GithubUrl": "https://github.com/somnathdashs/Male-Felmale-Classification/",
+            "ISAI": true,
+            "ModelUrl": "https://github.com/somnathdashs/Male-Felmale-Classification/raw/main/Gender.h5",
+            "CreatedDate": "2023-07-02 17:09:02",
+            "UpdateDate": "No Update",
+            "Search": "Male and Female classification\n A Deep Learning Model which used for classification of Male and Female. The Accuracy it reach upto 97%. It train on 25000 data where 12500 is Male's images and 12500 is Female's images. https://github.com/somnathdashs/Male-Felmale-Classification/raw/main/SS/Screenshot%202023-07-02%20222657.png?raw=true,https://github.com/somnathdashs/Male-Felmale-Classification/raw/main/SS/Screenshot%202023-07-02%20222742.png?raw=true https://github.com/somnathdashs/Male-Felmale-Classification/ 2023-07-02 17:09:02No Update"
+        }
     ]
 }

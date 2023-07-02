@@ -78,6 +78,21 @@
             "UpdateDate": "No Update",
             "Search": "Tic tac toe With AI\n An implementation of Minimax AI Algorithm on Tic-Tac-Toe (or Noughts and Crosses) game.<br><br>To solve games using AI, we will introduce the concept of a game tree followed by minimax algorithm. The different states of the game are represented by nodes in the game tree, very similar to the above planning problems. The idea is just slightly different. In the game tree, the nodes are arranged in levels that correspond to each player's turns in the game so that the \u201croot\u201d node of the tree (usually depicted at the top of the diagram) is the beginning position in the game. In tic-tac-toe, this would be the empty grid with no Xs or Os played yet. Under root, on the second level, there are the possible states that can result from the first player\u2019s moves, be it X or O. We call these nodes the \u201cchildren\u201d of the root node. https://raw.githubusercontent.com/somnathdashs/MINI-Tic-Tac-Toe-/main/preview/minimax_img.png,https://raw.githubusercontent.com/somnathdashs/MINI-Tic-Tac-Toe-/main/preview/tic-tac-toe-minimax-game-tree.png,https://raw.githubusercontent.com/somnathdashs/MINI-Tic-Tac-Toe-/main/preview/simplified-g-tree.png https://github.com/somnathdashs/Tic-Tac-Toe-with-AI/blob/main/README.md 2023-04-21 11:29:38No Update"
         }
+    ],"dd991b93-f6a2-490b-9a3b-698a40b44691": [
+        {
+            "Uid": "dd991b93-f6a2-490b-9a3b-698a40b44691",
+            "Title": "Male and Female classification",
+            "Des": "A Deep Learning Model which used for classification of Male and Female. The Accuracy it reach upto 97%. It train on 25000 data where 12500 is Male's images and 12500 is Female's images.",
+            "ImageUrl": "https://github.com/somnathdashs/Male-Felmale-Classification/raw/main/SS/Screenshot%202023-07-02%20222657.png?raw=true",
+            "SsUrl": "https://github.com/somnathdashs/Male-Felmale-Classification/raw/main/SS/Screenshot%202023-07-02%20222657.png?raw=true,https://github.com/somnathdashs/Male-Felmale-Classification/raw/main/SS/Screenshot%202023-07-02%20222742.png?raw=true",
+            "ReadmeUrl": "https://raw.githubusercontent.com/somnathdashs/Male-Felmale-Classification/main/README.md",
+            "GithubUrl": "https://github.com/somnathdashs/Male-Felmale-Classification/",
+            "ISAI": true,
+            "ModelUrl": "https://github.com/somnathdashs/Male-Felmale-Classification/raw/main/Gender.h5",
+            "CreatedDate": "2023-07-02 17:09:02",
+            "UpdateDate": "No Update",
+            "Search": "Male and Female classification\n A Deep Learning Model which used for classification of Male and Female. The Accuracy it reach upto 97%. It train on 25000 data where 12500 is Male's images and 12500 is Female's images. https://github.com/somnathdashs/Male-Felmale-Classification/raw/main/SS/Screenshot%202023-07-02%20222657.png?raw=true,https://github.com/somnathdashs/Male-Felmale-Classification/raw/main/SS/Screenshot%202023-07-02%20222742.png?raw=true https://github.com/somnathdashs/Male-Felmale-Classification/ 2023-07-02 17:09:02No Update"
+        }
     ]
 }
 

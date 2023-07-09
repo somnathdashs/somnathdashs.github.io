@@ -1,20 +1,20 @@
 
 
 {
-    "91a60401-e51a-4c7e-83cc-0c09f09add5e": [
+    "dd991b93-f6a2-490b-9a3b-698b897y8798314": [
         {
-            "Uid": "91a60401-e51a-4c7e-83cc-0c09f09add5e",
-            "Title": "Face Recognition\n",
-            "Des": "It is a Face Recognition project, which you can use it in different project to make a face lock patten. Here, you add a person's face (It will automatic detect the fave encode it) which store in a database folder. Later on it used to Recognize the face.",
-            "ImageUrl": "https://raw.githubusercontent.com/somnathdashs/Face-Recognition/main/Preview/live.JPG",
-            "SsUrl": "https://raw.githubusercontent.com/somnathdashs/Face-Recognition/main/Preview/live.JPG,https://raw.githubusercontent.com/somnathdashs/Face-Recognition/main/Preview/add.JPG",
-            "ReadmeUrl": "https://raw.githubusercontent.com/somnathdashs/Face-Recognition/main/README.md",
-            "GithubUrl": "https://github.com/somnathdashs/Face-Recognition",
-            "ISAI": false,
-            "ModelUrl": "",
-            "CreatedDate": "2023-04-21 11:15:22",
+            "Uid": "dd991b93-f6a2-490b-9a3b-698b897y8798314",
+            "Title": "Sentiment Analysis with GUI",
+            "Des": "A Deep Learning Model which used for Sentiment analysis. The Accuracy it reach upto 85%. It train on 25000 text data.",
+            "ImageUrl": "https://github.com/somnathdashs/Sentiment-Analysis/raw/main/SS/Screenshot%202023-07-09%20104740.png?raw=true",
+            "SsUrl": "https://github.com/somnathdashs/Sentiment-Analysis/raw/main/SS/Screenshot%202023-07-09%20104740.png?raw=true,https://github.com/somnathdashs/Sentiment-Analysis/blob/main/SS/Screenshot%202023-07-09%20103455.png?raw=true",
+            "ReadmeUrl": "https://raw.githubusercontent.com/somnathdashs/Sentiment-Analysis/main/README.md",
+            "GithubUrl": "https://github.com/somnathdashs/Sentiment-Analysis/",
+            "ISAI": true,
+            "ModelUrl": "https://github.com/somnathdashs/Sentiment-Analysis/raw/main/Bert_uncased_model_Tiwtter.h5",
+            "CreatedDate": "2023-07-09 18:09:02",
             "UpdateDate": "No Update",
-            "Search": "Face Recognition\n It is a Face Recognition project, which you can use it in different project to make a face lock patten. Here, you add a person's face (It will automatic detect the fave encode it) which store in a database folder. Later on it used to Recognize the face. https://raw.githubusercontent.com/somnathdashs/Face-Recognition/main/Preview/live.JPG,https://raw.githubusercontent.com/somnathdashs/Face-Recognition/main/Preview/add.JPG https://github.com/somnathdashs/Face-Recognition 2023-04-21 11:15:22No Update"
+            "Search": "A Deep Learning Model which used for Sentiment analysis. The Accuracy it reach upto 85%. It train on 25000 text data Sentiment Analysis with GUI"
         }
     ],
     "091d7533-f33f-4b45-86bb-d483566ecee1": [

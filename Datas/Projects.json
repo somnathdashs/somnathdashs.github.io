@@ -109,5 +109,20 @@
             "UpdateDate": "No Update",
             "Search": "Male and Female classification\n A Deep Learning Model which used for classification of Male and Female. The Accuracy it reach upto 97%. It train on 25000 data where 12500 is Male's images and 12500 is Female's images. https://github.com/somnathdashs/Male-Felmale-Classification/raw/main/SS/Screenshot%202023-07-02%20222657.png?raw=true,https://github.com/somnathdashs/Male-Felmale-Classification/raw/main/SS/Screenshot%202023-07-02%20222742.png?raw=true https://github.com/somnathdashs/Male-Felmale-Classification/ 2023-07-02 17:09:02No Update"
         }
+    ],"dd991b93-f6a2-490b-9a3b-698b897y8798314": [
+        {
+            "Uid": "dd991b93-f6a2-490b-9a3b-698b897y8798314",
+            "Title": "Sentiment Analysis with GUI",
+            "Des": "A Deep Learning Model which used for Sentiment analysis. The Accuracy it reach upto 85%. It train on 25000 text data.",
+            "ImageUrl": "https://github.com/somnathdashs/Sentiment-Analysis/raw/main/SS/Screenshot%202023-07-09%20104740.png?raw=true",
+            "SsUrl": "https://github.com/somnathdashs/Sentiment-Analysis/raw/main/SS/Screenshot%202023-07-09%20104740.png?raw=true,https://github.com/somnathdashs/Sentiment-Analysis/blob/main/SS/Screenshot%202023-07-09%20103455.png?raw=true",
+            "ReadmeUrl": "https://raw.githubusercontent.com/somnathdashs/Sentiment-Analysis/main/README.md",
+            "GithubUrl": "https://github.com/somnathdashs/Sentiment-Analysis/",
+            "ISAI": true,
+            "ModelUrl": "https://github.com/somnathdashs/Sentiment-Analysis/raw/main/Bert_uncased_model_Tiwtter.h5",
+            "CreatedDate": "2023-07-09 18:09:02",
+            "UpdateDate": "No Update",
+            "Search": "A Deep Learning Model which used for Sentiment analysis. The Accuracy it reach upto 85%. It train on 25000 text data Sentiment Analysis with GUI"
+        }
     ]
 }

@@ -1,18 +1,20 @@
+
+
 {
-    "91a60401-e51a-4c7e-83cc-0c09f09add5e": [
+    "dd991b93-f6a2-490b-9a3b-698b897y8798314": [
         {
-            "Uid": "91a60401-e51a-4c7e-83cc-0c09f09add5e",
-            "Title": "Face Recognition\n",
-            "Des": "It is a Face Recognition project, which you can use it in different project to make a face lock patten. Here, you add a person's face (It will automatic detect the fave encode it) which store in a database folder. Later on it used to Recognize the face.",
-            "ImageUrl": "https://raw.githubusercontent.com/somnathdashs/Face-Recognition/main/Preview/live.JPG",
-            "SsUrl": "https://raw.githubusercontent.com/somnathdashs/Face-Recognition/main/Preview/live.JPG,https://raw.githubusercontent.com/somnathdashs/Face-Recognition/main/Preview/add.JPG",
-            "ReadmeUrl": "https://raw.githubusercontent.com/somnathdashs/Face-Recognition/main/README.md",
-            "GithubUrl": "https://github.com/somnathdashs/Face-Recognition",
-            "ISAI": false,
-            "ModelUrl": "",
-            "CreatedDate": "2023-04-21 11:15:22",
+            "Uid": "dd991b93-f6a2-490b-9a3b-698b897y8798314",
+            "Title": "Sentiment Analysis with GUI",
+            "Des": "A Deep Learning Model which used for Sentiment analysis. The Accuracy it reach upto 85%. It train on 25000 text data.",
+            "ImageUrl": "https://github.com/somnathdashs/Sentiment-Analysis/raw/main/SS/Screenshot%202023-07-09%20104740.png?raw=true",
+            "SsUrl": "https://github.com/somnathdashs/Sentiment-Analysis/raw/main/SS/Screenshot%202023-07-09%20104740.png?raw=true,https://github.com/somnathdashs/Sentiment-Analysis/blob/main/SS/Screenshot%202023-07-09%20103455.png?raw=true",
+            "ReadmeUrl": "https://raw.githubusercontent.com/somnathdashs/Sentiment-Analysis/main/README.md",
+            "GithubUrl": "https://github.com/somnathdashs/Sentiment-Analysis/",
+            "ISAI": true,
+            "ModelUrl": "https://github.com/somnathdashs/Sentiment-Analysis/raw/main/Bert_uncased_model_Tiwtter.h5",
+            "CreatedDate": "2023-07-09 18:09:02",
             "UpdateDate": "No Update",
-            "Search": "Face Recognition\n It is a Face Recognition project, which you can use it in different project to make a face lock patten. Here, you add a person's face (It will automatic detect the fave encode it) which store in a database folder. Later on it used to Recognize the face. https://raw.githubusercontent.com/somnathdashs/Face-Recognition/main/Preview/live.JPG,https://raw.githubusercontent.com/somnathdashs/Face-Recognition/main/Preview/add.JPG https://github.com/somnathdashs/Face-Recognition 2023-04-21 11:15:22No Update"
+            "Search": "A Deep Learning Model which used for Sentiment analysis. The Accuracy it reach upto 85%. It train on 25000 text data Sentiment Analysis with GUI"
         }
     ],
     "091d7533-f33f-4b45-86bb-d483566ecee1": [
@@ -47,20 +49,20 @@
             "Search": "Object Detection A object detection project that can detecte 85 types of object using YoLo v5. Python make it more easy to work with such library https://github.com/somnathdashs/Object-Detection/blob/main/Screenshot%202023-06-12%20225151.png?raw=true,https://github.com/somnathdashs/Object-Detection/blob/main/Screenshot%202023-06-12%20225211.png?raw=true 2023-06-12 17:26:38 https://github.com/somnathdashs/Object-Detection/ 2023-06-12 17:25:00"
         }
     ],
-    "9e8c33c7-9424-40c0-b0d1-04965deef37a": [
+    "7c18e905-a3a2-4707-a452-9eb7a1f4ac06": [
         {
-            "Uid": "9e8c33c7-9424-40c0-b0d1-04965deef37a",
-            "Title": "Emotions Recognition\n",
-            "Des": "A Deep Learning Model which would able to predict your emotions just by looking to your face. The Accuracy it reach upto 55% . It train on 22500 data and on 6 different class. It can also detect multi-face emotion from a image or frame.\n<br><br>\nNote :\n<br>\nI didn't add \"X.pkl\" file because it is a large file around 2 gb . you get both X and Y_binary files by just running preprocessing.ipynb\n\n'X.pkl' and 'Y_binary.pkl' are file of our data preprocessed. it will very usefull for our training process.",
-            "ImageUrl": "https://raw.githubusercontent.com/somnathdashs/Emotions-Recognition/main/Test_img/happy.JPG",
-            "SsUrl": "https://raw.githubusercontent.com/somnathdashs/Emotions-Recognition/main/Test_img/privew1.JPG,https://raw.githubusercontent.com/somnathdashs/Emotions-Recognition/main/Test_img/happy.JPG",
-            "ReadmeUrl": "https://raw.githubusercontent.com/somnathdashs/Emotions-Recognition/main/README.md",
-            "GithubUrl": "https://github.com/somnathdashs/Emotions-Recognition",
-            "ISAI": false,
-            "ModelUrl": "",
-            "CreatedDate": "2023-04-21 11:25:28",
+            "Uid": "7c18e905-a3a2-4707-a452-9eb7a1f4ac06",
+            "Title": "Cat Vs Dog classification\n",
+            "Des": "A Deep Learning Model which used for classification of Cat and Dog. The Accuracy it reach upto 95%. It train on 25000 data where 12500 is cat images and 12500 is dog images.",
+            "ImageUrl": "https://github.com/somnathdashs/Cat-and-dog-classification/raw/main/SS/Screenshot%202023-07-01%20165918.png?raw=true",
+            "SsUrl": "https://github.com/somnathdashs/Cat-and-dog-classification/raw/main/SS/Screenshot%202023-07-01%20165918.png?raw=true",
+            "ReadmeUrl": "https://raw.githubusercontent.com/somnathdashs/Cat-and-dog-classification/main/README.md",
+            "GithubUrl": "https://github.com/somnathdashs/Cat-and-dog-classification",
+            "ISAI": true,
+            "ModelUrl": "https://github.com/somnathdashs/Cat-and-dog-classification/raw/main/cat_n_dog.h5",
+            "CreatedDate": "2023-07-01 12:35:05",
             "UpdateDate": "No Update",
-            "Search": "Emotions Recognition\n A Deep Learning Model which would able to predict your emotions just by looking to your face. The Accuracy it reach upto 55% . It train on 22500 data and on 6 different class. It can also detect multi-face emotion from a image or frame.\n<br><br>\nNote :\n<br>\nI didn't add \"X.pkl\" file because it is a large file around 2 gb . you get both X and Y_binary files by just running preprocessing.ipynb\n\n'X.pkl' and 'Y_binary.pkl' are file of our data preprocessed. it will very usefull for our training process. https://raw.githubusercontent.com/somnathdashs/Emotions-Recognition/main/Test_img/privew1.JPG,https://raw.githubusercontent.com/somnathdashs/Emotions-Recognition/main/Test_img/happy.JPG https://github.com/somnathdashs/Emotions-Recognition 2023-04-21 11:25:28No Update"
+            "Search": "Cat Vs Dog classification\n A Deep Learning Model which used for classification of Cat and Dog. The Accuracy it reach upto 95%. It train on 25000 data where 12500 is cat images and 12500 is dog images. https://github.com/somnathdashs/Cat-and-dog-classification/raw/main/SS/Screenshot%202023-07-01%20165918.png?raw=true https://github.com/somnathdashs/Cat-and-dog-classification 2023-07-01 12:35:05No Update"
         }
     ],
     "56a76d78-634e-4b22-a15e-88d2333d451c": [
@@ -78,5 +80,22 @@
             "UpdateDate": "No Update",
             "Search": "Tic tac toe With AI\n An implementation of Minimax AI Algorithm on Tic-Tac-Toe (or Noughts and Crosses) game.<br><br>To solve games using AI, we will introduce the concept of a game tree followed by minimax algorithm. The different states of the game are represented by nodes in the game tree, very similar to the above planning problems. The idea is just slightly different. In the game tree, the nodes are arranged in levels that correspond to each player's turns in the game so that the \u201croot\u201d node of the tree (usually depicted at the top of the diagram) is the beginning position in the game. In tic-tac-toe, this would be the empty grid with no Xs or Os played yet. Under root, on the second level, there are the possible states that can result from the first player\u2019s moves, be it X or O. We call these nodes the \u201cchildren\u201d of the root node. https://raw.githubusercontent.com/somnathdashs/MINI-Tic-Tac-Toe-/main/preview/minimax_img.png,https://raw.githubusercontent.com/somnathdashs/MINI-Tic-Tac-Toe-/main/preview/tic-tac-toe-minimax-game-tree.png,https://raw.githubusercontent.com/somnathdashs/MINI-Tic-Tac-Toe-/main/preview/simplified-g-tree.png https://github.com/somnathdashs/Tic-Tac-Toe-with-AI/blob/main/README.md 2023-04-21 11:29:38No Update"
         }
-    ],
+    ],"dd991b93-f6a2-490b-9a3b-698a40b44691": [
+        {
+            "Uid": "dd991b93-f6a2-490b-9a3b-698a40b44691",
+            "Title": "Male and Female classification",
+            "Des": "A Deep Learning Model which used for classification of Male and Female. The Accuracy it reach upto 97%. It train on 25000 data where 12500 is Male's images and 12500 is Female's images.",
+            "ImageUrl": "https://github.com/somnathdashs/Male-Felmale-Classification/raw/main/SS/Screenshot%202023-07-02%20222657.png?raw=true",
+            "SsUrl": "https://github.com/somnathdashs/Male-Felmale-Classification/raw/main/SS/Screenshot%202023-07-02%20222657.png?raw=true,https://github.com/somnathdashs/Male-Felmale-Classification/raw/main/SS/Screenshot%202023-07-02%20222742.png?raw=true",
+            "ReadmeUrl": "https://raw.githubusercontent.com/somnathdashs/Male-Felmale-Classification/main/README.md",
+            "GithubUrl": "https://github.com/somnathdashs/Male-Felmale-Classification/",
+            "ISAI": true,
+            "ModelUrl": "https://github.com/somnathdashs/Male-Felmale-Classification/raw/main/Gender.h5",
+            "CreatedDate": "2023-07-02 17:09:02",
+            "UpdateDate": "No Update",
+            "Search": "Male and Female classification\n A Deep Learning Model which used for classification of Male and Female. The Accuracy it reach upto 97%. It train on 25000 data where 12500 is Male's images and 12500 is Female's images. https://github.com/somnathdashs/Male-Felmale-Classification/raw/main/SS/Screenshot%202023-07-02%20222657.png?raw=true,https://github.com/somnathdashs/Male-Felmale-Classification/raw/main/SS/Screenshot%202023-07-02%20222742.png?raw=true https://github.com/somnathdashs/Male-Felmale-Classification/ 2023-07-02 17:09:02No Update"
+        }
+    ]
 }
+
+

@@ -50,6 +50,7 @@ function Choose_data() {
       document.getElementById("SS").value = url
       var data = await JSON.parse(text);
       arr = Object.values(data)
+      arr.reverse();
       var Ccards = "";
       var Searchlist = []
       for (var i = 0; i < arr.length; i++) {
@@ -88,6 +89,7 @@ function Choose_data() {
       var data = await JSON.parse(text);
       var Ccards = "";
       arr = Object.values(data)
+      arr.reverse();
       for (var i = 0; i < arr.length; i++) {
         var Cpro = arr[i][0]
         var info = `Created on: ${Cpro.CreatedDate} and Last Update on: ${Cpro.UpdateDate}`

@@ -1,0 +1,62 @@
+{
+    "58DF-6juf": {
+        "ID": "58DF-6juf",
+        "Name": "How to make J.A.R.V.I.S using Python",
+        "Des": "Make your own J.A.R.V.I.S using Python as i guide you through creating your own Jarvis-inspired virtual assistant.  Subscribe for more such video and series.",
+        "Cover_image": "https://github.com/somnathdashs/Jarvis/raw/main/Module/Datas/Template.png?raw=true",
+        "playlist_link": "https://www.youtube.com/playlist?list=PLeoHstZu_JQXlcRlhNgDmbLsWC21tnuUM",
+        "Each_Video_Embed_Link": {
+            "Video1": "https://www.youtube.com/embed/3qrkLXY6fm4",
+            "video2": "https://www.youtube.com/embed/0TPCX8CZhVI",
+            "video3": "https://www.youtube.com/embed/T6gOxBMvceM",
+            "video4": "https://www.youtube.com/embed/8B_idN5OZOg",
+            "video5": "https://www.youtube.com/embed/4kl7umF99i0",
+            "video6": "https://www.youtube.com/embed/ok4976Ju4Yg",
+            "video7": "https://www.youtube.com/embed/F7t6Qo--kIc",
+            "video8": "https://www.youtube.com/embed/hxyBvlSC37Q",
+            "video9": "https://www.youtube.com/embed/AyyvqOVh8wg",
+            "video10": "https://www.youtube.com/embed/pIatdp1lEIo",
+            "video11": "https://www.youtube.com/embed/c_BSzaFm55c",
+            "video12": "https://www.youtube.com/embed/UOZV5eczO-A",
+            "video13": "https://www.youtube.com/embed/HegFR6jQ16g",
+            "video14": "https://www.youtube.com/embed/FI9d9l_6koY",
+            "video15": "https://www.youtube.com/embed/XPPctCZ8ljM"
+        },
+        "sourch_code": "https://github.com/somnathdashs/Jarvis"
+    },
+    "58DF-787f": {
+        "ID": "58DF-787f",
+        "Name": "Deep Learning projects",
+        "Des": "Some amazing deep learning and A.I project.  Subscribe for more such video and series.",
+        "Cover_image": "https://github.com/somnathdashs/Cat-and-dog-classification/raw/main/SS/Add%20a%20heading%20(1).png?raw=true",
+        "playlist_link": "https://youtube.com/playlist?list=PLeoHstZu_JQXc1xHtZwpc_SN8k_0b9_p6&si=tUSff2zytzNTrTc9",
+        "Each_Video_Embed_Link": {
+            "Video1": "https://www.youtube.com/embed/XkzXwXnuOxE?si=xhbH4AE-x33EHQco",
+            "video2": "https://www.youtube.com/embed/XiizmJ4-x3c?si=M1kbmjxz8GPUImTC",
+            "video3": "https://www.youtube.com/embed/HYCiVR6eaoY?si=cd_7tGtW5GgPlk4v"
+        },
+        "sourch_code": "https://github.com/somnathdashs/"
+    },
+    "58DF-7we4": {
+        "ID": "58DF-7we4",
+        "Name": "Advance Personal A.I - Deep learning, Artificial Neural Network (ANN)",
+        "Des": "It is a series where we will create our own personal A.I to make our work easy and fast. In the A.I program we will take the help of DEEP LEARNING & NEURAL NETWORK to make our A.I to understand our commands in more efficient manner.",
+        "Cover_image": "https://github.com/somnathdashs/somnathdashs.github.io/blob/main/Datas/IMG/PAI2.jpg?raw=true",
+        "playlist_link": "https://youtube.com/playlist?list=PLeoHstZu_JQX66udUtj_XyqH-RMutIv5x&si=jfnrKvh9vKOAZxFC",
+        "Each_Video_Embed_Link": {
+            "Video1": "https://www.youtube.com/embed/dys9t1F60j8",
+            "Video2": "https://www.youtube.com/embed/dxrS9IpB6cA",
+            "Video3": "https://www.youtube.com/embed/SzGQMPeKcOA",
+            "Video4": "https://www.youtube.com/embed/vRYwJsua8bg",
+            "Video5": "https://www.youtube.com/embed/bIHkdiL4X6I",
+            "Video6": "https://www.youtube.com/embed/Bq4ofLsLsJE",
+            "Video7": "https://www.youtube.com/embed/_lREuAC440E",
+            "Video8": "https://www.youtube.com/embed/IkLJpZOOygk",
+            "Video9": "https://www.youtube.com/embed/VdGtUIEIJgw",
+            "Video10": "https://www.youtube.com/embed/d5pvPEEWey0"
+   
+        },
+        "sourch_code": "https://github.com/somnathdashs/Advanced-personal-AI-MINI"
+    }
+
+}

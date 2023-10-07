@@ -1,0 +1,33 @@
+.card-img-top:hover{
+    position: relative;;
+    top: -15px;
+    transition: .5s ease-out;
+    
+}
+
+.card:hover{
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
+    transition: ease-in-out;
+    
+}
+
+.card:hover{
+    cursor: pointer;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+.card-text{
+    font-weight: 0 !important;
+}
+.card{
+    min-height: 450px;
+    max-height: 450px;
+}
+
+.btn-outline-danger{
+    color: rgb(255, 112, 2) ;
+}
+.btn-outline-danger:hover{
+    color: rgb(255, 255, 255) ;
+    background-color: rgb(255, 112, 2) ;
+}

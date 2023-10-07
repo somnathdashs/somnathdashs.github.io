@@ -19,13 +19,13 @@
 
 iframe:hover{
     box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
-    height: 280px;
+    height: 245px;
     transition: .5s ease;
 }
 
 iframe {
-    width: 28rem;
-    height: 265px;
+    width: 25rem;
+    height: 235px;
     display: block !important;
     margin-left: auto !important;
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);

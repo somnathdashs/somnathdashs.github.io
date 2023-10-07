@@ -55,7 +55,7 @@ closeButton.addEventListener('click', event => {
 
 
 
-readTextFile("/Datas/Series.json", async function (text) {
+readTextFile("https://raw.githubusercontent.com/somnathdashs/somnathdashs.github.io/main/Datas/Series.json", async function (text) {
     try {
         const U = window.location;
         const Urll = "%0A%0A" + U + "%0A%0A";

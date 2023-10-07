@@ -40,6 +40,7 @@ function readTextFile(file, callback) {
 document.getElementById("SUrl").innerText = window.location;
 
 
+
 const shareButton = document.querySelector('.share-button1');
 const shareDialog = document.querySelector('.share-dialog');
 const closeButton = document.querySelector('.close-button');

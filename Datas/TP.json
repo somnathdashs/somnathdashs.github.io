@@ -33,20 +33,20 @@
             "Search": "Live Webcam 2023-10-17 20:30:05 streaming This program help you to stream your live video from webcamera in your local network, you can see the live streaming video from any device connected to your local network just by typing server ' http://[YOUR IP]:[YOUR PORT] ' in the web brower."
         }
     ],
-    "7e548a8d-4376-4d6d-8959-53788021f588": [
+    "dd991S45-f6a2-490b-9A3B-698b897y8798314": [
         {
-            "Uid": "7e548a8d-4376-4d6d-8959-53788021f588",
-            "Title": "Object Detection",
-            "Des": "A object detection project that can detecte 85 types of object using YoLo v5. Python make it more easy to work with such library",
-            "ImageUrl": "https://github.com/somnathdashs/Object-Detection/blob/main/Screenshot%202023-06-12%20225151.png?raw=true",
-            "SsUrl": "https://github.com/somnathdashs/Object-Detection/blob/main/Screenshot%202023-06-12%20225151.png?raw=true,https://github.com/somnathdashs/Object-Detection/blob/main/Screenshot%202023-06-12%20225211.png?raw=true",
-            "ReadmeUrl": "about:blank",
-            "GithubUrl": "https://github.com/somnathdashs/Object-Detection/",
+            "Uid": "dd991S45-f6a2-490b-9A3B-698b897y8798314",
+            "Title": "Live Audio streaming",
+            "Des": "This program help you to stream your live Audio from your indexed microphone in your local network, you can play the live streaming Audio from any device connected to your local network just by typing server ' http://[YOUR IP]:[YOUR PORT] ' in the web brower.",
+            "ImageUrl": "https://raw.githubusercontent.com/somnathdashs/Live-Audio-Streaming/main/template/IMG_!.jpg",
+            "SsUrl": "https://raw.githubusercontent.com/somnathdashs/Live-Audio-Streaming/main/template/IMG_!.jpg",          
+            "ReadmeUrl": "https://raw.githubusercontent.com/somnathdashs/Live-Audio-Streaming/main/README.md",
+            "GithubUrl": "https://github.com/somnathdashs/Live-Audio-Streaming",
             "ISAI": false,
             "ModelUrl": "",
-            "CreatedDate": "2023-06-12 17:25:00",
-            "UpdateDate": "2023-06-12 17:26:38",
-            "Search": "Object Detection A object detection project that can detecte 85 types of object using YoLo v5. Python make it more easy to work with such library https://github.com/somnathdashs/Object-Detection/blob/main/Screenshot%202023-06-12%20225151.png?raw=true,https://github.com/somnathdashs/Object-Detection/blob/main/Screenshot%202023-06-12%20225211.png?raw=true 2023-06-12 17:26:38 https://github.com/somnathdashs/Object-Detection/ 2023-06-12 17:25:00"
+            "CreatedDate": "2023-10-22 10:55:05",
+            "UpdateDate": "No Update",
+            "Search": "2023-10-22 10:55:05 This program help you to stream your live Audio from your indexed microphone in your local network, you can play the live streaming Audio from any device connected to your local network just by typing server ' http://[YOUR IP]:[YOUR PORT] ' in the web brower. Live Audio streaming "
         }
     ],
     "7c18e905-a3a2-4707-a452-9eb7a1f4ac06": [

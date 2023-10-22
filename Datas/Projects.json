@@ -139,5 +139,21 @@
             "UpdateDate": "No Update",
             "Search": "Live Webcam 2023-10-17 20:30:05 streaming This program help you to stream your live video from webcamera in your local network, you can see the live streaming video from any device connected to your local network just by typing server ' http://[YOUR IP]:[YOUR PORT] ' in the web brower."
         }
+    ],
+    "dd991S45-f6a2-490b-9A3B-698b897y8798314": [
+        {
+            "Uid": "dd991S45-f6a2-490b-9A3B-698b897y8798314",
+            "Title": "Live Audio streaming",
+            "Des": "This program help you to stream your live Audio from your indexed microphone in your local network, you can play the live streaming Audio from any device connected to your local network just by typing server ' http://[YOUR IP]:[YOUR PORT] ' in the web brower.",
+            "ImageUrl": "https://raw.githubusercontent.com/somnathdashs/Live-Audio-Streaming/main/template/IMG_!.jpg",
+            "SsUrl": "https://raw.githubusercontent.com/somnathdashs/Live-Audio-Streaming/main/template/IMG_!.jpg",          
+            "ReadmeUrl": "https://raw.githubusercontent.com/somnathdashs/Live-Audio-Streaming/main/README.md",
+            "GithubUrl": "https://github.com/somnathdashs/Live-Audio-Streaming",
+            "ISAI": false,
+            "ModelUrl": "",
+            "CreatedDate": "2023-10-22 10:55:05",
+            "UpdateDate": "No Update",
+            "Search": "2023-10-22 10:55:05 This program help you to stream your live Audio from your indexed microphone in your local network, you can play the live streaming Audio from any device connected to your local network just by typing server ' http://[YOUR IP]:[YOUR PORT] ' in the web brower. Live Audio streaming "
+        }
     ]
 }

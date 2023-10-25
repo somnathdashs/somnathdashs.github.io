@@ -6,7 +6,10 @@
     font-size: 2rem;
     color: rgb(245, 12, 12);
 }
-
+#Wimg {
+    font-size: 2rem;
+    color: rgb(67, 252, 0);
+}
 
 .custum_header .my_img {
     border-radius: 100% !important;

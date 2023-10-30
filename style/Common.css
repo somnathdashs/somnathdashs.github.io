@@ -22,8 +22,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-attachment: fixed;
-    
+    background-attachment: fixed;  
 }
 .custum_header .nav_tab{
     cursor: pointer;

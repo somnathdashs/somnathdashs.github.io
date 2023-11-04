@@ -6,6 +6,7 @@
     font-size: 2rem;
     color: rgb(245, 12, 12);
 }
+
 #Wimg {
     font-size: 2rem;
     color: rgb(67, 252, 0);
@@ -77,6 +78,76 @@
     position: relative;
     animation: step 9s steps(4) infinite;
 }
+
+
+
+
+
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    z-index: 105;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Styling for the modal content */
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 500px;
+}
+
+.modal-content div img {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+}
+
+._Ju86 {
+    width: 100% !important;
+    margin: 17px 0px !important;
+    height: 60px;
+
+    border-radius: 12px;
+}
+
+
+/* Styling for the close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+
+@media (max-width:350px) {
+	.modal-content {
+		width: 300px;
+	}
+	
+}
+
+@media (max-width:500px) {
+	.modal-content {
+		width: 380px;
+	}
+	
+}
+
 
 /* step Animatin  */
 @keyframes step {
@@ -196,7 +267,7 @@ body {
     color: var(--white-colour);
 }
 
-#YTIFRAME{
+#YTIFRAME {
     display: block;
 }
 
@@ -281,9 +352,10 @@ body {
 
 
 @media (max-width:1023px) {
-    #YTIFRAME{
+    #YTIFRAME {
         display: none;
     }
+
     .custum_header .my_name_cont .my_name {
         color: var(--main-colour);
         display: inline;

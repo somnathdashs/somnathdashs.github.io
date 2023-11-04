@@ -1,0 +1,66 @@
+.CARD_MAIN {
+    margin-right: 0%;
+    margin: 0px 25px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.left-container {
+    flex: 1;
+    order: 1;
+    /* By default, left container is first */
+    background-color: lightblue;
+}
+
+.right-container {
+    flex: 1;
+    order: 2;
+    /* By default, right container is second */
+    background-color: lightgreen;
+}
+
+iframe{
+    width: 80%;
+    height: 280px;
+}
+
+@media (max-width: 767px) {
+    main {
+        flex-direction: column;
+    }
+    .CARD_MAIN {
+        margin: 25px 0px;
+    }
+    iframe{
+        width: 100%;
+        height: 280px;
+    }
+
+    /* Change the order for mobile view
+    .left-container {
+        order: 2;
+    }
+
+    .right-container {
+        order: 1;
+    } */
+}
+
+
+
+/* @media (max-width:1024px){
+    .CARD_MAIN{
+        max-width: 70%;
+    }
+}
+
+@media (max-width:768px){
+    .CARD_MAIN{
+        max-width: 90%;
+    }
+} */

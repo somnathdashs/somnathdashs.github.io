@@ -1,17 +1,31 @@
 const mykey = window.location.search;
 const urlP = new URLSearchParams(mykey);
-const wish = atob(urlP.get("Surprise_Gift"));
+const wish = atob(urlP.get("surprise_gift"));
+const BN = atob(urlP.get("BN"));
+const BR = atob(urlP.get("BR"));
+const WN = urlP.get("surprise_from");
+
+document.getElementById('b6').innerText = BR
+document.getElementById('WName').innerText = WN
+document.getElementById('BName').innerText = BN
+
+
 if (wish != "default") {
 	var linesArray = wish.split("\n");
 	linesArray.pop()
-	document.getElementById("Msg-Row").innerHTML=``
+	document.getElementById("Msg-Row").innerHTML = ``
 	for (let index = 0; index < linesArray.length; index++) {
 		const element = linesArray[index];
 		a = `<p>${element}</p>`
-		document.getElementById("Msg-Row").innerHTML+=a
+		document.getElementById("Msg-Row").innerHTML += a
 
 	}
+// }else if(wish=="OP\n"){
+// 	document.getElementById("Msg-Row").innerHTML = ``
 }
+
+
+
 
 
 $(window).load(function () {
@@ -194,7 +208,9 @@ $('document').ready(function () {
 				$("p:nth-child(" + i + ")").fadeIn('slow').delay(1000);
 				if (i == 50) {
 					$("p:nth-child(49)").fadeOut('slow').promise().done(function () {
-						$('.cake').fadeIn('fast');
+						$('.cake').fadeIn('slow');
+						$('#Last_surprise').fadeIn('slow');
+
 					});
 
 				}
@@ -207,7 +223,7 @@ $('document').ready(function () {
 		}
 
 		msgLoop(0);
-
+		
 	});
 });
 

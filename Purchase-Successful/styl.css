@@ -1,0 +1,96 @@
+  @import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+  body {
+      background-color: rgb(242, 246, 237);
+  }
+
+  .Animate{
+    display: block !important;
+    animation: slideUp 4s ease-in forwards;
+  }
+
+
+  @keyframes slideUp {
+    0%,
+    50% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+     
+    60%,
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    
+    }
+  }
+
+
+
+
+
+
+  .Triangle-top {
+      width: 0;
+      height: 0;
+      position: absolute;
+      border-left: 0px solid transparent;
+      border-right: 250px solid transparent;
+      border-top: 350px solid #e8b70c;
+  }
+
+
+
+
+
+  @media (max-width:768px){
+    .Triangle-top {
+        border-left: 0px solid transparent;
+        border-right: 150px solid transparent;
+        border-top: 250px solid #e8b70c;
+    }
+  }
+
+  @media (max-width:425px){
+    .Triangle-top {
+        border-left: 0px solid transparent;
+        border-right: 120px solid transparent;
+        border-top: 220px solid #e8b70c;
+    }
+  }
+
+
+
+  main div img {
+      width: 100px;
+      height: 100px;
+  }
+
+  .thank-you-container {
+    animation: thank-you-animation 1.5s linear infinite;
+  }
+
+  @keyframes thank-you-animation {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform:  scale(1.1);
+    }
+
+    100% {
+      transform:  scale(1);
+    }
+  }
+
+
+
+
+  #btns,#p1,#p2,#h11,#check,#Cardd{
+    display: none;
+  }
+
+  .bx{
+    cursor: pointer !important;
+  }

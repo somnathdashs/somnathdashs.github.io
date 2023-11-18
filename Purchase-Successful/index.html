@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZC2M42YH8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-4ZC2M42YH8');
+    </script>
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Successful</title>
+    <link rel="icon" type="image/x-icon" href="/Image/check.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link href="/style/Common.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="/style/Contectme_style.css" rel="stylesheet">
+    <link href="/style/Common.css" rel="stylesheet">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+
+    <noindex></noindex>
+    <link href="/Purchase-Successful/styl.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div class="Triangle-top"></div>
+    <div style="height: 30px; width: 100%;"></div>
+    <main id="3453">
+        <div class="top">
+            <img class="m-auto" id="check" src="/Image/check.png">
+            <h5 class="h1 text-center my-5" id="h11" style="font-family: Agbalumo"><b>Thank You!!</b></h5>
+            <p class="h5 text-center mx-auto" id="p1" style="font-family: monospace; max-width: 80%;">We're thanks to
+                you for Purchasing from our website. It helps us to continue doing what we love, and to provide our you
+                the best possible Items just like this one...</p>
+            <button id="btns" class="btn btn-primary mx-auto mt-5 thank-you-container text-center">Download
+                Now!!</button>
+            <p id="p2" class="fs-6 text-center mx-auto mt-3" style="font-family: monospace; max-width: 80%;">**Your
+                download will get start. If not click above download button. </p>
+        </div>
+        <div class="mx-auto my-10 py-6" id="Cardd" style="max-width: 328px; background: #fff;">
+            <h5 class="h4 mb-5 text-center">Contact Me</h5>
+            <div class="flex text-center" style="justify-self: center;">
+                <i class='bx bxs-envelope' onclick="window.open('mailto:pinudash104@google.com','_blank')"
+                    style='color:#cc2020; font-size: 3rem; margin-left:70px;'></i>
+                <div style="width: 100px;"></div>
+                <i class='bx bxl-whatsapp'
+                    onclick="window.open('https://api.whatsapp.com/send/?phone=918917617552&text&type=phone_number','_blank')"
+                    style='color:#35f136; font-size: 3rem;'></i>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+
+</html>
+
+
+<script>
+
+    window.addEventListener("load", function () {
+        setTimeout(function () {
+            document.getElementById("check").classList.add("Animate")
+            document.getElementById("h11").classList.add("Animate")
+            document.getElementById("p1").classList.add("Animate")
+        }, 500);
+        setTimeout(function () {
+            document.getElementById("btns").style.display = "block"
+            document.getElementById("p2").style.display = "block"
+            document.getElementById("Cardd").style.display = "block"
+
+            const mykey = window.location.search;
+            const urlP = new URLSearchParams(mykey);
+            const Url = atob(urlP.get("bi"));
+            if (Url != '\x9Eée' && (Url != "" || Url != " ")) {
+                window.open(Url, "_blank")
+                document.getElementById("btns").onclick = function () {
+                    window.open(Url, "_blank")
+                }
+
+            }
+        }, 3500);
+
+    });
+</script>

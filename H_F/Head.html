@@ -24,13 +24,25 @@ crossorigin="anonymous"></script>
       <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto">
           <!-- "active" -->
-          <a class="mr-5 hover:text-gray-900 nav_tab under nav-link active" href="/">Home</a>
-          <a class="mr-5 hover:text-gray-900 nav_tab under nav-link" href="/My_project.html">My Projects</a>
-          <a class="mr-5 hover:text-gray-900 nav_tab under nav-link" href="/VideoSphere.html">VideoSphere</a>
-          <a class="mr-5 hover:text-gray-900 nav_tab under nav-link" target="_blank"
+          <a class="mr-5 hover:text-gray-900 nav_tab under nav-link" onclick="Make_Activte(this);" href="/">Home</a>
+          <a class="mr-5 hover:text-gray-900 nav_tab under nav-link" onclick="Make_Activte(this);" href="/My_project.html">My Projects</a>
+          <a class="mr-5 hover:text-gray-900 nav_tab under nav-link" onclick="Make_Activte(this);" href="/VideoSphere.html">VideoSphere</a>
+          <a class="mr-5 hover:text-gray-900 nav_tab under nav-link" onclick="Make_Activte(this);" target="_blank"
             href="https://somnathdashsnp.blogspot.com">Blog</a>
-          <a class="mr-5 hover:text-gray-900 nav_tab under nav-link" href="/About.html">About</a>
+          <a class="mr-5 hover:text-gray-900 nav_tab under nav-link" onclick="Make_Activte(this);" href="/About.html">About</a>
         </ul>
+        <a class="btn btn-primary mr-5 " href="/Store/" onclick="Make_Activte(this);" >Go to Store</a>
       </div>
     </div>
   </nav>
+<script>
+  var Last_Active=null
+  document.getElementById().classList.add("")
+  function Make_Activte(nav_ico){
+    nav_ico.getElementById().classList.add("active")
+    Last_Active.getElementById().classList.remove("active")
+    Last_Active=nav_ico    
+  }
+
+
+</script>

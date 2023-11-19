@@ -136,14 +136,14 @@
 
 @media (max-width:350px) {
 	.modal-content {
-		width: 300px;
+		width: 300px !important;
 	}
 	
 }
 
 @media (max-width:500px) {
 	.modal-content {
-		width: 380px;
+		width: 380px !important;
 	}
 	
 }

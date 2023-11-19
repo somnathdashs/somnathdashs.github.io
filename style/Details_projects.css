@@ -27,7 +27,6 @@ code {
 
 
 
-#top_part {}
 
 #gntbtn {
     /* outline: 2px solid rgb(94, 255, 1); */
@@ -247,11 +246,7 @@ transition: .5s;
     z-index: 2;
   }
   
-  header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
+
   
   .targets {
     display: grid;

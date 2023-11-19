@@ -375,8 +375,4 @@ class TableModel(QtCore.QAbstractTableModel):
 
 app = QtWidgets.QApplication(sys.argv)
 window = UI()
-<<<<<<< HEAD
 sys.exit(app.exec_())
-=======
-sys.exit(app.exec_())
->>>>>>> 25d6ad9ed3e85326d22c7be46c8ebf714bba64f6

@@ -1,20 +1,18 @@
-
-
 {
-    "dd991b93-f6a2-490b-9a3b-698b897y8798314": [
+    "dd991S45-f6a2-490b-9A3B-698b897y8798423": [
         {
-            "Uid": "dd991b93-f6a2-490b-9a3b-698b897y8798314",
-            "Title": "Sentiment Analysis with GUI",
-            "Des": "A Deep Learning Model which used for Sentiment analysis. The Accuracy it reach upto 85%. It train on 25000 text data.",
-            "ImageUrl": "https://github.com/somnathdashs/Sentiment-Analysis/raw/main/SS/Screenshot%202023-07-09%20104740.png?raw=true",
-            "SsUrl": "https://github.com/somnathdashs/Sentiment-Analysis/raw/main/SS/Screenshot%202023-07-09%20104740.png?raw=true,https://github.com/somnathdashs/Sentiment-Analysis/blob/main/SS/Screenshot%202023-07-09%20103455.png?raw=true",
-            "ReadmeUrl": "https://raw.githubusercontent.com/somnathdashs/Sentiment-Analysis/main/README.md",
-            "GithubUrl": "https://github.com/somnathdashs/Sentiment-Analysis/",
-            "ISAI": true,
-            "ModelUrl": "https://github.com/somnathdashs/Sentiment-Analysis/raw/main/Bert_uncased_model_Tiwtter.h5",
-            "CreatedDate": "2023-07-09 18:09:02",
+            "Uid": "dd991S45-f6a2-490b-9A3B-698b897y8798423",
+            "Title": "Show Desktop (A Window Software)",
+            "Des": "It happens with us most of the time that, when we are busy on some personal work on our laptop or computer and someone sudden visit or enter the room can see our screen with the personal window open. To hide all of it sudden we need to minimize the window. ",
+            "SsUrl": "https://raw.githubusercontent.com/somnathdashs/Show-Desktop/main/Image/Mouse.png",
+            "ImageUrl": "https://raw.githubusercontent.com/somnathdashs/Show-Desktop/main/Image/icon.ico",
+            "ReadmeUrl": "https://raw.githubusercontent.com/somnathdashs/Show-Desktop/main/README.md",
+            "GithubUrl": "https://github.com/somnathdashs/Show-Desktop/tree/main",
+            "ISAI": false,
+            "ModelUrl": "",
+            "CreatedDate": "2024-04-02 13:50:05",
             "UpdateDate": "No Update",
-            "Search": "A Deep Learning Model which used for Sentiment analysis. The Accuracy it reach upto 85%. It train on 25000 text data Sentiment Analysis with GUI"
+            "Search": "https://github.com/somnathdashs/Show-Desktop/tree/main https://raw.githubusercontent.com/somnathdashs/Show-Desktop/main/README.md https://raw.githubusercontent.com/somnathdashs/Show-Desktop/main/Image/icon.icoIt happens with us most of the time that, when we are busy on some personal work on our laptop or computer and someone sudden visit or enter the room can see our screen with the personal window open. To hide all of it sudden we need to minimize the window. https://raw.githubusercontent.com/somnathdashs/Show-Desktop/main/Image/Mouse.png"
         }
     ],
     "dd991b93-f6a2-490b-9A3B-698b897y8798314": [
@@ -39,7 +37,7 @@
             "Title": "Live Audio streaming",
             "Des": "This program help you to stream your live Audio from your indexed microphone in your local network, you can play the live streaming Audio from any device connected to your local network just by typing server ' http://[YOUR IP]:[YOUR PORT] ' in the web brower.",
             "ImageUrl": "https://raw.githubusercontent.com/somnathdashs/Live-Audio-Streaming/main/template/IMG_!.jpg",
-            "SsUrl": "https://raw.githubusercontent.com/somnathdashs/Live-Audio-Streaming/main/template/IMG_!.jpg",          
+            "SsUrl": "https://raw.githubusercontent.com/somnathdashs/Live-Audio-Streaming/main/template/IMG_!.jpg",
             "ReadmeUrl": "https://raw.githubusercontent.com/somnathdashs/Live-Audio-Streaming/main/README.md",
             "GithubUrl": "https://github.com/somnathdashs/Live-Audio-Streaming",
             "ISAI": false,
@@ -80,7 +78,8 @@
             "UpdateDate": "No Update",
             "Search": "Tic tac toe With AI\n An implementation of Minimax AI Algorithm on Tic-Tac-Toe (or Noughts and Crosses) game.<br><br>To solve games using AI, we will introduce the concept of a game tree followed by minimax algorithm. The different states of the game are represented by nodes in the game tree, very similar to the above planning problems. The idea is just slightly different. In the game tree, the nodes are arranged in levels that correspond to each player's turns in the game so that the \u201croot\u201d node of the tree (usually depicted at the top of the diagram) is the beginning position in the game. In tic-tac-toe, this would be the empty grid with no Xs or Os played yet. Under root, on the second level, there are the possible states that can result from the first player\u2019s moves, be it X or O. We call these nodes the \u201cchildren\u201d of the root node. https://raw.githubusercontent.com/somnathdashs/MINI-Tic-Tac-Toe-/main/preview/minimax_img.png,https://raw.githubusercontent.com/somnathdashs/MINI-Tic-Tac-Toe-/main/preview/tic-tac-toe-minimax-game-tree.png,https://raw.githubusercontent.com/somnathdashs/MINI-Tic-Tac-Toe-/main/preview/simplified-g-tree.png https://github.com/somnathdashs/Tic-Tac-Toe-with-AI/blob/main/README.md 2023-04-21 11:29:38No Update"
         }
-    ],"dd991b93-f6a2-490b-9a3b-698a40b44691": [
+    ],
+    "dd991b93-f6a2-490b-9a3b-698a40b44691": [
         {
             "Uid": "dd991b93-f6a2-490b-9a3b-698a40b44691",
             "Title": "Male and Female classification",
@@ -97,5 +96,3 @@
         }
     ]
 }
-
-

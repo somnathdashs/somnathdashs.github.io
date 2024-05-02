@@ -155,5 +155,21 @@
             "UpdateDate": "No Update",
             "Search": "2023-10-22 10:55:05 This program help you to stream your live Audio from your indexed microphone in your local network, you can play the live streaming Audio from any device connected to your local network just by typing server ' http://[YOUR IP]:[YOUR PORT] ' in the web brower. Live Audio streaming "
         }
+    ],
+    "dd991S45-f6a2-490b-9A3B-698b897y8798423": [
+        {
+            "Uid": "dd991S45-f6a2-490b-9A3B-698b897y8798423",
+            "Title": "Show Desktop (A Window Software)",
+            "Des": "It happens with us most of the time that, when we are busy on some personal work on our laptop or computer and someone sudden visit or enter the room can see our screen with the personal window open. To hide all of it sudden we need to minimize the window. ",
+            "SsUrl": "https://raw.githubusercontent.com/somnathdashs/Show-Desktop/main/Image/Mouse.png",
+            "ImageUrl": "https://raw.githubusercontent.com/somnathdashs/Show-Desktop/main/Image/icon.ico",          
+            "ReadmeUrl": "https://raw.githubusercontent.com/somnathdashs/Show-Desktop/main/README.md",
+            "GithubUrl": "https://github.com/somnathdashs/Show-Desktop/tree/main",
+            "ISAI": false,
+            "ModelUrl": "",
+            "CreatedDate": "2024-04-02 13:50:05",
+            "UpdateDate": "No Update",
+            "Search": "https://github.com/somnathdashs/Show-Desktop/tree/main https://raw.githubusercontent.com/somnathdashs/Show-Desktop/main/README.md https://raw.githubusercontent.com/somnathdashs/Show-Desktop/main/Image/icon.icoIt happens with us most of the time that, when we are busy on some personal work on our laptop or computer and someone sudden visit or enter the room can see our screen with the personal window open. To hide all of it sudden we need to minimize the window. https://raw.githubusercontent.com/somnathdashs/Show-Desktop/main/Image/Mouse.png"
+        }
     ]
 }

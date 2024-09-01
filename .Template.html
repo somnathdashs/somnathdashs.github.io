@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" class="motion-safe:scroll-smooth 2xl:text-[20px]">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Somnath Dash">
+	<meta name="twitter:site" content="@somnathdash1">
+	<meta name="twitter:creator" content="@somnathdash1">
+	<meta name="twitter:description" content="Just in way of devloping unique things">
+	<meta name="twitter:card" content="summary">
+	<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+	<link rel="sitemap" href="sitemap-index.xml">
+	<link rel="icon" href="/image/ico.jpg">
+	<!-- <ViewTransitions/> -->
+	<title>Somnath Dash</title>
+	<meta name="description" content="Full-Time Open-Sourcerer &amp; Aspiring Rebel">
+	<meta name="robots" content="index,follow">
+	<link rel="canonical" href="index.html">
+	<meta property="og:title" content="Somnath Dash">
+	<meta property="og:description" content="Full-Time Open-Sourcerer &amp; Aspiring Rebel">
+	<meta property="og:url" content="https://somnathdashs.github.io/">
+	<meta property="og:type" content="website">
+	<link rel="stylesheet" href="/_astro/flowerloader.css">
+
+	<script src="/H_F/script.js"></script>
+	<style>
+		.background-animate[data-astro-cid-xj7tktfn] {
+			background-size: 400%;
+			animation: AnimationName 4s ease infinite
+		}
+
+		@keyframes AnimationName {
+
+			0%,
+			to {
+				background-position: 0% 50%
+			}
+
+			50% {
+				background-position: 100% 50%
+			}
+		}
+	</style>
+	<link rel="stylesheet" href="/_astro/_page_.9DbcfNSt.css">
+</head>
+
+<body class="antialiased text-gray-900 dark:text-slate-300 tracking-tight bg-white dark:bg-slate-950">
+	<style>
+		html {
+			scroll-padding-top: 80px;
+			/* The header has 72px height and we add some padding */
+		}
+	</style>
+	<header
+		class="sticky top-0 z-40 flex-none mx-auto w-full bg-white md:bg-white/90 dark:bg-slate-950 dark:md:bg-slate-950/90 md:backdrop-blur-sm border-b dark:border-b-0"
+		id="HEAD__">
+		<div class="cell">
+			<div class="card">
+				<span class="flower-loader">Loading&#8230;</span>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section data-astro-cid-xj7tktfn="">
+			<div class="flex md:h-screen max-w-6xl mx-auto px-4 sm:px-6 md:-mt-20" data-astro-cid-xj7tktfn="">
+				<div class="m-auto py-12 md:py-20" data-astro-cid-xj7tktfn="">
+
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer id="FOOT__">
+		<div class="cell">
+			<div class="card">
+				<span class="flower-loader">Loading&#8230;</span>
+			</div>
+		</div>
+	</footer>
+
+	<script type="module">
+		function attachEvent(selector, event, fn) {
+			const matches = document.querySelectorAll(selector);
+			if (matches?.length > 0) {
+				for (const element of matches) {
+					element.addEventListener(event, () => {
+						fn(element);
+					}, false);
+				}
+			}
+		}
+
+		window.onload = () => {
+			attachEvent('[data-toggle-menu]', 'click', element => {
+				element.classList.toggle('expanded');
+				document.body.classList.toggle('overflow-hidden');
+				document.getElementById('menu')?.classList.toggle('hidden');
+			});
+		};
+
+		window.onpageshow = () => {
+			const element = document.querySelector('[data-toggle-menu]');
+			if (element) {
+				element.classList.remove('expanded');
+			}
+			document.body.classList.remove('overflow-hidden');
+			document.getElementById('menu')?.classList.add('hidden');
+		};
+	</script>
+</body>
+
+</html>

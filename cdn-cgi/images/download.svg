@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1025" height="1025" viewBox="0 0 1025 1025" xml:space="preserve">
+<desc>Created with Fabric.js 3.6.6</desc>
+<defs>
+</defs>
+<g transform="matrix(9.4 0 0 8.04 605.57 425.43)"  >
+<path style="stroke: rgb(0,0,0); stroke-width: 10; stroke-dasharray: ; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-62.2, -20.73)" d="m 20.013628 0 l 84.37401 0 l 0 0 c 11.053215 -1.04756605e-14 20.013626 9.282301 20.013626 20.7326 c 0 11.450296 -8.960411 20.7326 -20.013626 20.7326 l -84.37401 0 l 0 0 c -11.053222 0 -20.013628 -9.282303 -20.013628 -20.7326 c -5.2380687e-15 -11.450298 8.960406 -20.7326 20.013628 -20.7326 z" stroke-linecap="round" />
+</g>
+<g transform="matrix(0.29 0 0 0.29 213.42 421.42)"  >
+<g style=""   >
+		<g transform="matrix(33.33 0 0 33.33 -0.07 199.95)"  >
+<path style="stroke: rgb(28,39,76); stroke-width: 1.27; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 0.5;"  transform=" translate(-12, -18)" d="M 3 15 C 3 17.8284 3 19.2426 3.87868 20.1213 C 4.75736 21 6.17157 21 9 21 H 15 C 17.8284 21 19.2426 21 20.1213 20.1213 C 21 19.2426 21 17.8284 21 15" stroke-linecap="round" />
+</g>
+		<g transform="matrix(33.33 0 0 33.33 -0.05 -83.39)"  >
+<path style="stroke: rgb(28,39,76); stroke-width: 1.27; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;"  transform=" translate(-12, -9.5)" d="M 12 3 V 16 M 12 16 L 16 11.625 M 12 16 L 8 11.625" stroke-linecap="round" />
+</g>
+</g>
+</g>
+<g transform="matrix(2.81 0 0 2.81 869.98 423.92)" style=""  >
+		<text xml:space="preserve" font-family="'Open Sans', sans-serif" font-size="50" font-style="normal" font-weight="bold" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(3,3,3); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-182" y="15.71" style="white-space: pre; ">Download </tspan></text>
+</g>
+</svg>

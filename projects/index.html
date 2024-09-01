@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" class="motion-safe:scroll-smooth 2xl:text-[20px]">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Somnath Dash">
+    <meta name="twitter:site" content="@somnathdash1">
+    <meta name="twitter:creator" content="@somnathdash1">
+    <meta name="twitter:description" content="Just in way of devloping unique things">
+    <meta name="twitter:card" content="summary">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="sitemap" href="sitemap-index.xml">
+    <link rel="icon" href="/image/ico.jpg">
+    <!-- <ViewTransitions/> -->
+    <title>Somnath Dash</title>
+    <meta name="description" content="Full-Time Open-Sourcerer &amp; Aspiring Rebel">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="index.htm">
+    <meta property="og:title" content="Somnath Dash">
+    <meta property="og:description" content="Full-Time Open-Sourcerer &amp; Aspiring Rebel">
+    <meta property="og:url" content="https://somnathdashs.github.io/">
+    <meta property="og:type" content="website">
+    <script src="/H_F/script.js"></script>
+    <link rel="stylesheet" href="/_astro/flowerloader.css">
+
+
+    <style>
+        .background-animate[data-astro-cid-xj7tktfn] {
+            background-size: 400%;
+            animation: AnimationName 4s ease infinite
+        }
+
+        @keyframes AnimationName {
+
+            0%,
+            to {
+                background-position: 0% 50%
+            }
+
+            50% {
+                background-position: 100% 50%
+            }
+        }
+
+        /* Search bar */
+        .search-bar {
+            margin: 0 auto 30px;
+            max-width: 600px;
+            /* Adjust based on your design */
+        }
+
+        .search-bar input[type="text"] {
+            width: 100%;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 25px;
+            color: #0a0a0a;
+            font-weight: 650;
+            font-size: 1em;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            outline: none;
+        }
+
+        .search-bar input[type="text"]::placeholder {
+            color: #0a0a0a;
+            font-weight: 550;
+        }
+
+        .search-bar input[type="text"]:focus {
+            box-shadow: 0px 0px 15px rgba(212, 211, 211, 0.4);
+        }
+
+
+        .search-btn {
+            background: linear-gradient(to right, #f97316, #e11d48);
+            /* Matches your projects text gradient */
+            border: none;
+            border-radius: 50%;
+            color: white;
+            /* padding: 130%; */
+            font-size: 2em;
+            margin: 0 25px;
+            cursor: pointer;
+            outline: none;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            position: relative;
+            box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.3);
+
+            z-index: 10;
+        }
+
+
+
+        .search-btn:hover {
+            transform: translateY(-2px) scale(1.001);
+            /* Pop-off effect */
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+
+            /* Shadow to emphasize pop-off */
+        }
+    </style>
+    <link rel="stylesheet" href="/_astro/_page_.9DbcfNSt.css">
+</head>
+
+<body class="antialiased text-gray-900 dark:text-slate-300 tracking-tight bg-white dark:bg-slate-950">
+    <style>
+        html {
+            scroll-padding-top: 80px;
+            /* The header has 72px height and we add some padding */
+        }
+    </style>
+
+    <div id="HEAD__">
+        <div class="cell">
+            <div class="card">
+                <span class="flower-loader">Loading&#8230;</span>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section data-astro-cid-xj7tktfn="">
+            <div class="flex md:h-screen max-w-6xl mx-auto px-4 sm:px-6 md:-mt-20" data-astro-cid-xj7tktfn="">
+                <div class="m-auto py-12 md:py-20" data-astro-cid-xj7tktfn="">
+                    <header> <!-- TODO: Make title components -->
+                        <h1
+                            class="text-center text-4xl md:text-6xl font-bold leading-tighter tracking-tighter mb-8 md:mb-16 font-heading">
+                            Explore
+                            <span
+                                class="bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-secondary-500 pr-[0.025em] mr-[-0.025em]">Creations!
+                            </span>
+                        </h1>
+                    </header>
+
+                    <section>
+                        <div class="search-bar flex">
+                            <input type="text" id="search_txt" placeholder="Search projects...">
+                            <button id="search_btn"
+                                class="search-btn bg-gradient-to-r from-primary-500 to-secondary-500 pr-[0.025em] mr-[-0.025em]">&#x1F50D;</button>
+                        </div>
+                    </section>
+
+                    <section data-nosnippet="" id="Cards"
+                        class="mx-auto grid sm:gap-12 grid-cols-1 lg:grid-cols-2 sm:p-1 my-12 dark:text-white">
+                        <div class="cell">
+                            <div class="card">
+                                <span class="flower-loader">Loading&#8230;</span>
+                            </div>
+                        </div>
+
+                    </section>
+
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="FOOT__">
+        <div class="cell">
+            <div class="card">
+                <span class="flower-loader">Loading&#8230;</span>
+            </div>
+        </div>
+    </footer>
+
+
+    <script type="module">
+        import { projectsRef, onValue, add3Dots } from '/cdn-cgi/FB.js';
+        let ProjectsData;
+
+        // Using the imported reference and function
+        onValue(projectsRef, (snapshot) => {
+            ProjectsData = snapshot.val();
+
+            document.getElementById("Cards").innerHTML = "";
+
+            for (const key in ProjectsData) {
+                if (Object.prototype.hasOwnProperty.call(ProjectsData, key)) {
+                    const project_data = ProjectsData[key];
+                    let card_Text = "";
+                    if (project_data.cardtags) {
+                        const tags = project_data.cardtags.split(',');
+                        tags.forEach(tag => card_Text += `<span class="text-[10px] inline-flex items-center font-bold leading-sm px-1.5 text-black/70 dark:text-black rounded-lg bg-sky-100/90 dark:bg-sky-200">${tag}</span>`);
+                    }
+                    var project_widget = `</a><a href="/projects/View/?id=${key}"
+                            class="flex py-6 px-2 sm:p-6 bg-white dark:bg-black/20 sm:rounded-xl shadow-md dark:shadow-lg hover:shadow-xl dark:hover:sm:shadow-indigo-500/20 transition duration-500 dark:sm:border dark:border-slate-800">
+                            <div class="flex-initial flex-shrink-0 justify-center mr-2 sm:mr-3"> <img
+                                    src="${project_data.logoURL}" width="128" height="128" class=""> </div>
+                            <div class="flex flex-col justify-center my-3 mr-2 sm:mt-[-1px]">
+                                <div class="mb-0.5 text-2xl sm:text-3xl font-bold">${add3Dots(project_data.title, 17)}</div>
+                                <div
+                                    class="text-gray-700 dark:text-gray-200/90 text-lg sm:text-xl sm:leading-tight leading-tight">
+                                    ${add3Dots(project_data.subText, 50)}</div>
+                                <div class="flex flex-wrap gap-1.5 mt-3 sm:mt-3 opacity-90"> 
+                                ${card_Text}
+                                    </div>
+                            </div>
+                        </a>`
+                    document.getElementById("Cards").innerHTML += project_widget;
+
+                }
+            }
+
+
+
+
+        }, (errorObject) => {
+            console.log('The read failed: ' + errorObject.name);
+        });
+
+        document.getElementById("search_btn").onclick = onSearch;
+        document.getElementById("search_txt").onchange = onSearch;
+
+        function onSearch() {
+            const subtext = document.getElementById("search_txt").value;
+            document.getElementById("Cards").innerHTML = "";
+            for (const key in ProjectsData) {
+                if (Object.prototype.hasOwnProperty.call(ProjectsData, key)) {
+                    const project_data = ProjectsData[key];
+                    let card_Text = "";
+                    if (project_data.cardtags) {
+                        const tags = project_data.cardtags.split(',');
+                        tags.forEach(tag => card_Text += `<span class="text-[10px] inline-flex items-center font-bold leading-sm px-1.5 text-black/70 dark:text-black rounded-lg bg-sky-100/90 dark:bg-sky-200">${tag}</span>`);
+                    }
+                    var project_widget = `</a><a href="/projects/View/?id=${key}"
+                            class="flex py-6 px-2 sm:p-6 bg-white dark:bg-black/20 sm:rounded-xl shadow-md dark:shadow-lg hover:shadow-xl dark:hover:sm:shadow-indigo-500/20 transition duration-500 dark:sm:border dark:border-slate-800">
+                            <div class="flex-initial flex-shrink-0 justify-center mr-2 sm:mr-3"> <img
+                                    src="${project_data.logoURL}" width="128" height="128" class=""> </div>
+                            <div class="flex flex-col justify-center my-3 mr-2 sm:mt-[-1px]">
+                                <div class="mb-0.5 text-2xl sm:text-3xl font-bold">${add3Dots(project_data.title, 17)}</div>
+                                <div
+                                    class="text-gray-700 dark:text-gray-200/90 text-lg sm:text-xl sm:leading-tight leading-tight">
+                                    ${add3Dots(project_data.subText, 50)}</div>
+                                <div class="flex flex-wrap gap-1.5 mt-3 sm:mt-3 opacity-90"> 
+                                ${card_Text}
+                                    </div>
+                            </div>
+                        </a>`
+                    document.getElementById("Cards").innerHTML += project_widget;
+
+                }
+            }
+
+
+
+        }
+
+    </script>
+
+
+    <script type="module">
+        function attachEvent(selector, event, fn) {
+            const matches = document.querySelectorAll(selector);
+            if (matches?.length > 0) {
+                for (const element of matches) {
+                    element.addEventListener(event, () => {
+                        fn(element);
+                    }, false);
+                }
+            }
+        }
+
+        window.onload = () => {
+            attachEvent('[data-toggle-menu]', 'click', element => {
+                element.classList.toggle('expanded');
+                document.body.classList.toggle('overflow-hidden');
+                document.getElementById('menu')?.classList.toggle('hidden');
+            });
+        };
+
+        window.onpageshow = () => {
+            const element = document.querySelector('[data-toggle-menu]');
+            if (element) {
+                element.classList.remove('expanded');
+            }
+            document.body.classList.remove('overflow-hidden');
+            document.getElementById('menu')?.classList.add('hidden');
+        };
+    </script>
+</body>
+
+</html>

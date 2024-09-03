@@ -152,6 +152,28 @@
         .hiddens {
             display: none;
         }
+
+        /* Floating btn css */
+
+        .float {
+            position: fixed;
+            width: 140px;
+            height: 40px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #0C9;
+            text-decoration: none;
+            color: #FFF;
+            border-radius: 8px;
+            text-align: center;
+            padding-top: 15px;
+            box-shadow: 2px 2px 3px #999;
+        }
+
+
+        .my-float {
+            margin-top: 22px;
+        }
     </style>
     <div class="sticky top-0 z-40 flex-none mx-auto w-full bg-white md:bg-white/90 dark:bg-slate-950 dark:md:bg-slate-950/90 md:backdrop-blur-sm border-b dark:border-b-0"
         id="HEAD__">
@@ -166,6 +188,9 @@
         <section data-astro-cid-xj7tktfn="mx-auto" class="mx-auto" style="width: 80%;">
             <div class="flex md:h-screen max-w-6xl mx-auto px-4 sm:px-6 md:-mt-20" data-astro-cid-xj7tktfn="">
                 <div class="m-auto py-12 md:py-20" data-astro-cid-xj7tktfn="">
+                    <a id="sorc_code" class="float hiddens">
+                        Get Source Code
+                    </a>
                     <header class="flex flex-col items-center text-center px-4 sm:px-6 mb-40"> <img
                             src="https://cdn-icons-png.freepik.com/256/16000/16000950.png?semt=ais_hybrid" id="img"
                             width="224" height="224" class=" mb-3">
@@ -255,7 +280,8 @@
                         <nav id="tags"
                             class="flex flex-wrap gap-4 max-w-md justify-center mt-8 font-semibold text-xl text-primary-600 instapaper_ignore">
                         </nav>
-                        <p id="date-on-cretated" class="mt-3 fs-3" style="color: snow; font-weight: 650;">Date Create: </p>
+                        <p id="date-on-cretated" class="mt-3 fs-3" style="color: snow; font-weight: 650;">Date Create:
+                        </p>
                     </header>
 
                     <div id="ss">
@@ -355,17 +381,22 @@
             const Tags = String(data.tags).split(",");
             document.getElementById("tags").innerHTML = '';
             document.title = data.title + "  - by Somnath Dash"
-            document.getElementById("date-on-cretated").innerText="Date Created: "+new Date(data.datecreated).toLocaleString()
+            document.getElementById("date-on-cretated").innerText = "Date Created: " + new Date(data.datecreated).toLocaleString()
 
-            if (data.downloadURL != null && data.downloadURL !="" ) {
+            if (data.downloadURL != null && data.downloadURL != "") {
                 document.getElementById("download-btn").classList.remove("hiddens")
                 document.getElementById("download-btn").href = data.downloadURL
             }
-            if (data.githuburl != null && data.githuburl !="") {
+            if (data.githuburl != null && data.githuburl != "") {
                 document.getElementById("github-btn").classList.remove("hiddens")
                 document.getElementById("github-btn").href = data.githuburl
             }
-            if (data.playstoreURL!= null && data.playstoreURL !="") {
+            if (data.SourceCode) {
+                document.getElementById("sorc_code").classList.remove("hiddens");
+                document.href = data.SourceCode;
+
+            }
+            if (data.playstoreURL != null && data.playstoreURL != "") {
                 document.getElementById("playstore-btn").classList.remove("hiddens")
                 document.getElementById("playstore-btn").href = data.playstoreURL
             }

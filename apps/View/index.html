@@ -11,17 +11,19 @@
     <meta name="twitter:card" content="summary">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link rel="sitemap" href="sitemap-index.xml">
-    <link rel="icon" href="/image/ico.jpg"  type="image/x-icon"  >
+    <link rel="icon" href="/image/ico.jpg" type="image/x-icon">
     <!-- <ViewTransitions/> -->
     <title>Somnath Dash</title>
-    <meta name="description" content="Full-Time Open-Sourcerer &amp; Aspiring Rebel">
+    <meta name="description" content="">
     <meta name="robots" content="index,follow">
     <link rel="canonical" href="index.html">
     <meta property="og:title" content="Somnath Dash">
-    <meta property="og:description" content="Full-Time Open-Sourcerer &amp; Aspiring Rebel">
+    <meta property="og:description" content="">
     <meta property="og:url" content="https://somnathdashs.github.io/">
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="/astro/flowerloader.css">
+    <script src="/astro/tinymce_7.3.0/tinymce/js/tinymce/tinymce.min.js" referrerpolicy="origin"></script>
+
 
     <!-- <link href="/_astro/tinymce_7.3.0/tinymce/js/tinymce/tinymce.min.js"> -->
     <script src="/H_F/script.js"></script>
@@ -161,16 +163,42 @@
         .hiddens {
             display: none;
         }
+
+        /* Floating btn css */
+
+        .float {
+            position: fixed;
+            width: 140px;
+            height: 40px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #0C9;
+            text-decoration: none;
+            color: #FFF;
+            border-radius: 8px;
+            text-align: center;
+            padding-top: 15px;
+            box-shadow: 2px 2px 3px #999;
+        }
+
+
+        .my-float {
+            margin-top: 22px;
+        }
     </style>
 
 
     <main>
         <section data-astro-cid-xj7tktfn="mx-auto" class="mx-auto" style="width: 100%;">
-            <div class="flex md:h-screen max-w-6xl mx-auto px-4 sm:px-6 md:-mt-20" style="padding-top: 20px;" data-astro-cid-xj7tktfn="">
+            <div class="flex md:h-screen max-w-6xl mx-auto px-4 sm:px-6 md:-mt-20" style="padding-top: 20px;"
+                data-astro-cid-xj7tktfn="">
                 <div class="m-auto py-12 md:py-20" data-astro-cid-xj7tktfn="">
+                    <a id="sorc_code" class="float hiddens">
+                        Get Source Code
+                    </a>
                     <header class="flex flex-col items-center text-center px-4 sm:px-6 mb-40"> <img
-                            src="https://cdn-icons-png.freepik.com/256/16000/16000950.png" id="img"
-                            width="224" height="224" class=" mb-3">
+                            src="https://cdn-icons-png.freepik.com/256/16000/16000950.png" id="img" width="224"
+                            height="224" class=" mb-3">
                         <h1 class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading"
                             id="title"> </h1>
                         <h2 class="text-2xl md:text-lgl tracking-tight mb-8" id="subText"> </h2>
@@ -377,7 +405,12 @@
             document.getElementById("playstore-btn").href = data.playstoreURL
         }
 
-        console.log(data.screenshots);
+        if (data.SourceCode) {
+            document.getElementById("sorc_code").classList.remove("hiddens");
+            document.href=data.SourceCode;
+
+        }
+
         if (data.screenshots) {
             document.getElementById("ss").innerHTML = "";
             const urls = data.screenshots.split(',');

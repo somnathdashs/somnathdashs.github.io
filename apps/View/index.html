@@ -169,7 +169,7 @@
         .float {
             position: fixed;
             width: 140px;
-            height: 80px;
+            height: 50px;
             bottom: 40px;
             right: 40px;
             background-color: #0C9;
@@ -195,7 +195,7 @@
                 data-astro-cid-xj7tktfn="">
                 <div class="m-auto py-12 md:py-20" data-astro-cid-xj7tktfn="">
                     <a id="sorc_code" class="float hiddens">
-                        Get Source Code
+                        Source Code
                     </a>
                     <header class="flex flex-col items-center text-center px-4 sm:px-6 mb-40"> <img
                             src="https://cdn-icons-png.freepik.com/256/16000/16000950.png" id="img" width="224"
@@ -352,6 +352,19 @@
     var url = new URL(url_string);
     const Pid = url.searchParams.get("id");
 
+    // Function to create and add a meta tag to the head
+    function addMetaTag(name, content, property = false) {
+        const meta = document.createElement('meta');
+        if (property) {
+            meta.setAttribute('property', name);
+        } else {
+            meta.setAttribute('name', name);
+        }
+        meta.setAttribute('content', content);
+        document.head.appendChild(meta);
+    }
+
+
     document.querySelector('#share-button')
         .addEventListener('click', event => {
 
@@ -408,7 +421,7 @@
 
         if (data.SourceCode) {
             document.getElementById("sorc_code").classList.remove("hiddens");
-            document.href=data.SourceCode;
+            document.href = data.SourceCode;
 
         }
 
@@ -431,6 +444,39 @@
             }
 
         }
+
+        // Add basic meta tags
+        addMetaTag('description', data.subText);
+        addMetaTag('keywords', data.cardtags);
+
+        // Add Open Graph meta tags
+        addMetaTag('og:title', data.title, true);
+        addMetaTag('og:description', data.subText, true);
+        addMetaTag('og:image', data.logoURL, true);
+        addMetaTag('og:url', location.href, true);
+        addMetaTag('og:type', 'website', true);
+        addMetaTag('og:site_name', 'Your Website Name', true);
+
+        // Add Twitter Card meta tags
+        addMetaTag('twitter:card', data.logoURL);
+        addMetaTag('twitter:title', data.title);
+        addMetaTag('twitter:description', data.subText);
+        addMetaTag('twitter:image', 'https://example.com/image.jpg');
+        addMetaTag('twitter:url', location.href);
+        addMetaTag('twitter:site', '@somnath_dash1');
+
+        // Optional: Add Schema.org JSON-LD script tag
+        const script = document.createElement('script');
+        script.setAttribute('type', 'application/ld+json');
+        script.textContent = JSON.stringify({
+            "@context": "http://schema.org",
+            "@type": "WebPage",
+            "name": data.title,
+            "description": data.subText,
+            "url": location.href,
+            "image":data.logoURL
+        });
+        document.head.appendChild(script);
 
 
     })

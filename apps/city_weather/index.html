@@ -390,6 +390,7 @@
 
 
         Get_A_App_Data(Pid, (data) => {
+            console.log(data);            
             document.getElementById("title").innerText = data.title
             document.getElementById("subText").innerText = data.subText
             document.getElementById("Des").innerHTML = data.details_explain

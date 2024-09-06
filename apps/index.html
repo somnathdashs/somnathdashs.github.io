@@ -216,7 +216,7 @@
                         const tags = project_data.cardtags.split(',');
                         tags.forEach(tag => card_Text += `<span class="text-[10px] inline-flex items-center font-bold leading-sm px-1.5 text-black/70 dark:text-black rounded-lg bg-sky-100/90 dark:bg-sky-200">${tag}</span>`);
                     }
-                    var project_widget = `</a><a href="/apps/View/?id=${key}"
+                    var project_widget = `</a><a href="/apps/${project_data.title.replace(/\s+/g, '_').toLowerCase()}"
                             class="flex py-6 px-2 sm:p-6 bg-white dark:bg-black/20 sm:rounded-xl shadow-md dark:shadow-lg hover:shadow-xl dark:hover:sm:shadow-indigo-500/20 transition duration-500 dark:sm:border dark:border-slate-800">
                             <div class="flex-initial flex-shrink-0 justify-center mr-2 sm:mr-3"> <img style="border-radius:13px;"
                                     src="${project_data.logoURL}" width="128" height="128" class=""> </div>
@@ -258,7 +258,7 @@
                             const tags = project_data.cardtags.split(',');
                             tags.forEach(tag => card_Text += `<span class="text-[10px] inline-flex items-center font-bold leading-sm px-1.5 text-black/70 dark:text-black rounded-lg bg-sky-100/90 dark:bg-sky-200">${tag}</span>`);
                         }
-                        var project_widget = `</a><a href="/apps/View/?id=${key}"
+                        var project_widget = `</a><a href="/apps/${project_data.title.replace(/\s+/g, '_').toLowerCase()}"
                             class="flex py-6 px-2 sm:p-6 bg-white dark:bg-black/20 sm:rounded-xl shadow-md dark:shadow-lg hover:shadow-xl dark:hover:sm:shadow-indigo-500/20 transition duration-500 dark:sm:border dark:border-slate-800">
                             <div class="flex-initial flex-shrink-0 justify-center mr-2 sm:mr-3"> <img style="border-radius:13px;"
                                     src="${project_data.logoURL}" width="128" height="128" class=""> </div>

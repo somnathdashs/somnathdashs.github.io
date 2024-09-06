@@ -430,8 +430,8 @@ if (data.screenshots) {
 for (let index = 0; index < Tags.length; index++) {
     const element = Tags[index];
     if (element != null && element != undefined) {
-        const a = '<a href="#'+element+'"
-                        class="hover:text-primary-400 dark:text-primary-400 dark:hover:text-primary-200">'+element+'</a>';
+        const a = '<a href="#'+element+
+        '"class="hover:text-primary-400 dark:text-primary-400 dark:hover:text-primary-200">'+element+'</a>';
         document.getElementById("tags").innerHTML += a;
     }
 

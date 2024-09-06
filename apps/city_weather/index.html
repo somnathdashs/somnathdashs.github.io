@@ -395,7 +395,6 @@ document.getElementById("img").src = data.logoURL
 subText=data.subText
 const Tags = String(data.tags).split(",");
 document.getElementById("tags").innerHTML = '';
-document.title = data.title + "  - by Somnath Dash"
 document.getElementById("date-on-cretated").innerText = "Date Created: " + new Date(data.datecreated).toLocaleString()
 
 if (data.downloadURL != null && data.downloadURL != "") {

@@ -349,7 +349,7 @@ document.getElementById('menu')?.classList.add('hidden');
 };
 </script>
 <script type="module">
-import { Get_A_App_Data } from "/cdn-cgi/FB.js"
+import { Get_A_Project_Data } from "/cdn-cgi/FB.js"
 var url_string = location.href;
 const Pid = 'id_7e88782fgh4aa';
 var subText=""
@@ -387,7 +387,7 @@ document.querySelector('#share-button')
 })
 
 
-Get_A_App_Data(Pid, (data) => {
+Get_A_Project_Data(Pid, (data) => {
 document.getElementById("title").innerText = data.title
 document.getElementById("subText").innerText = data.subText
 document.getElementById("Des").innerHTML = data.details_explain

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Xappox - App Landing Page</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="icon" href="image/favicon.png" type="image/gif" sizes="16x16">
+	<link rel="stylesheet" type="text/css" href="css/vendor.bundle.css">
+	<link rel="stylesheet" type="text/css" href="css/style-without-font-style.css">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			line-height: 1.6;
+			margin: 0;
+			padding: 0;
+			background-color: #f4f4f4;
+		}
+
+		.container1 {
+			max-width: 800px;
+			margin: auto;
+			padding: 20px;
+			background: #ffffff;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+
+		h1,
+		h2 {
+			color: #333;
+		}
+
+		p {
+			color: #666;
+		}
+
+		img {
+			max-width: 100%;
+			height: auto;
+			margin-top: 10px;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+			padding: 5px;
+			background: #fff;
+		}
+
+		.center {
+			text-align: center;
+		}
+
+		ul {
+			list-style-type: disc;
+			padding-left: 20px;
+			margin-bottom: 20px;
+		}
+
+		.toc {
+			background-color: #e9ecef;
+			padding: 10px;
+			border-radius: 5px;
+			margin-bottom: 20px;
+		}
+
+		.toc a {
+			color: #007bff;
+			text-decoration: none;
+		}
+
+		.toc a:hover {
+			text-decoration: underline;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Preloader -->
+	<div id="preloader" class="grdnt-orange">
+		<div id="status">&nbsp;</div>
+	</div>
+	<!-- // -->
+
+	<!-- header -->
+	<header>
+		<!-- navbar -->
+		<nav id="navbar" class="navbar navbar-custom nav-light navbar-fixed-top" data-spy="affix" data-offset-top="70">
+			<div class="container">
+				<div class="row">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header page-scroll">
+						<button type="button" class="navbar-toggle" data-toggle="collapse"
+							data-target="#bs-example-navbar-collapse-1">
+							<i class="fa fa-bars"></i>
+						</button>
+						<a class="navbar-brand page-scroll logo-light" href="index.html"><img alt="" width="150"
+								src="image/logo.png"></a>
+						<a class="navbar-brand page-scroll logo-clr" href="index.html"><img alt=""
+								src="image/logo.png"></a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<div class="right-nav text-right">
+
+							<div class="nav-btn">
+								<a onclick="	downloadForPlatform();" class="btn grdnt-purple">Download Now</a>
+							</div>
+						</div>
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
+			</div>
+		</nav>
+		<!-- End navbar -->
+
+		<!-- banner -->
+		<div id="home" class="hero-single grdnt-orange light bg-trans-4">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-5">
+						<div class="intro-text grad-orange">
+							<strong style="font-weight: 650;" align="justify" class="h1">Mock 24x7 Help Guide - How to
+								Use</strong>
+						</div>
+					</div>
+					<div class="col-sm-7">
+						<div class="text-right img-pre">
+							<img alt="" width="450" src="image/3.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Banner -->
+
+	</header>
+	<!-- End header -->
+
+	<!--Blog  -->
+	<section class="sec-pad blog">
+		<div class="container1">
+			<div class="toc">
+				<h2>ON THIS PAGE</h2>
+				<ul>
+					<li><a href="#overview">Overview</a></li>
+					<li><a href="#generating-api-key">Generating Gemini API Key</a></li>
+					<li><a href="#using-api">Using the API in Mock 24x7</a></li>
+					<li><a href="#generating-questions">Generating Questions</a></li>
+				</ul>
+			</div>
+
+			<h2 id="overview">Overview</h2>
+			<p>This guide provides you with a detailed explanation of how to use the Mock 24x7 app to generate questions
+				using the Gemini API. Here’s a quick overview of the topics covered:</p>
+			<ul>
+				<li><strong>Generating Gemini API Key:</strong> Steps to obtain and copy the Gemini API key required for
+					the app.</li>
+				<li><strong>Using the API Key in Mock 24x7:</strong> How to input your API key in the app and proceed to
+					the main screen.</li>
+				<li><strong>Generating Questions:</strong> Entering topic details to generate questions for your
+					practice.</li>
+			</ul>
+
+			<h2 id="generating-api-key">1. Generating Gemini API Key</h2>
+			<p>The Gemini API is necessary to use the app. Mock 24x7 uses your Gemini API to generate questions. Note
+				that Gemini API is not available in some regions and also not for users below 18 years. Don’t worry, you
+				can use a VPN or your parent’s Google account to obtain the API.</p>
+
+			<h4>Step 1: Visit the Gemini API studio -</h4>
+			<p>You need to visit the Gemini API studio to generate your API key.</p>
+			<b class="h4"><a href="https://aistudio.google.com/app/apikey" target="_blank">Go to Gemini Studio</a></b>
+			<br>
+			<h4>Step 2: Agree to the Legal Notice and Click on Continue</h4>
+			<img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-51150.appspot.com/o/ScreenShort%2FMock%20247%20guid%2FScreenshot%202024-10-08%20130120.png?alt=media&token=d4ac4c6f-aedc-4170-83b0-c2506edc15dd"
+				alt="Agree and continue">
+
+			<h4>Step 3: Create API Key</h4>
+			<p>Click on the "Create API Key" button and follow the next steps.</p>
+			<img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-51150.appspot.com/o/ScreenShort%2FMock%20247%20guid%2FScreenshot%202024-10-08%20125638.png?alt=media&token=e45ac0ae-26c0-4287-8b6b-003d0f23217f"
+				alt="Create API Key">
+
+			<h4>Step 4: Create a New Project</h4>
+			<p>If you have an existing project, you can use it. Otherwise, create a new project.</p>
+			<img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-51150.appspot.com/o/ScreenShort%2FMock%20247%20guid%2FScreenshot%202024-10-08%20130230.png?alt=media&token=6efe5856-4fa6-4bd0-b377-9ad6c5f956ca"
+				alt="Create new project">
+
+			<h4>Step 5: Copy the API Key</h4>
+			<p>Once generated, copy your API key by clicking on the "Copy" button.</p>
+			<img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-51150.appspot.com/o/ScreenShort%2FMock%20247%20guid%2FScreenshot%202024-10-08%20125916.png?alt=media&token=3f1b59e9-7528-4eec-b258-5de325398264"
+				alt="Copy API Key">
+
+			<h2 id="using-api">2. Using the API in Mock 24x7</h2>
+			<p>After successfully generating and copying your API Key, go back to the app’s API Key screen. Paste the
+				key in the text field as shown below, then press "Next".</p>
+			<div class="center">
+				<img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-51150.appspot.com/o/ScreenShort%2FMock%20247%20guid%2Fimg-0.png?alt=media&token=bce0d128-4b19-416f-89ef-50fcc80316e7"
+					alt="Paste API Key" width="200">
+			</div>
+			<p>If the API is correct and active, you will enter the main screen. The app uses "Gemini 1.5 Flash".</p>
+			<p><a href="https://ai.google.dev/pricing" target="_blank">Know more about API limits and pricing</a></p>
+
+			<h2 id="generating-questions">3. Generating Questions</h2>
+			<p>Enter the required information such as Topic Name, Difficulty Level, and Number of Questions. Then press
+				"Generate" to create tests just for you.</p>
+			<img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-51150.appspot.com/o/ScreenShort%2FMock%20247%20guid%2FScreenshot%202024-10-08%20213704.png?alt=media&token=b54bd18e-bbb8-434c-aca8-ef756f7af986"
+				alt="Generate Questions">
+
+			<h2>Thank You for Using Mock 24x7!</h2>
+			<p>If you enjoy the app and find it helpful, don’t forget to Buy Me a Coffee!</p>
+			<p class="center">Made with 💖</p>
+		</div>
+	</section>
+	<!-- End blog -->
+
+	<!--Footer  -->
+	<footer class="footer-wrapper bg-gray pb-0  sec-pad">
+		<div class="container footer-content">
+			<div class="row">
+				<div class="row footer-widget">
+					<div class="col-md-3 col-sm-6 res-margin">
+						<a class="navbar-brand" href="index.html"><img alt="" src="image/logo.png"></a>
+						<div class="spce"></div>
+						<p class="h4">Helping in way to make everyone assecc to use AI to get prepared for their exams.
+						</p>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<h6 class="h3">Follow Me</h6>
+						<div class="spce"></div>
+						<ul>
+							<li><a target="_blank" href="https://www.linkedin.com/in/somnath-dash-1a5808246/">LinkedIn
+								</a></li>
+							<li><a target="_blank" href="https://x.com/somnath_dash1">Twitter</a></li>
+							<li><a target="_blank" href="https://www.github.com/somnathdashs">Github</a></li>
+							<li><a target="_blank" href="https://www.youtube.com/@ppythonparadise">YouTube</a></li>
+
+						</ul>
+					</div>
+				</div>
+				<div class="spce md"></div>
+				<div class="spce"></div>
+				<div class="copyright text-center">
+					Copyright © 2024 Mock 24x7. All Rights Reserved.
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+	<script src="js/vendorbundle.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -341,6 +341,7 @@
         var url_string = location.href;
         var url = new URL(url_string);
         const Pid = url.searchParams.get("id");
+        subText=""
 
         document.querySelector('#share-button')
             .addEventListener('click', event => {
@@ -354,9 +355,10 @@
                         // Title that occurs over
                         // web share dialog
                         title: document.title,
+                        text: subText,
 
                         // URL to share
-                        url: location.href
+                        url: "https://somnathdash.hitakhankhihomeohall.in/?id="+Pid+"&type=Projects"
                     }).then(() => {
                         console.log('Thanks for sharing!');
                     }).catch(err => {
@@ -376,6 +378,7 @@
         Get_A_Project_Data(Pid, (data) => {
             document.getElementById("title").innerText = data.title
             document.getElementById("subText").innerText = data.subText
+            subText=data.subText
             document.getElementById("Des").innerHTML = data.details_explain
             document.getElementById("img").src = data.logoURL
             const Tags = String(data.tags).split(",");

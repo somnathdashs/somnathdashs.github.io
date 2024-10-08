@@ -352,6 +352,7 @@
     var url_string = location.href;
     var url = new URL(url_string);
     const Pid = url.searchParams.get("id");
+    var subText=""
 
     // Function to create and add a meta tag to the head
     function addMetaTag(name, content, property = false) {
@@ -378,9 +379,10 @@
                     // Title that occurs over
                     // web share dialog
                     title: document.title,
+                    text:subText,
 
                     // URL to share
-                    url: location.href
+                    url: "https://somnathdash.hitakhankhihomeohall.in/?id="+Pid+"&type=Apps"
                 }).then(() => {
                     console.log('Thanks for sharing!');
                 }).catch(err => {
@@ -402,6 +404,7 @@
         document.getElementById("subText").innerText = data.subText
         document.getElementById("Des").innerHTML = data.details_explain
         document.getElementById("img").src = data.logoURL
+        subText=data.subText
         const Tags = String(data.tags).split(",");
         document.getElementById("tags").innerHTML = '';
         document.title = data.title + "  - by Somnath Dash"
@@ -422,7 +425,7 @@
 
         if (data.SourceCode) {
             document.getElementById("sorc_code").classList.remove("hiddens");
-            document.href = data.SourceCode;
+            document.getElementById("sorc_code").href = data.SourceCode;
 
         }
 

@@ -252,23 +252,28 @@ function downloadForPlatform() {
     const platform = navigator.platform.toLowerCase();
 
     // Define file URLs for different platforms
-    const windowsFile = "https://example.com/your-windows-file.exe";
-    const macFile = "https://example.com/your-mac-file.dmg";
-    const linuxFile = "https://example.com/your-linux-file.deb";
+    const windowsFile = "https://github.com/somnathdashs/Mock-24x7/releases/download/v2.0.0/Mock.24x7_Winx64_v2.0.0.zip";
+    // const macFile = "https://example.com/your-mac-file.dmg";
+    // const linuxFile = "https://example.com/your-linux-file.deb";
     const androidFile = "https://example.com/your-android-file.apk";
-    const iosFile = "https://example.com/your-ios-file.ipa";
+    // const iosFile = "https://example.com/your-ios-file.ipa";
 
     // Check platform
     if (platform.includes("win")) {
         window.location.href = windowsFile;
     } else if (platform.includes("mac")) {
-        window.location.href = macFile;
+        alert("Platform not supported for download.");
+        // window.location.href = macFile;
     } else if (platform.includes("linux")) {
-        window.location.href = linuxFile;
+        alert("Platform not supported for download.");
+        // window.location.href = linuxFile;
     } else if (/android/i.test(navigator.userAgent)) { // For Android devices
         window.location.href = androidFile;
+        
     } else if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) { // For iOS devices
-        window.location.href = iosFile;
+        // window.location.href = iosFile;
+        alert("Platform not supported for download.");
+
     } else {
         alert("Platform not supported for download.");
     }

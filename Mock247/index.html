@@ -1257,7 +1257,18 @@
 
 
 <script>
+	var url_string = location.href;
+	var url = new URL(url_string);
+	const share = url.searchParams.get("share");
+	if (share) {
+		navigator.share({
+			title: "Share Mock 24x7",
+			text: 'A Free AI generated mock test app available 24x7. Download "Mock 24x7" Now --By @somnathdashs (on Github)',
 
+			// URL to share
+			url: "https://somnathdashs.github.io/Mock247/"
+		})
+	}
 </script>
 
 </html>

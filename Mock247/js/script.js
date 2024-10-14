@@ -8,6 +8,17 @@
         $('#status').fadeOut();
         $('#preloader').delay(350).fadeOut('slow');
         $('body').delay(350).css({ 'overflow': 'visible' });
+        var url_string = location.href;
+        var url = new URL(url_string);
+        const share = url.searchParams.get("share");
+        // while (!Navigator.canShare()) {
+
+        // }
+        // if (share) {
+        //     $("#sharess").click()
+        // }
+
+
     })
 
 
@@ -269,7 +280,7 @@ function downloadForPlatform() {
         // window.location.href = linuxFile;
     } else if (/android/i.test(navigator.userAgent)) { // For Android devices
         window.location.href = androidFile;
-        
+
     } else if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) { // For iOS devices
         // window.location.href = iosFile;
         alert("Platform not supported for download.");

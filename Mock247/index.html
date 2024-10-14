@@ -101,6 +101,9 @@
 									<p class="large">Hurried for a test! Worry about mcq Quetions? Don't worry MOCK 24x7
 										is here for you to generate and prepared tests for you using AI.</p>
 									<div class="btn-holder">
+										<a href="https://whatsapp.com/channel/0029VaqvgQB77qVKGQJXyj0v" target="_blank" class="btn btn-" style="background-color: rgb(13, 229, 136);">Join Whatsapp, Stay Update</a>
+									</div>
+									<div class="btn-holder">
 										<a onclick="	downloadForPlatform();" class="btn btn-dark">Download
 											Now</a>
 									</div>
@@ -1211,6 +1214,7 @@
 		</div>
 	</section> -->
 	<!--  -->
+	<div id="sharess"></div>
 
 
 	<!-- Download-->
@@ -1248,27 +1252,47 @@
 		</div>
 	</footer>
 	<!-- End Footer -->
-
-	<!-- script -->
 	<script src="js/vendorbundle.js"></script>
-	<script src="js/script.js"></script>
 
 </body>
 
 
 <script>
-	var url_string = location.href;
-	var url = new URL(url_string);
-	const share = url.searchParams.get("share");
-	if (share) {
-		navigator.share({
-			title: "Share Mock 24x7",
-			text: 'A Free AI generated mock test app available 24x7. Download "Mock 24x7" Now --By @somnathdashs (on Github)',
+	$(document).ready(function() {
+    var url_string = location.href;
+    var url = new URL(url_string);
+    const share = url.searchParams.get("share");
 
-			// URL to share
-			url: "https://somnathdashs.github.io/Mock247/"
-		})
-	}
+    document.querySelector('#sharess')
+        .addEventListener('click', event => {
+            if (navigator.share) {
+                navigator.share({
+                    title: "Share Mock 24x7",
+                    text: 'A Free AI generated mock test app available 24x7. Download "Mock 24x7" Now --By @somnathdashs (on Github)',
+                    url: "https://somnathdashs.github.io/Mock247/"
+                }).then(() => {
+                    console.log('Thanks for sharing!');
+                }).catch(err => {
+                    console.log("Error while using Web share API:");
+                    console.log(err);
+                });
+            } else {
+                alert("Browser doesn't support this API !");
+            }
+        });
+
+    if (share) {
+        // Simulate a click if the URL parameter 'share' is present
+        $("#sharess").click();
+    }
+});
+
+
 </script>
+
+<!-- script -->
+<script src="js/script.js"></script>
+
+
 
 </html>

@@ -258,30 +258,53 @@
     })
 
 })(jQuery);
+function getOS() {
+    const userAgent = window.navigator.userAgent,
+        platform = window.navigator?.userAgentData?.platform || window.navigator.platform,
+        macosPlatforms = ['macOS', 'Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+        windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+        iosPlatforms = ['iPhone', 'iPad', 'iPod'];
+    let os = null;
+
+    if (macosPlatforms.indexOf(platform) !== -1) {
+        os = 'Mac OS';
+    } else if (iosPlatforms.indexOf(platform) !== -1) {
+        os = 'iOS';
+    } else if (windowsPlatforms.indexOf(platform) !== -1) {
+        os = 'Windows';
+    } else if (/Android/.test(userAgent)) {
+        os = 'Android';
+    } else if (/Linux/.test(platform)) {
+        os = 'Linux';
+    }
+
+    return os;
+}
+
 
 function downloadForPlatform() {
-    const platform = navigator.platform.toLowerCase();
+    const platform = getOS();
 
     // Define file URLs for different platforms
     const windowsFile = "https://github.com/somnathdashs/Mock-24x7/releases/download/v2.0.0/Mock.24x7_Winx64_v2.0.0.zip";
     // const macFile = "https://example.com/your-mac-file.dmg";
     // const linuxFile = "https://example.com/your-linux-file.deb";
-    const androidFile = "https://example.com/your-android-file.apk";
+    const androidFile = "https://github.com/somnathdashs/Mock-24x7/releases/download/v2.0.0/Mock_24x7_android_v2.0.0.apk";
     // const iosFile = "https://example.com/your-ios-file.ipa";
 
     // Check platform
-    if (platform.includes("win")) {
+    if (platform.includes("Windows")) {
         window.location.href = windowsFile;
-    } else if (platform.includes("mac")) {
+    } else if (platform.includes("Mac OS")) {
         alert("Platform not supported for download.");
         // window.location.href = macFile;
-    } else if (platform.includes("linux")) {
+    } else if (platform.includes("Linux")) {
         alert("Platform not supported for download.");
         // window.location.href = linuxFile;
-    } else if (/android/i.test(navigator.userAgent)) { // For Android devices
+    } else if (platform.includes("Android")) { // For Android devices
         window.location.href = androidFile;
 
-    } else if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) { // For iOS devices
+    } else if (platform.includes("iOS")) { // For iOS devices
         // window.location.href = iosFile;
         alert("Platform not supported for download.");
 

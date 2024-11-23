@@ -289,7 +289,7 @@ function downloadForPlatform() {
     const windowsFile = "https://github.com/somnathdashs/Mock-24x7/releases/download/v2.0.0/Mock.24x7_Winx64_v2.0.0.zip";
     // const macFile = "https://example.com/your-mac-file.dmg";
     // const linuxFile = "https://example.com/your-linux-file.deb";
-    const androidFile = "https://github.com/somnathdashs/Mock-24x7/releases/download/v2.1.1/Mock.24x7.v2.1.0.android.apk";
+    const androidFile = "https://github.com/somnathdashs/Mock-24x7/releases/download/v2.1.0/Mock.24x7.v2.1.1.android.apk";
     // const iosFile = "https://example.com/your-ios-file.ipa";
 
     // Check platform

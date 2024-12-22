@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Reset Redirect</title>
+</head>
+<body>
+    <script>
+        // Extract query parameters
+        const params = new URLSearchParams(window.location.search);
+        const userId = params.get('userId');
+        const secret = params.get('secret');
+
+        // Redirect to the custom scheme
+        window.location.href = `myapp://reset-password?userId=${userId}&secret=${secret}`;
+    </script>
+    <p>If you are not redirected, <a href="#">click here</a>.</p>
+</body>
+</html>

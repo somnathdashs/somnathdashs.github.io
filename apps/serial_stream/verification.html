@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Redirecting...</title>
+  <title>Open Serial Stream</title>
   <style>
     * {
       box-sizing: border-box;
@@ -23,6 +23,7 @@
 
     .container {
       text-align: center;
+      padding: 20px;
     }
 
     .spinner {
@@ -32,7 +33,7 @@
       width: 50px;
       height: 50px;
       animation: spin 1s linear infinite;
-      margin: 0 auto 20px auto;
+      margin: 0 auto 20px;
     }
 
     @keyframes spin {
@@ -43,21 +44,65 @@
     .loading-text {
       font-size: 1.2rem;
       color: #6b7280;
+      margin-bottom: 20px;
+    }
+
+    .open-button {
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 1rem;
+      background-color: #3b82f6;
+      color: #ffffff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    .open-button:hover {
+      background-color: #2563eb;
+    }
+
+    .fallback-text {
+      font-size: 1rem;
+      color: #4b5563;
+      margin: 20px 0;
+    }
+
+    .hidden {
+      display: none;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="spinner"></div>
-    <div class="loading-text">Loading...</div>
+    <div id="loading-screen">
+      <div class="spinner"></div>
+      <div class="loading-text">Loading...</div>
+    </div>
+
+    <div id="fallback-screen" class="hidden">
+      <div class="fallback-text">
+        If the app doesn't open, click the button below.
+      </div>
+      <button class="open-button" onclick="openApp()">Open Serial Stream</button>
+    </div>
   </div>
 
   <script>
+    function openApp() {
+      window.location.href = "serialstream://verify=true";
+    }
+
     window.onload = function () {
-      // Delay to let the user see the spinner briefly
+      // Try opening the app automatically
+      openApp();
+
+      // Show fallback message and button after 3 seconds
       setTimeout(() => {
-        window.location.href = "serialstream://verify=true";
-      }, 500);
+        document.getElementById("loading-screen").classList.add("hidden");
+        document.getElementById("fallback-screen").classList.remove("hidden");
+      }, 1500);
     };
   </script>
 </body>

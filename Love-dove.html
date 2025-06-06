@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Math Love Proposal 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    canvas {
+      border-radius: 20px;
+      background-color: white;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    }
+    .message {
+      margin-top: 20px;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      font-size: 1.3rem;
+      max-width: 90%;
+    }
+    .input-section {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+    .input-section input {
+      margin: 10px;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      width: 80%;
+      max-width: 300px;
+    }
+    .input-section button {
+      margin-top: 10px;
+      background: #ff007f;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .input-section button:hover {
+      background: #e60073;
+    }
+    .link-box {
+      margin-top: 15px;
+      background: #fff0f5;
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+<div id="inputUI" class="input-section">
+  <h2>💖 Create Your Math Proposal 💖</h2>
+  <input id="bfName" placeholder="Your Name (e.g., John)">
+  <input id="gfName" placeholder="Her Name (e.g., Emily)">
+  <button onclick="generateLink()">Generate Link</button>
+  <div id="linkBox" class="link-box" style="display:none;"></div>
+</div>
+
+<canvas id="heartCanvas" width="600" height="600" style="display:none;"></canvas>
+<div id="msg" class="message" style="display:none;"></div>
+
+<script>
+function generateLink() {
+  const bf = document.getElementById('bfName').value.trim();
+  const gf = document.getElementById('gfName').value.trim();
+  if (!bf || !gf) return alert("Please fill in both names.");
+
+  const encoded = btoa(JSON.stringify({ bf, gf }));
+  const url = location.origin + location.pathname + "?data=" + encoded;
+
+  document.getElementById("linkBox").style.display = "block";
+  document.getElementById("linkBox").innerText = "Copy & Send this link to your love:\n" + url;
+}
+
+// Drawing heart
+function drawHeart(ctx, k = 25.41, scale = 150, step = 0.01) {
+  ctx.clearRect(0, 0, 600, 600);
+  ctx.beginPath();
+  ctx.lineWidth = 2;
+
+  ctx.strokeStyle = "#ff007f";
+  ctx.moveTo(300, 300);
+
+  let x = -Math.sqrt(3);
+  while (x <= Math.sqrt(3)) {
+    let y = (Math.abs(x) ** (2/3)) + 0.9 * Math.sin(k * x) * Math.sqrt(3 - x * x);
+    let sx = x * scale + 300;
+    let sy = 300 - y * scale;
+    ctx.lineTo(sx, sy);
+    x += step;
+  }
+  ctx.stroke();
+}
+
+// If data param exists
+window.onload = () => {
+  const params = new URLSearchParams(window.location.search);
+  if (params.has("data")) {
+    document.getElementById("inputUI").style.display = "none";
+    document.getElementById("heartCanvas").style.display = "block";
+
+    const decoded = JSON.parse(atob(params.get("data")));
+    const { bf, gf } = decoded;
+
+    const msg = `Dear ${gf},\nThis is a mathematical proof of my love.\nFrom yours forever, ${bf} 💖`;
+    document.getElementById("msg").innerText = msg;
+    document.getElementById("msg").style.display = "block";
+
+    const ctx = document.getElementById("heartCanvas").getContext("2d");
+    drawHeart(ctx);
+  }
+};
+</script>
+
+</body>
+</html>

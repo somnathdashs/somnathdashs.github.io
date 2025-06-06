@@ -6,38 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     html, body {
-      height: 100%;
       margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      overflow: hidden;
     }
+
     canvas {
-      border-radius: 20px;
       background-color: white;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      z-index: 1;
     }
-    .message {
-      margin-top: 20px;
-      background: white;
+
+    .input-section, .message {
+      position: relative;
+      z-index: 2;
+      background: rgba(255,255,255,0.9);
       padding: 20px;
       border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      font-size: 1.3rem;
-      max-width: 90%;
-    }
-    .input-section {
-      background: white;
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      margin-top: 20px;
       text-align: center;
     }
+
     .input-section input {
       margin: 10px;
       padding: 10px;
@@ -46,6 +44,7 @@
       width: 80%;
       max-width: 300px;
     }
+
     .input-section button {
       margin-top: 10px;
       background: #ff007f;
@@ -56,15 +55,35 @@
       font-weight: bold;
       cursor: pointer;
     }
+
     .input-section button:hover {
       background: #e60073;
     }
+
     .link-box {
-      margin-top: 15px;
+      margin-top: 10px;
+      font-size: 0.95rem;
       background: #fff0f5;
       padding: 10px;
       border-radius: 10px;
-      font-size: 0.95rem;
+    }
+
+    .message {
+      font-size: 1.4rem;
+      white-space: pre-wrap;
+      max-width: 90%;
+    }
+
+    .emoji {
+      position: absolute;
+      font-size: 2rem;
+      animation: fall 5s linear infinite;
+      z-index: 0;
+    }
+
+    @keyframes fall {
+      0% { transform: translateY(-100px) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
     }
   </style>
 </head>
@@ -81,6 +100,10 @@
 <canvas id="heartCanvas" width="600" height="600" style="display:none;"></canvas>
 <div id="msg" class="message" style="display:none;"></div>
 
+<audio id="music" loop>
+  <source src="./song2.mp3" type="audio/mpeg">
+</audio>
+
 <script>
 function generateLink() {
   const bf = document.getElementById('bfName').value.trim();
@@ -91,30 +114,62 @@ function generateLink() {
   const url = location.origin + location.pathname + "?data=" + encoded;
 
   document.getElementById("linkBox").style.display = "block";
-  document.getElementById("linkBox").innerText = "Copy & Send this link to your love:\n" + url;
+  document.getElementById("linkBox").innerText = "💌 Copy & Send this link to your love:\n" + url;
 }
 
-// Drawing heart
-function drawHeart(ctx, k = 25.41, scale = 150, step = 0.01) {
+function drawHeart(ctx, onComplete) {
   ctx.clearRect(0, 0, 600, 600);
   ctx.beginPath();
   ctx.lineWidth = 2;
-
   ctx.strokeStyle = "#ff007f";
-  ctx.moveTo(300, 300);
 
   let x = -Math.sqrt(3);
-  while (x <= Math.sqrt(3)) {
-    let y = (Math.abs(x) ** (2/3)) + 0.9 * Math.sin(k * x) * Math.sqrt(3 - x * x);
-    let sx = x * scale + 300;
-    let sy = 300 - y * scale;
-    ctx.lineTo(sx, sy);
+  const scale = 150;
+  const k = 25.41;
+  let step = 0.01;
+
+  function animate() {
+    if (x > Math.sqrt(3)) {
+      ctx.stroke();
+      if (onComplete) onComplete();
+      return;
+    }
+
+    try {
+      let y = (Math.abs(x) ** (2 / 3)) + 0.9 * Math.sin(k * x) * Math.sqrt(3 - x ** 2);
+      let sx = x * scale + 300;
+      let sy = 300 - y * scale;
+      ctx.lineTo(sx, sy);
+    } catch {}
+
     x += step;
+    ctx.stroke();
+    requestAnimationFrame(animate);
   }
-  ctx.stroke();
+
+  animate();
 }
 
-// If data param exists
+function typeWriter(text, elementId, i = 0) {
+  if (i < text.length) {
+    document.getElementById(elementId).innerHTML += text.charAt(i);
+    setTimeout(() => typeWriter(text, elementId, i + 1), 50);
+  }
+}
+
+// Falling emojis
+function createEmojis() {
+  const emojis = ["💖", "💘", "💝", "😍", "💕"];
+  setInterval(() => {
+    let emoji = document.createElement("div");
+    emoji.className = "emoji";
+    emoji.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+    emoji.style.left = Math.random() * window.innerWidth + "px";
+    document.body.appendChild(emoji);
+    setTimeout(() => emoji.remove(), 6000);
+  }, 400);
+}
+
 window.onload = () => {
   const params = new URLSearchParams(window.location.search);
   if (params.has("data")) {
@@ -124,12 +179,22 @@ window.onload = () => {
     const decoded = JSON.parse(atob(params.get("data")));
     const { bf, gf } = decoded;
 
-    const msg = `Dear ${gf},\nThis is a mathematical proof of my love.\nFrom yours forever, ${bf} 💖`;
-    document.getElementById("msg").innerText = msg;
-    document.getElementById("msg").style.display = "block";
-
     const ctx = document.getElementById("heartCanvas").getContext("2d");
-    drawHeart(ctx);
+
+    const message = `Dear ${gf},\n\nThis is a mathematical proof of my love.\n\nForever yours,\n${bf} 💘`;
+
+    createEmojis();
+    drawHeart(ctx, () => {
+      document.getElementById("msg").style.display = "block";
+      typeWriter(message, "msg");
+    });
+
+    // Auto-play music
+    const music = document.getElementById("music");
+    music.volume = 0.4;
+    music.play().catch(() => {
+      document.body.addEventListener("click", () => music.play(), { once: true });
+    });
   }
 };
 </script>

@@ -1,0 +1,1957 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Serial Stream - Free TV Serials & Web Series Streaming App | Android TV & Phone</title>
+    <meta name="description"
+        content="Download Serial Stream for free! Universal Android APK for phones, tablets, and Android TV. Stream unlimited TV serials and web series. Buffer-free playback, AI recommendations, and secure streaming. No subscription required.">
+    <meta name="keywords"
+        content="free streaming app, TV serials, web series, Android app, Android TV, universal APK, free entertainment, streaming platform, serial streaming, mobile streaming, free TV shows, web series app, Anupamaa, Yeh Rishta Kya Kehlata Hai, Taarak Mehta Ka Ooltah Chashmah, Kumkum Bhagya, Kundali Bhagya, Ghum Hai Kisikey Pyaar Meiin, Naagin, Bigg Boss, Khatron Ke Khiladi, Indian Idol, Kaun Banega Crorepati, Saath Nibhaana Saathiya, Balika Vadhu, Kasautii Zindagii Kay, Bade Achhe Lagte Hain, Mahabharat, Ramayan, Shaktimaan, CID, Crime Patrol, Savdhaan India, Bhabiji Ghar Par Hain, The Kapil Sharma Show, Pavitra Rishta, Devon Ke Dev Mahadev, Diya Aur Baati Hum, Sasural Simar Ka, Patiala Babes, Ishq Subhan Allah, Yeh Hai Mohabbatein, Ishqbaaaz, Qubool Hai, Pyaar Ka Dard Hai Meetha Meetha Pyaara Pyaara, Ek Duje Ke Vaaste, Miley Jab Hum Tum, Dill Mill Gayye, Kasamh Se, Uttaran, Jodha Akbar, Maharana Pratap, Chandragupta Maurya, Porus, Siya Ke Ram, Chandrakanta, Nazar, Nazar 2, Nazar 3, Nazar 4, Nazar 5, Nazar 6, Nazar 7, Nazar 8, Nazar 9, Nazar 10, Nazar 11, Nazar 12, Nazar 13, Nazar 14, Nazar 15, Nazar 16, Nazar 17, Nazar 18, Nazar 19, Nazar 20">
+    <meta name="author" content="Serial Stream">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Serial Stream - Universal Android Streaming App">
+    <meta property="og:description"
+        content="Your ultimate free streaming app with universal Android APK. Works on phones, tablets, and Android TV. Stream all TV serials and web series effortlessly!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://somnathdashs.github.io/serial_stream/">
+    <meta property="og:image" content="/serial_stream/ss/logo.png">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Serial Stream - Universal Android Streaming App">
+    <meta name="twitter:description"
+        content="Stream unlimited TV serials and web series for free! One APK for Android phones, tablets & Android TV!">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/serial_stream/ss/logo.png">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-color: #6366f1;
+            --secondary-color: #8b5cf6;
+            --accent-color: #f59e0b;
+            --success-color: #10b981;
+            --dark-bg: #0f172a;
+            --card-bg: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #cbd5e1;
+            --gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            --gradient-accent: linear-gradient(135deg, #f59e0b 0%, #f97316 100%);
+            --shadow-primary: 0 10px 40px rgba(99, 102, 241, 0.3);
+            --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--dark-bg);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header - Enhanced Responsiveness */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 23, 42, 0.9);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            position: relative;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            z-index: 1001;
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+            margin-right: 0.5rem;
+            border-radius: 8px;
+        }
+
+        .logo i {
+            margin-right: 0.5rem;
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+            background: rgba(99, 102, 241, 0.1);
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+            z-index: 1001;
+        }
+
+        .mobile-menu-toggle:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            background: radial-gradient(ellipse at center, rgba(99, 102, 241, 0.1) 0%, transparent 70%);
+        }
+
+        .hero-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding-top: 5rem;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(99, 102, 241, 0.1);
+            color: var(--primary-color);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(99, 102, 241, 0.2);
+        }
+
+        .hero h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 2vw, 1.3rem);
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary,
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: var(--gradient-primary);
+            color: white;
+            box-shadow: var(--shadow-primary);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 50px rgba(99, 102, 241, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-primary);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--primary-color);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 5rem 0;
+            position: relative;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-title p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-card);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--gradient-primary);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-primary);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .feature-card h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .feature-card p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* About Section */
+        .about {
+            padding: 5rem 0;
+            background: rgba(99, 102, 241, 0.05);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: var(--card-bg);
+            border-radius: 15px;
+        }
+
+        .stat-number {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: block;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .about-image {
+            text-align: center;
+        }
+
+        .about-screenshot {
+            width: 300px;
+            height: 600px;
+            background: linear-gradient(145deg, #1e293b, #334155);
+            border-radius: 35px;
+            padding: 15px;
+            box-shadow: 0 25px 80px rgba(0, 0, 0, 0.6);
+            position: relative;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            margin: 0 auto;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .about-screenshot:hover {
+            transform: translateY(-10px);
+        }
+
+        .about-screenshot::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 5px;
+            background: #64748b;
+            border-radius: 3px;
+        }
+
+        .about-screenshot::after {
+            content: '';
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            width: 10px;
+            height: 10px;
+            background: #4ade80;
+            border-radius: 50%;
+        }
+
+        .about-screen {
+            width: 100%;
+            height: calc(100% - 30px);
+            margin-top: 30px;
+            border-radius: 25px;
+            overflow: hidden;
+            position: relative;
+            background: #000;
+        }
+
+        .about-screen img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 25px;
+        }
+
+        /* Screenshots Section - Enhanced Model */
+        .screenshots {
+            padding: 5rem 0;
+            background: rgba(139, 92, 246, 0.05);
+        }
+
+        .screenshot-showcase {
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .phone-mockup-container {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 3rem 0;
+            flex-wrap: wrap;
+        }
+
+        .phone-mockup {
+            width: 300px;
+            height: 600px;
+            background: linear-gradient(145deg, #1e293b, #334155);
+            border-radius: 35px;
+            padding: 15px;
+            box-shadow: 0 25px 80px rgba(0, 0, 0, 0.6);
+            position: relative;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .phone-mockup:hover {
+            transform: translateY(-10px);
+        }
+
+        .phone-mockup::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 5px;
+            background: #64748b;
+            border-radius: 3px;
+        }
+
+        .phone-mockup::after {
+            content: '';
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            width: 10px;
+            height: 10px;
+            background: #4ade80;
+            border-radius: 50%;
+        }
+
+        .screen {
+            width: 100%;
+            height: calc(100% - 30px);
+            margin-top: 30px;
+            border-radius: 25px;
+            overflow: hidden;
+            position: relative;
+            background: #000;
+        }
+
+        .screen img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 25px;
+        }
+
+        .screen-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            padding: 2rem 1.5rem 1.5rem;
+            color: white;
+        }
+
+        .screen-overlay h4 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .screen-overlay p {
+            font-size: 0.85rem;
+            opacity: 0.9;
+            line-height: 1.4;
+        }
+
+        /* Screenshot Navigation */
+        .screenshot-nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .nav-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .nav-dot.active {
+            background: var(--primary-color);
+            border-color: rgba(99, 102, 241, 0.3);
+            transform: scale(1.2);
+        }
+
+        .nav-dot:hover {
+            background: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Screenshot Features */
+        .screenshot-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .screenshot-feature {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .screenshot-feature:hover {
+            transform: translateY(-5px);
+        }
+
+        .screenshot-feature i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .screenshot-feature h4 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .screenshot-feature p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        /* Universal APK Section */
+        .download {
+            padding: 5rem 0;
+        }
+
+        .universal-apk-card {
+            background: var(--card-bg);
+            padding: 3rem;
+            border-radius: 30px;
+            box-shadow: var(--shadow-card);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            max-width: 900px;
+            margin: 0 auto 3rem;
+        }
+
+        .universal-apk-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(from 0deg, transparent, var(--primary-color), transparent);
+            animation: rotate 20s linear infinite;
+            z-index: -1;
+        }
+
+        .universal-apk-card::after {
+            content: '';
+            position: absolute;
+            inset: 2px;
+            background: var(--card-bg);
+            border-radius: 28px;
+            z-index: -1;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .universal-badge {
+            display: inline-block;
+            background: var(--gradient-accent);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 25px rgba(245, 158, 11, 0.3);
+        }
+
+        .device-icons {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .device-icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+
+        .device-icon:hover {
+            opacity: 1;
+            transform: scale(1.05);
+        }
+
+        .device-icon-circle {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            box-shadow: var(--shadow-primary);
+        }
+
+        .device-icon-label {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+
+        .download-main {
+            margin: 3rem 0 2rem;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.5rem 3rem;
+            background: var(--gradient-primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-primary);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 60px rgba(99, 102, 241, 0.4);
+        }
+
+        .download-info {
+            margin-top: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        /* Version History Section - Enhanced Responsiveness */
+        .version-history {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-top: 3rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        .version-history h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .version-history-toggle {
+            background: var(--primary-color);
+            border: none;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            margin-left: auto;
+            white-space: nowrap;
+        }
+
+        .version-history-toggle:hover {
+            background: var(--secondary-color);
+        }
+
+        .version-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin-bottom: 1rem;
+            border-left: 4px solid var(--primary-color);
+            width: 100%;
+        }
+
+        .version-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .version-number {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            color: var(--primary-color);
+            font-size: 1.1rem;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .version-date {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            flex-shrink: 0;
+        }
+
+        .version-notes {
+            list-style: none;
+            width: 100%;
+        }
+
+        .version-notes li {
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            word-wrap: break-word;
+        }
+
+        .version-notes li i {
+            color: var(--success-color);
+            margin-top: 0.2rem;
+            flex-shrink: 0;
+        }
+
+        .version-history-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            width: 100%;
+        }
+
+        .version-history-content.expanded {
+            max-height: 1000px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--card-bg);
+            padding: 3rem 0 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section ul li a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-secondary);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            justify-content: center;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background: rgba(99, 102, 241, 0.1);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color);
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Screenshot Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 10000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(10px);
+        }
+
+        .modal-content {
+            position: relative;
+            margin: 2% auto;
+            max-width: 95%;
+            max-height: 95%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content img {
+            max-width: 100%;
+            max-height: 90vh;
+            object-fit: contain;
+            border-radius: 10px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 10001;
+        }
+
+        .close:hover {
+            opacity: 0.7;
+        }
+
+        /* Enhanced Responsive Design */
+        @media (max-width: 768px) {
+
+            /* Header Responsiveness */
+            .nav-links {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                background: var(--dark-bg);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+                display: none;
+                z-index: 999;
+            }
+
+            .nav-links.show {
+                display: flex !important;
+            }
+
+            .nav-links a {
+                font-size: 1.5rem;
+                padding: 1rem 2rem;
+                border-radius: 15px;
+                text-align: center;
+                min-width: 200px;
+            }
+
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            .logo {
+                font-size: 1.5rem;
+            }
+
+            .logo img {
+                width: 35px;
+                height: 35px;
+            }
+
+            /* Content adjustments */
+            .hero-content {
+                padding-top: 8rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 3rem;
+            }
+
+            .device-icons {
+                gap: 2rem;
+            }
+
+            .phone-mockup-container {
+                flex-direction: column;
+                align-items: center;
+                gap: 3rem;
+            }
+
+            .phone-mockup,
+            .about-screenshot {
+                width: 280px;
+                height: 550px;
+            }
+
+            .screenshot-features {
+                grid-template-columns: 1fr;
+            }
+
+            /* Version History Mobile Fixes */
+            .version-history {
+                padding: 1.5rem;
+                margin: 2rem 0;
+            }
+
+            .version-history h3 {
+                font-size: 1.3rem;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+
+            .version-history-toggle {
+                margin-left: 0;
+                align-self: flex-start;
+            }
+
+            .version-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+
+            .version-number {
+                font-size: 1rem;
+                min-width: unset;
+            }
+
+            .version-date {
+                font-size: 0.8rem;
+            }
+
+            .version-notes li {
+                font-size: 0.85rem;
+                margin-bottom: 0.75rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 2rem;
+            }
+
+            .universal-apk-card {
+                padding: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .logo {
+                font-size: 1.3rem;
+            }
+
+            .logo img {
+                width: 30px;
+                height: 30px;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .feature-card {
+                padding: 2rem;
+            }
+
+            .device-icon-circle {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+            }
+
+            .download-btn {
+                padding: 1.2rem 2rem;
+                font-size: 1rem;
+            }
+
+            .phone-mockup,
+            .about-screenshot {
+                width: 260px;
+                height: 520px;
+            }
+
+            /* Version History Extra Small Screen */
+            .version-history {
+                padding: 1rem;
+            }
+
+            .version-history h3 {
+                font-size: 1.2rem;
+            }
+
+            .version-item {
+                padding: 1rem;
+            }
+
+            .version-notes li {
+                font-size: 0.8rem;
+            }
+
+            .stats {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        /* Scroll animations */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease;
+        }
+
+        .scroll-reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <div id="logo-container"></div>
+                <span id="app-name">Serial Stream</span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#screenshots">Screenshots</a></li>
+                <li><a href="#download">Download</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content fade-in-up">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i> <span id="hero-badge-text">Universal Android APK</span>
+                </div>
+                <h1 id="hero-title">Welcome to Serial Stream</h1>
+                <p class="hero-subtitle" id="hero-subtitle"></p>
+                <div class="cta-buttons">
+                    <a href="#download" class="btn-primary">
+                        <i class="fas fa-download"></i>
+                        <span id="download-btn-text">Download Universal APK</span>
+                    </a>
+                    <a href="#screenshots" class="btn-secondary" onclick="scrollToScreenshots()">
+                        <i class="fas fa-images"></i>
+                        View Screenshots
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-title scroll-reveal">
+                <h2>Powerful Universal Features</h2>
+                <p>Experience seamless streaming with our intelligent APK that adapts to any Android device</p>
+            </div>
+            <div class="features-grid" id="features-grid"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text scroll-reveal">
+                    <h2 id="about-title">About Serial Stream</h2>
+                    <div id="about-description"></div>
+                    <div class="stats" id="stats-grid"></div>
+                </div>
+                <div class="about-image scroll-reveal">
+                    <div class="about-screenshot" onclick="showAboutScreenshot()">
+                        <div class="about-screen">
+                            <img id="about-screenshot-img" src="" alt="Serial Stream Screenshot" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section - Enhanced Model -->
+    <section id="screenshots" class="screenshots">
+        <div class="container">
+            <div class="section-title scroll-reveal">
+                <h2>Experience the Interface</h2>
+                <p>See how our intelligent APK adapts to different Android devices and provides the best streaming
+                    experience</p>
+            </div>
+
+            <div class="screenshot-showcase scroll-reveal">
+                <!-- Phone Mockups -->
+                <div class="phone-mockup-container" id="phone-mockups"></div>
+
+                <!-- Navigation Dots -->
+                <div class="screenshot-nav" id="screenshot-nav"></div>
+            </div>
+
+            <!-- Screenshot Features -->
+            <div class="screenshot-features scroll-reveal">
+                <div class="screenshot-feature">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h4>Mobile Optimized</h4>
+                    <p>Perfect touch interface designed for smartphones with intuitive navigation and smooth gestures.
+                    </p>
+                </div>
+                <div class="screenshot-feature">
+                    <i class="fas fa-tv"></i>
+                    <h4>TV Ready</h4>
+                    <p>Big screen experience with remote control support and living room-friendly interface design.</p>
+                </div>
+                <div class="screenshot-feature">
+                    <i class="fas fa-palette"></i>
+                    <h4>Adaptive Design</h4>
+                    <p>Automatically adjusts layout, colors, and controls based on your device type and screen size.</p>
+                </div>
+                <div class="screenshot-feature">
+                    <i class="fas fa-search"></i>
+                    <h4>Smart Discovery</h4>
+                    <p>Intelligent content discovery with categories, search, and personalized recommendations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Universal APK Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <div class="section-title scroll-reveal">
+                <h2>One APK, All Devices</h2>
+                <p>Download our intelligent universal APK that automatically adapts to any Android device</p>
+            </div>
+
+            <div class="universal-apk-card scroll-reveal">
+                <div class="universal-badge">
+                    <i class="fas fa-magic"></i> <span id="current-version"></span>
+                </div>
+
+                <h3
+                    style="font-family: 'Poppins', sans-serif; font-size: 2rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-primary);">
+                    Intelligent Multi-Device Support
+                </h3>
+
+                <p
+                    style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Our smart APK automatically detects your device type and optimizes the interface and performance
+                    accordingly. No need for separate downloads!
+                </p>
+
+                <div class="device-icons" id="device-icons"></div>
+
+                <div class="download-main">
+                    <a href="" id="download-link" class="download-btn">
+                        <i class="fab fa-android"></i>
+                        <span>Download Universal APK</span>
+                        <span style="font-size: 0.9rem; font-weight: 500;" id="file-size"></span>
+                    </a>
+                </div>
+
+                <div class="download-info">
+                    <p><i class="fas fa-check-circle" style="color: #10b981;"></i> <strong>100% Free</strong> • No Ads •
+                        No Registration Required</p>
+                    <p><i class="fas fa-shield-alt" style="color: #10b981;"></i> Safe & Secure • Malware-Free • Privacy
+                        Protected</p>
+                </div>
+            </div>
+
+            <!-- Version History -->
+            <div class="version-history scroll-reveal">
+                <h3>
+                    <i class="fas fa-history"></i>
+                    Version History
+                    <button class="version-history-toggle" onclick="toggleVersionHistory()">
+                        View All Versions
+                    </button>
+                </h3>
+
+                <div class="version-history-content" id="versionHistoryContent"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo" style="margin-bottom: 1rem;">
+                        <div id="footer-logo-container"></div>
+                        Serial Stream
+                    </div>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">Your ultimate universal streaming app
+                        for all Android devices. One APK, endless entertainment across phones, tablets, and Android TV.
+                    </p>
+                    <div class="social-links">
+                        <!-- <a href="#" style="text-decoration: none;"><i class="fab fa-facebook-f"></i></a> -->
+                        <a href="https://t.me/serial_stream" style="text-decoration: none;"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>App Features</h3>
+                    <ul>
+                        <li><a href="#features">Universal Compatibility</a></li>
+                        <li><a href="#features">Adaptive UI</a></li>
+                        <li><a href="#download">Better,Smooth,Buffer-free PLayer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Supported Devices</h3>
+                    <ul>
+                        <li><a href="#download">Android Phones</a></li>
+                        <li><a href="#download">Android Tablets</a></li>
+                        <li><a href="#download">Android TV</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>How?</h3>
+                    <ul>
+                        <li><a href="https://github.com/somnathdashs/Serial_Stream/">Github Learn More</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Serial Stream. All rights reserved. Universal Android streaming for everyone.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Screenshot Modal -->
+    <div id="screenshotModal" class="modal" onclick="hideScreenshot()">
+        <span class="close" onclick="hideScreenshot()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Screenshot">
+        </div>
+    </div>
+
+    <script>
+        // App Data Configuration - Easy to update JSON structure
+        const APP_DATA = {
+            app: {
+                name: "Serial Stream",
+                tagline: "Universal Android APK",
+                version: "(STABLE) v3.5.0",
+                downloadUrl: "https://github.com/somnathdashs/Serial_Stream/releases/download/v3.5.0/Serial.StreamV3.5.0.apk",
+                fileSize: "(60.9 MB)",
+                logoUrl: "/serial_stream/ss/logo.png" // Logo URL from JSON
+            },
+            hero: {
+                badge: "Universal Android APK",
+                title: "Welcome to Serial Stream",
+                subtitle: "Your ultimate free Android streaming app with <strong>universal APK compatibility</strong>. Stream all TV serials and web series effortlessly on Android phones, tablets, and Android TV with a single download. <strong>Your go-to app for endless entertainment—anytime, anywhere.</strong>",
+                downloadButtonText: "Download Universal APK"
+            },
+            about: {
+                title: "About Serial Stream",
+                description: [
+                    "Serial Stream revolutionizes entertainment with our <strong>universal Android APK</strong> that works seamlessly across all your Android devices! With intelligent UI adaptation and device-specific optimizations, we ensure your favorite shows are perfectly presented whether you're on your phone, tablet, or Android TV.",
+                    "Our platform brings you a vast library of TV serials and web series from various genres, an intuitive interface that automatically adapts to your device, and the freedom to watch anytime, anywhere, without subscriptions or hidden costs."
+                ]
+            },
+            stats: [
+                { number: "2K+", label: "Active Users" },
+                { number: "1K+", label: "TV Shows & Series" },
+                { number: "3", label: "Device Types Supported" },
+                { number: "100%", label: "Free Forever" }
+            ],
+            features: [
+                {
+                    icon: "fas fa-bolt",
+                    title: "Seamless Streaming",
+                    description: "Enjoy buffer-free playback powered by adaptive streaming technology. Automatically optimizes for your device's screen size and capabilities."
+                },
+                {
+                    icon: "fas fa-mobile-alt",
+                    title: "Universal Compatibility",
+                    description: "One APK works perfectly on Android phones, tablets, and Android TV. Intelligent UI that adapts to your device's form factor automatically."
+                },
+                {
+                    icon: "fas fa-shield-alt",
+                    title: "Secure & Private",
+                    description: "Built with the latest encryption and privacy protection. Stream with confidence knowing your data is secure across all your devices."
+                }
+            ],
+            devices: [
+                { icon: "fas fa-mobile-alt", label: "Android Phone" },
+                { icon: "fas fa-tablet-alt", label: "Android Tablet" },
+                { icon: "fas fa-tv", label: "Android TV" }
+            ],
+            screenshots: [
+                {
+                    url: "/serial_stream/ss/2.png",
+                    title: "TV Channel Browser",
+                    description: "Browse through various TV channels like Zee TV, Colors, MTV with our beautiful grid layout"
+                },
+                {
+                    url: "/serial_stream/ss/3.png",
+                    title: "Episode Player",
+                    description: "Watch episodes with our full-screen player featuring Vasudha and other popular serials"
+                },
+                {
+                    url: "/serial_stream/ss/4.png",
+                    title: "Episodes Section",
+                    description: "Explore content organized by date (Latest always on top)"
+                }
+            ],
+            versions: [
+                {
+                    version: "v3.5.0 (UNIIVERSAL STABLE APK)",
+                    date: "Augest 27, 2025",
+                    latest: true,
+                    notes: [
+                        { icon: "fas fa-rocket", text: "First Stable and usable app version." },
+                        { icon: "fas fa-rocket", text: "New Teachnique. New Player. New Interface" },
+                    ],
+                    url: "https://github.com/somnathdashs/Serial_Stream/releases/download/v3.5.0/Serial.StreamV3.5.0.apk"
+                },
+                {
+                    version: "v2.0.0 (BETA)",
+                    date: "June 03, 2025",
+                    latest: false,
+                    notes: [
+                        { icon: "fas fa-magic", text: "Introduced universal APK with intelligent device detection" },
+                        { icon: "fas fa-mobile-alt", text: "Adaptive UI that automatically adjusts to device form factor" },
+                        { icon: "fas fa-tv", text: "Enhanced Android TV remote navigation and controls" },
+                        { icon: "fas fa-rocket", text: "Most stable beta version ever. " },
+                    ],
+                    url: "https://github.com/somnathdashs/Serial_Stream/releases/download/v2.0.0/Serial.StreamV2.0.0.apk"
+                },
+            ]
+        };
+
+        let currentScreenshot = 0;
+
+        // Initialize the page with data
+        function initializePage() {
+            // Update hero section
+            document.getElementById('hero-badge-text').textContent = APP_DATA.hero.badge;
+            document.getElementById('hero-title').textContent = APP_DATA.hero.title;
+            document.getElementById('hero-subtitle').innerHTML = APP_DATA.hero.subtitle;
+            document.getElementById('download-btn-text').textContent = APP_DATA.hero.downloadButtonText;
+            document.getElementById('app-name').textContent = APP_DATA.app.name;
+
+            // Update about section
+            document.getElementById('about-title').textContent = APP_DATA.about.title;
+            const aboutDesc = document.getElementById('about-description');
+            aboutDesc.innerHTML = APP_DATA.about.description.map(p => `<p>${p}</p>`).join('');
+
+            // Set about screenshot (using first screenshot)
+            document.getElementById('about-screenshot-img').src = APP_DATA.screenshots[0].url;
+
+            // Update current version
+            document.getElementById('current-version').textContent = APP_DATA.app.version;
+            document.getElementById('file-size').textContent = APP_DATA.app.fileSize;
+            document.getElementById('download-link').href = APP_DATA.app.downloadUrl;
+
+            // Set logo
+            setupLogo();
+
+            // Generate all sections
+            generateFeatures();
+            generateStats();
+            generateDeviceIcons();
+            generateScreenshotModel();
+            generateVersionHistory();
+        }
+
+        function setupLogo() {
+            const logoContainer = document.getElementById('logo-container');
+            const footerLogoContainer = document.getElementById('footer-logo-container');
+
+            if (APP_DATA.app.logoUrl) {
+                logoContainer.innerHTML = `<img src="${APP_DATA.app.logoUrl}" alt="${APP_DATA.app.name} Logo">`;
+                footerLogoContainer.innerHTML = `<img src="${APP_DATA.app.logoUrl}" alt="${APP_DATA.app.name} Logo" style="width: 30px; height: 30px; margin-right: 0.5rem;">`;
+            } else {
+                logoContainer.innerHTML = `<i class="fas fa-play-circle"></i>`;
+                footerLogoContainer.innerHTML = `<i class="fas fa-play-circle" style="margin-right: 0.5rem; font-size: 1.5rem; color: var(--primary-color);"></i>`;
+            }
+        }
+
+        function generateFeatures() {
+            const featuresGrid = document.getElementById('features-grid');
+            featuresGrid.innerHTML = APP_DATA.features.map(feature => `
+                <div class="feature-card scroll-reveal">
+                    <div class="feature-icon">
+                        <i class="${feature.icon}"></i>
+                    </div>
+                    <h3>${feature.title}</h3>
+                    <p>${feature.description}</p>
+                </div>
+            `).join('');
+        }
+
+        function generateStats() {
+            const statsGrid = document.getElementById('stats-grid');
+            statsGrid.innerHTML = APP_DATA.stats.map(stat => `
+                <div class="stat-item">
+                    <span class="stat-number">${stat.number}</span>
+                    <span class="stat-label">${stat.label}</span>
+                </div>
+            `).join('');
+        }
+
+        function generateDeviceIcons() {
+            const deviceIcons = document.getElementById('device-icons');
+            deviceIcons.innerHTML = APP_DATA.devices.map(device => `
+                <div class="device-icon">
+                    <div class="device-icon-circle">
+                        <i class="${device.icon}"></i>
+                    </div>
+                    <div class="device-icon-label">${device.label}</div>
+                </div>
+            `).join('');
+        }
+
+        function generateScreenshotModel() {
+            const phoneMockups = document.getElementById('phone-mockups');
+            const screenshotNav = document.getElementById('screenshot-nav');
+
+            // Generate phone mockups
+            phoneMockups.innerHTML = APP_DATA.screenshots.map((screenshot, index) => `
+                <div class="phone-mockup ${index === 0 ? 'active' : ''}" data-index="${index}" onclick="showScreenshot('${screenshot.url}')">
+                    <div class="screen">
+                        <img src="${screenshot.url}" alt="${screenshot.title}" loading="lazy">
+                        <div class="screen-overlay">
+                            <h4>${screenshot.title}</h4>
+                            <p>${screenshot.description}</p>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+
+            // Generate navigation dots
+            screenshotNav.innerHTML = APP_DATA.screenshots.map((_, index) => `
+                <div class="nav-dot ${index === 0 ? 'active' : ''}" onclick="switchScreenshot(${index})"></div>
+            `).join('');
+        }
+
+        function switchScreenshot(index) {
+            currentScreenshot = index;
+
+            // Update active states
+            document.querySelectorAll('.nav-dot').forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+
+            // Center the selected phone mockup
+            const mockups = document.querySelectorAll('.phone-mockup');
+            mockups.forEach((mockup, i) => {
+                if (i === index) {
+                    mockup.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+                }
+            });
+        }
+
+        function generateVersionHistory() {
+            const versionContent = document.getElementById('versionHistoryContent');
+            versionContent.innerHTML = APP_DATA.versions.map(version => `
+                <div class="version-item">
+                    <div class="version-header">
+                        <a class="version-number" href="${version.url}" style="text-decoration: none;">${version.version} ${(version.latest?"  [LATEST]  ":"")}</a>
+
+                        <span class="version-date">Released: ${version.date}</span>
+                    </div>
+                    <ul class="version-notes">
+                        ${version.notes.map(note => `
+                            <li><i class="${note.icon}"></i> ${note.text}</li>
+                        `).join('')}
+                    </ul>
+                </div>
+            `).join('');
+        }
+
+        // Screenshot modal functions
+        function showScreenshot(imageUrl) {
+            document.getElementById('screenshotModal').style.display = 'block';
+            document.getElementById('modalImage').src = imageUrl;
+            document.body.style.overflow = 'hidden';
+        }
+
+        function showAboutScreenshot() {
+            const aboutImg = document.getElementById('about-screenshot-img');
+            showScreenshot(aboutImg.src);
+        }
+
+        function hideScreenshot() {
+            document.getElementById('screenshotModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Version history toggle
+        function toggleVersionHistory() {
+            const content = document.getElementById('versionHistoryContent');
+            const button = document.querySelector('.version-history-toggle');
+
+            if (content.classList.contains('expanded')) {
+                content.classList.remove('expanded');
+                button.textContent = 'View All Versions';
+            } else {
+                content.classList.add('expanded');
+                button.textContent = 'Hide Versions';
+            }
+        }
+
+        // Scroll to screenshots
+        function scrollToScreenshots() {
+            const screenshotsSection = document.getElementById('screenshots');
+            const headerHeight = document.querySelector('header').offsetHeight;
+            const targetPosition = screenshotsSection.offsetTop - headerHeight;
+
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        }
+
+        // Auto-rotate screenshots every 5 seconds
+        function startScreenshotRotation() {
+            // setInterval(() => {
+            //     const nextIndex = (currentScreenshot + 1) % APP_DATA.screenshots.length;
+            //     switchScreenshot(nextIndex);
+            // }, 5000);
+        }
+
+        // Enhanced Mobile menu toggle with improved functionality
+        function setupMobileMenu() {
+            const mobileToggle = document.getElementById('mobile-menu-toggle');
+            const navLinks = document.getElementById('nav-links');
+            const toggleIcon = mobileToggle.querySelector('i');
+
+            mobileToggle.addEventListener('click', function (e) {
+                e.stopPropagation();
+                navLinks.classList.toggle('show');
+
+                // Toggle hamburger/close icon
+                if (navLinks.classList.contains('show')) {
+                    toggleIcon.className = 'fas fa-times';
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    toggleIcon.className = 'fas fa-bars';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function (e) {
+                if (navLinks.classList.contains('show') &&
+                    !navLinks.contains(e.target) &&
+                    !mobileToggle.contains(e.target)) {
+                    navLinks.classList.remove('show');
+                    toggleIcon.className = 'fas fa-bars';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+
+            // Close menu when clicking on nav links
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('show');
+                    toggleIcon.className = 'fas fa-bars';
+                    document.body.style.overflow = 'auto';
+                });
+            });
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerHeight = document.querySelector('header').offsetHeight;
+                    const targetPosition = target.offsetTop - headerHeight;
+
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Scroll reveal animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                }
+            });
+        }, observerOptions);
+
+        // Header background on scroll
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(15, 23, 42, 0.95)';
+            } else {
+                header.style.background = 'rgba(15, 23, 42, 0.9)';
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                hideScreenshot();
+
+                // Also close mobile menu if open
+                const navLinks = document.getElementById('nav-links');
+                const toggleIcon = document.querySelector('#mobile-menu-toggle i');
+                if (navLinks.classList.contains('show')) {
+                    navLinks.classList.remove('show');
+                    toggleIcon.className = 'fas fa-bars';
+                    document.body.style.overflow = 'auto';
+                }
+            }
+        });
+
+        // Prevent modal content click from closing modal
+        document.querySelector('.modal-content').addEventListener('click', function (e) {
+            e.stopPropagation();
+        });
+
+        // Initialize page and start animations
+        window.addEventListener('load', function () {
+            initializePage();
+            setupMobileMenu();
+
+            // Observe scroll reveal elements after page is loaded
+            setTimeout(() => {
+                document.querySelectorAll('.scroll-reveal').forEach(el => {
+                    observer.observe(el);
+                });
+            }, 100);
+
+            // Start screenshot rotation
+            setTimeout(startScreenshotRotation, 3000);
+
+            document.body.style.opacity = '1';
+            document.body.style.transition = 'opacity 0.5s ease-in-out';
+        });
+
+        // Animate counter numbers
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-number');
+            counters.forEach(counter => {
+                const target = counter.innerText;
+                let count = 0;
+                const increment = target.includes('K') ? 100 : target.includes('%') ? 1 : 1;
+                const timer = setInterval(() => {
+                    if (target.includes('K')) {
+                        counter.innerText = Math.ceil(count / 100)  + 'K+';
+                        count += increment;
+                        if (count > parseInt(target) * 100) clearInterval(timer);
+                    } else if (target.includes('%')) {
+                        counter.innerText = count + '%';
+                        count += increment;
+                        if (count > parseInt(target)) clearInterval(timer);
+                    } else if (target === '3') {
+                        counter.innerText = '3';
+                        clearInterval(timer);
+                    }
+                }, 20);
+            });
+        }
+
+        // Trigger counter animation when stats section is visible
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        });
+
+        // Device detection for highlighting
+        function detectAndHighlightDevice() {
+            const userAgent = navigator.userAgent.toLowerCase();
+            const isAndroid = userAgent.includes('android');
+            const isMobile = /android.*mobile/i.test(userAgent);
+            const isTablet = userAgent.includes('android') && !isMobile;
+            const isTV = userAgent.includes('tv') || userAgent.includes('googletv');
+
+            // Add visual indicators
+            const deviceIcons = document.querySelectorAll('.device-icon');
+
+            if (isTV && deviceIcons[2]) {
+                deviceIcons[2].style.opacity = '1';
+                deviceIcons[2].style.transform = 'scale(1.1)';
+                deviceIcons[2].querySelector('.device-icon-label').innerHTML += ' <span style="color: var(--success-color);">• Current Device</span>';
+            } else if (isTablet && deviceIcons[1]) {
+                deviceIcons[1].style.opacity = '1';
+                deviceIcons[1].style.transform = 'scale(1.1)';
+                deviceIcons[1].querySelector('.device-icon-label').innerHTML += ' <span style="color: var(--success-color);">• Current Device</span>';
+            } else if (isMobile && isAndroid && deviceIcons[0]) {
+                deviceIcons[0].style.opacity = '1';
+                deviceIcons[0].style.transform = 'scale(1.1)';
+                deviceIcons[0].querySelector('.device-icon-label').innerHTML += ' <span style="color: var(--success-color);">• Current Device</span>';
+            }
+        }
+
+        // Initialize observers and effects
+        setTimeout(() => {
+            detectAndHighlightDevice();
+
+            const statsSection = document.querySelector('.stats');
+            if (statsSection) {
+                statsObserver.observe(statsSection);
+            }
+        }, 1000);
+    </script>
+
+    <!-- Enhanced Structured Data for Universal APK -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Serial Stream - Universal Android APK",
+        "description": "Your ultimate free Android streaming app with universal APK compatibility. Stream all TV serials and web series effortlessly on Android phones, tablets, and Android TV with a single download.",
+        "applicationCategory": "EntertainmentApplication",
+        "operatingSystem": ["Android"],
+        "softwareVersion": "2.5.0",
+        "datePublished": "2025-08-27",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "ratingCount": "20000"
+        },
+        "downloadUrl": "https://somnathdashs.github.io/apps/serial_stream/",
+        "supportedDevice": [
+            "Android Phone",
+            "Android Tablet", 
+            "Android TV",
+            "Smart TV with Android"
+        ],
+        "featureList": [
+            "Universal APK compatibility",
+            "Adaptive user interface",
+            "Cross-device synchronization", 
+            "AI-powered recommendations",
+            "4K streaming support",
+            "Multi-language support"
+        ],
+        "author": {
+            "@type": "Organization",
+            "name": "Serial Stream"
+        }
+    }
+    </script>
+</body>
+
+</html>

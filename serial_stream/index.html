@@ -1249,7 +1249,7 @@
                 function shareSerialStream() {
                     const shareData = {
                         title: 'Serial Stream',
-                        text: 'Check out Serial Stream – a universal Android APK for seamless streaming!',
+                        text: 'Check out Serial Stream – All TV Shows and web series streaming app!',
                         url: window.location.href
                     };
                     if (navigator.share) {
@@ -1567,7 +1567,7 @@
             aboutDesc.innerHTML = APP_DATA.about.description.map(p => `<p>${p}</p>`).join('');
 
             // Set about screenshot (using first screenshot)
-            document.getElementById('about-screenshot-img').src = APP_DATA.screenshots[0].url;
+            document.getElementById('about-screenshot-img').src = "/serial_stream/ss/5.png";
 
             // Update current version
             document.getElementById('current-version').textContent = APP_DATA.app.version;

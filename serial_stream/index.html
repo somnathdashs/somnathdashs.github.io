@@ -1239,6 +1239,31 @@
                         View Screenshots
                     </a>
                 </div>
+            <div class="share-section" style="margin-top: 2rem; text-align: center;">
+                <button class="btn-secondary" onclick="shareSerialStream()" style="display: inline-flex; align-items: center;">
+                    <i class="fas fa-share-alt" style="margin-right: 0.5em;"></i>
+                    Share Serial Stream
+                </button>
+            </div>
+            <script>
+                function shareSerialStream() {
+                    const shareData = {
+                        title: 'Serial Stream',
+                        text: 'Check out Serial Stream – a universal Android APK for seamless streaming!',
+                        url: window.location.href
+                    };
+                    if (navigator.share) {
+                        navigator.share(shareData).catch(() => {});
+                    } else {
+                        // Fallback: copy link to clipboard
+                        navigator.clipboard.writeText(window.location.href).then(function() {
+                            alert('Link copied to clipboard!');
+                        }, function() {
+                            alert('Could not copy link. Please copy it manually.');
+                        });
+                    }
+                }
+            </script>
             </div>
         </div>
     </section>
@@ -1347,7 +1372,7 @@
                 <div class="download-main">
                     <a href="" id="download-link" class="download-btn">
                         <i class="fab fa-android"></i>
-                        <span>Download Universal APK</span>
+                        <span>Download Serial Stream</span>
                         <span style="font-size: 0.9rem; font-weight: 500;" id="file-size"></span>
                     </a>
                 </div>
